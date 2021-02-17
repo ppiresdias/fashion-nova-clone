@@ -1,10 +1,12 @@
 import Footer from '../components/footer';
-import Navbar from '../components/navbar';
+import Header from '../components/header'
+import Navigation from '../components/navigation'
 
 export default function Layout(props) {
 	return (
 		<div>
-			<Navbar />
+			<Header />
+			{/* <Navigation /> */}
 			<div>{props.children}</div>
 			<Footer />
 		</div>
