@@ -1,1 +1,34 @@
 // styles for gallery page
+$spacer: 1rem;
+$p1: $spacer*.25;
+$p2: $spacer*.5;
+$p3: $spacer;
+$p4: $spacer*1.5;
+$p5: $spacer*3;
+
+.collections {
+  &__container {
+    padding: $p5 $p5;
+    
+  }
+
+  &__header {
+    margin-bottom: $p3;
+    text-align: center;
+  }
+
+  &__search-filter {
+    padding: 0;
+  }
+  &__gallery {
+    padding: 0;
+  }
+}
+
+.gallery {
+  &__column {
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+  }
+}
