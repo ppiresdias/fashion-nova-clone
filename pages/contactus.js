@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import Head from 'next/head';
 
-import '../styles/contactus.scss';
-
 const ContactUs = () => {
 	
 	return (
@@ -11,6 +9,7 @@ const ContactUs = () => {
 				<title>Contact Us</title>
 			</Head>
 			
+			<h1>Welcome to the Contact Us page!</h1>
         </div>
 	);
 };

@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import Head from 'next/head';
 
-const Blog = () => {
+const Product = () => {
 	
 	return (
 		<div>
 			<Head>
-				<title>Blog</title>
+				<title>Contact Us</title>
 			</Head>
 			
-			<h1>Welcome to the Blog page!</h1>
+			<h1>Welcome to the Product page!</h1>
         </div>
 	);
 };
 
-export default Blog;
+export default Product;

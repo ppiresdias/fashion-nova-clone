@@ -3,15 +3,16 @@ import "../styles/gallery.scss";
 
 import Head from "next/head";
 
-const Gallery = () => {
+const Collections = () => {
   return (
     <div>
         <Head>
-            <title>Gallery</title>
+            <title>Collections</title>
         </Head>
 
+        <h1>Welcome to the Collections Page!</h1>
     </div>
   );
 };
 
-export default Gallery;
+export default Collections;
