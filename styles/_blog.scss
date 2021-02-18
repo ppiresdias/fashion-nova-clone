@@ -1,0 +1,90 @@
+// styles for blog page
+$img-width: 100%;
+$img-height: 250px;
+$title-font: 'Prata',
+serif;
+$title-font-size: 25px;
+$content-font: 'Karla',
+sans-serif;
+
+
+// BLOG //
+.blog {
+    &__header {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+
+        h1 {
+            font-family: 'Karla', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            margin-bottom: 20px;
+            margin-top: 32px;
+            font-size: 40px;
+            letter-spacing: 0.5px;
+
+        }
+    }
+}
+
+.cards {
+    &__row {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        border: 1px solid white;
+
+        a{
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+        }
+
+        &__title {
+            font-family: $title-font;
+            font-size: $title-font-size;
+            font-weight: 400;
+            line-height: 1.4rem;
+            margin-top: 5px;
+            margin-bottom: 15px;
+
+        }
+
+        &__content {
+            font-family: $content-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.6;
+            word-break: break-word;
+            text-align: left;
+            color: gray;
+        }
+
+        &__img {
+            width: $img-width;
+            height: $img-height;
+            object-fit: cover;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        &__date {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            text-transform: uppercase;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        &:hover {
+            border-color: lightblue;
+        }
+
+    }
+
+}
