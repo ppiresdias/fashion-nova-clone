@@ -1,0 +1,20 @@
+/********* Custom Styles *********/
+
+@import "normalize";
+@import "fonts";
+@import "variables";
+@import "utilities";
+@import "config";
+
+/********* Component Styles *********/
+@import "header";
+@import "footer";
+
+/********* Pages Styles *********/
+
+@import "common";
+@import "home";
+@import "collections";
+@import "product";
+@import "blog";
+@import "contact_us";

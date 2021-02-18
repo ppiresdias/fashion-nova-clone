@@ -1,0 +1,96 @@
+.footer-wrapper{
+    background: $primaryColor;
+
+    .footer-container{
+        
+        .footer__content{
+            padding-top: 80px;
+
+            .footer__menu{
+                color: $primaryTextColor;
+                .footer__menu__header{
+                    font-size: 20px;
+                    font-weight: 700;
+                    font-family: 'Open sans' sans-serif;
+                    color: $primaryTextColor;
+                    text-transform: capitalize; 
+                    margin-bottom: 20px;
+                }
+
+                .footer__menu__links{
+
+                    .footer__menu__link__item{
+                        color: $primaryTextColor;
+                        font-size: $primaryFontSize;
+                        font-weight: 300;
+                        text-transform: capitalize;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                .footer__newsletter__info{
+                    margin: 0;
+                }
+
+                .footer__signup{
+                    margin: 25px 0;
+
+                    .newsletter-input{
+                        border-radius: 0px;
+                    }::placeholder{
+                        color: $placeholderText;
+                    }
+
+                    .newsletter-btn{
+                        background: $primaryColorBold;
+                        color: $primaryTextColor;
+                        border-radius: 0px;   
+                    }
+
+                    .form-check{
+                        margin-top: 15px;
+                        label{
+                            font-size: 14px;
+                            color: $primaryTextColor;
+                            font-style: italic;
+                        }
+                    }
+                }
+
+                .footer__socials{
+                    margin: 20px 0;
+
+                    .footer__social__item{
+                        font-size: 28px;
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+
+        hr{
+            color: $primaryTextColor;
+        }
+
+        .footer__bottom{
+            color: $primaryTextColor;
+            .footer__copyright{
+                font-size: 12px;
+                font-weight: 100px;
+            }
+
+            .footer__payments{
+                
+                .payments__list{
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 36px;
+
+                    .payment__item{
+                        margin: -20px 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
