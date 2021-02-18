@@ -74,7 +74,7 @@ class Header extends Component {
           </div>
         </div>
         {/* // Navigation */}
-        <nav className="navbar-wrapper navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar-wrapper navbar navbar-expand-lg">
           <div className="container navbar-top-container">
             <Link href="#">
               <a className="navbar-brand">
@@ -106,7 +106,7 @@ class Header extends Component {
             </ul>
           </div>
         </nav>
-        <div className="navbar-wrapper navbar navbar-expand-lg navbar-light bg-light">
+        <div className="navbar-wrapper navbar navbar-expand-lg">
           <div className="container navbar-bottom-container">
             <div
               className="nav-links collapse navbar-collapse"
@@ -154,3 +154,4 @@ class Header extends Component {
 }
 
 export default Header;
+
