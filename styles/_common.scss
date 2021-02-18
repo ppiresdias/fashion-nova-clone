@@ -1,18 +1,39 @@
 // global styles for all pages
-body{
+body {
     font-family: 'Open sans' sans-serif;
-
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $placeholderText;
     opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: $placeholderText;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: $placeholderText;
+}
+
+.button--outline {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+.button--black {
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: black;
 }
