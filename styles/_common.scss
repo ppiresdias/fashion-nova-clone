@@ -1,39 +1,52 @@
 // global styles for all pages
 body {
-    font-family: 'Open sans' sans-serif;
+  font-family: "Open sans" sans-serif;
 }
 
 ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: $placeholderText;
-    opacity: 1; /* Firefox */
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $placeholderText;
+  opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: $placeholderText;
+  /* Internet Explorer 10-11 */
+  color: $placeholderText;
 }
 
 ::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: $placeholderText;
+  /* Microsoft Edge */
+  color: $placeholderText;
 }
 
 .button--outline {
-    background-color: transparent;
-    border: 1px solid black;
-    padding: 1rem 2rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    &:hover {
-        background-color: black;
-        color: white;
-    }
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  &:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+  }
 }
 
 .button--black {
-    padding: 1.5rem 3rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    background-color: black;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  background-color: black;
+  &:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+  }
 }
