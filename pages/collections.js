@@ -4,11 +4,11 @@ import Head from "next/head";
 const Collections = () => {
   return (
     <div>
-        <Head>
-            <title>Collections</title>
-        </Head>
+      <Head>
+        <title>Collections</title>
+      </Head>
 
-        <h1>Welcome to the Collections Page!</h1>
+      <h1>Welcome to the Collections Page!</h1>
     </div>
   );
 };

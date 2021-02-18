@@ -1,1 +1,43 @@
 /******** Home/Landing Page Styles ***********/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.new__collection {
+    text-transform: uppercase;
+    background: right / cover no-repeat
+        url('https://source.unsplash.com/dhD_FiNkuzw/1920x1080');
+    height: 45rem;
+    max-height: 45rem;
+    min-height: 25rem;
+    margin-top: 4rem;
+    h1 {
+        font-weight: 900;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        @media screen and (min-width: 720px) {
+            font-size: 5rem;
+        }
+    }
+}
+
+.feature__products {
+    margin: 0 1rem;
+    .card {
+        border: none;
+    }
+    .previous__price {
+        text-decoration: line-through;
+        color: gray;
+        margin-right: 1rem;
+    }
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5rem 0;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+}
