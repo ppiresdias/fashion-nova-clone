@@ -82,7 +82,7 @@ const Blog = () => {
                 </div>
               </div>
             </div>
-            <row className="cards__row row">
+            <div className="cards__row row">
               <div className="col-sm-12 col-md-4">
                 <div className="card">
                   <img
@@ -146,7 +146,7 @@ const Blog = () => {
                   </p>
                 </div>
               </div>
-            </row>
+            </div>
           </div>
         </div>
       </div>
