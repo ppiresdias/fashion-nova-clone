@@ -1,43 +1,123 @@
 /******** Home/Landing Page Styles ***********/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap");
 
 * {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .new__collection {
-    text-transform: uppercase;
-    background: right / cover no-repeat
-        url('https://source.unsplash.com/dhD_FiNkuzw/1920x1080');
-    height: 45rem;
-    max-height: 45rem;
-    min-height: 25rem;
-    margin-top: 4rem;
-    h1 {
-        font-weight: 900;
-        font-size: 3rem;
-        margin-bottom: 3rem;
-        @media screen and (min-width: 720px) {
-            font-size: 5rem;
-        }
+  text-transform: uppercase;
+  background: right 30% / cover no-repeat
+    url("https://source.unsplash.com/dhD_FiNkuzw/600x880");
+  padding: 0 2rem;
+  height: 30rem;
+  max-height: 30rem;
+  min-height: 25rem;
+  @media screen and (min-width: 575px) {
+    background: right 10% / cover no-repeat
+      url("https://source.unsplash.com/dhD_FiNkuzw/1920x1080");
+    height: 50rem;
+    max-height: 50rem;
+    padding: 0;
+  }
+  h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    @media screen and (min-width: 720px) {
+      font-size: 5rem;
     }
+  }
 }
 
 .feature__products {
-    margin: 0 1rem;
-    .card {
-        border: none;
+  margin: 0 1rem;
+  .card {
+    border: none;
+  }
+  .previous__price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 1rem;
+  }
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5rem 0;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+}
+
+.himher {
+  margin: 10rem 0;
+  .for__her,
+  .for__him {
+    &::before {
+      background-color: rgba(0, 0, 0, 0.35);
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
     }
-    .previous__price {
-        text-decoration: line-through;
-        color: gray;
-        margin-right: 1rem;
+  }
+
+  h3,
+  a {
+    z-index: 2;
+  }
+
+  .for__her__content,
+  .for__him__content {
+    height: 35rem;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 4rem;
+    color: white;
+  }
+
+  .for__him__content {
+    background: center / cover no-repeat
+      url("https://source.unsplash.com/GwcXIzetYqM/");
+  }
+
+  .for__her__content {
+    background: center / cover no-repeat
+        url("https://source.unsplash.com/JfbpNdj4KAs/1920x1080"),
+      rgba(0, 0, 0, 0.5);
+  }
+}
+
+.latest__posts {
+  .row {
+    padding: 5rem 0;
+  }
+  .card {
+    border: none;
+    div > img {
+      object-fit: cover;
     }
-    h2 {
-        text-transform: uppercase;
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      .card-title {
         text-align: center;
-        padding: 5rem 0;
-        font-weight: bold;
-        font-size: 2.5rem;
+      }
+      .card-text {
+        font-size: 0.9rem;
+      }
     }
+  }
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
 }
