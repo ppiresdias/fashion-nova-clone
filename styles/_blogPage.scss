@@ -5,16 +5,17 @@ $content-font: 'Karla',
 sans-serif;
 
 .blog-page {
-   
+
     &__comment {
-        
-       h2{
-        padding-top: 3rem;
-        padding-bottom: 2rem;
-        text-align: center;
-        font-family: $content-font;
-        font-weight: 600;
-       }
+
+        h2 {
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+            text-align: center;
+            font-family: $content-font;
+            font-weight: 600;
+        }
+
         margin: auto;
         max-width: 700px;
 
@@ -116,7 +117,7 @@ sans-serif;
             font-size: 16px;
             line-height: 2;
             text-align: left;
-           
+
 
         }
 

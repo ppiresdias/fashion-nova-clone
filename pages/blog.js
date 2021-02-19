@@ -9,16 +9,48 @@ const Blog = () => {
       <Head>
         <title>Blog</title>
       </Head>
+
       <div className="blog">
         <div className="blog__header-wrapper">
           <header className="blog__header">
             <h1>Blog</h1>
           </header>
         </div>
+
         <div className="cards-wrapper">
           <div className="cards container">
+            <div className="row flex-column left-column">
+              <div className="recent">
+                <h4>RECENT ARTICLES</h4>
+                <Link href="/blogpage">
+                  <a>Outfit of the day</a>
+                </Link>
+                <Link href="/blogPage">
+                  <a>Clothing Paradise</a>
+                </Link>
+                <Link href="/blogPage">
+                  <a>Style beyond Imagination</a>
+                </Link>
+              </div>
+              <div className="tags">
+                <h4>Tags</h4>
+                <Link href="#">
+                  <a>Awesome</a>
+                </Link>
+                <Link href="#">
+                  <a>Summer</a>
+                </Link>
+                <Link href="#">
+                  <a>Winter</a>
+                </Link>
+                <Link href="#">
+                  <a>Vintage</a>
+                </Link>
+              </div>
+            </div>
+
             <div className="cards__row row">
-              <div className="col-sm-12 col-md-4">
+              <div className="col-sm-12 col-md-6">
                 <div className="card">
                   <img
                     className="card__img"
@@ -31,7 +63,7 @@ const Blog = () => {
                     eiusmod tempor incididunt ut labore et dolore Lorem
                     ipsumadipisicing elit, sed do magna aliqua dolor sit amet
                     conse ctetur...{" "}
-                    <Link href="blogPage">
+                    <Link href="/blogPage">
                       <a>
                         Read More <AiOutlineArrowRight />
                       </a>
@@ -39,7 +71,7 @@ const Blog = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-4">
+              <div className="col-sm-12 col-md-6">
                 <div className="card">
                   <img
                     className="card__img"
@@ -52,7 +84,7 @@ const Blog = () => {
                     eiusmod tempor incididunt ut labore et dolore Lorem
                     ipsumadipisicing elit, sed do magna aliqua dolor sit amet
                     conse ctetur...{" "}
-                    <Link href="blogPage">
+                    <Link href="/blogPage">
                       <a>
                         Read More <AiOutlineArrowRight />
                       </a>
@@ -60,7 +92,7 @@ const Blog = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-4">
+              <div className="col-sm-12 col-md-6">
                 <div className="card">
                   <img
                     className="card__img"
@@ -81,9 +113,7 @@ const Blog = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="cards__row row">
-              <div className="col-sm-12 col-md-4">
+              <div className="col-sm-12 col-md-6">
                 <div className="card">
                   <img
                     className="card__img"
@@ -96,7 +126,7 @@ const Blog = () => {
                     eiusmod tempor incididunt ut labore et dolore Lorem
                     ipsumadipisicing elit, sed do magna aliqua dolor sit amet
                     conse ctetur...{" "}
-                    <Link href="blogPage">
+                    <Link href="/blogPage">
                       <a>
                         Read More <AiOutlineArrowRight />
                       </a>
@@ -104,7 +134,7 @@ const Blog = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-4">
+              <div className="col-sm-12 col-md-6">
                 <div className="card">
                   <img
                     className="card__img"
@@ -117,7 +147,7 @@ const Blog = () => {
                     eiusmod tempor incididunt ut labore et dolore Lorem
                     ipsumadipisicing elit, sed do magna aliqua dolor sit amet
                     conse ctetur...{" "}
-                    <Link href="blogPage">
+                    <Link href="/blogPage">
                       <a>
                         Read More <AiOutlineArrowRight />
                       </a>
@@ -125,7 +155,7 @@ const Blog = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-4">
+              <div className="col-sm-12 col-md-6">
                 <div className="card">
                   <img
                     className="card__img"
@@ -138,7 +168,7 @@ const Blog = () => {
                     eiusmod tempor incididunt ut labore et dolore Lorem
                     ipsumadipisicing elit, sed do magna aliqua dolor sit amet
                     conse ctetur...{" "}
-                    <Link href="blogPage">
+                    <Link href="/blogPage">
                       <a>
                         Read More <AiOutlineArrowRight />
                       </a>
