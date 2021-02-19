@@ -51,7 +51,7 @@ const Footer = () => {
 						</div>
 						<div className="row footer__signup">
 							<form className="form-inline">
-								<input className="form-control newsletter-input" type="search" placeholder="plus black top" aria-label="Search"/>
+								<input className="form-control newsletter-input" type="search" placeholder="Enter email" aria-label="Search"/>
 								<button className="btn newsletter-btn" type="submit">
 								<ImSearch/>
 								</button>
