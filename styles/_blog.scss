@@ -11,6 +11,36 @@ sans-serif;
 // BLOG //
 .blog {
 
+    &__pagination {
+        text-align: center;
+        margin-bottom: 4rem;
+
+        hr {
+            margin: auto;
+            padding: 8px
+        }
+
+        ul {
+            li {
+                margin: 0 10px;
+                border: 1px solid gray;
+                padding: 4px 12px;
+                display: inline-block;
+                cursor: pointer;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+
+                }
+
+                &:hover {
+                    border-color: lightblue;
+                }
+            }
+        }
+    }
+
 
     &__header {
         text-align: center;
@@ -61,7 +91,7 @@ sans-serif;
         .recent {
             text-align: center;
             padding-bottom: 1.5rem;
-            border-bottom: 1px solid lightgray;
+            border-bottom: 1px solid rgb(241, 241, 241);
 
 
 
@@ -111,7 +141,7 @@ sans-serif;
     .card {
         border: 1px solid white;
         margin-bottom: 1.5rem;
-        
+
 
         a {
             font-weight: 600;
@@ -141,8 +171,9 @@ sans-serif;
         }
 
         &__img {
-            height: 240px;
-            background-size: cover;
+            height: 250px;
+            object-fit: cover;
+
 
         }
 

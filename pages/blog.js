@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import {
+  IoMdArrowForward,
+  IoIosArrowBack,
+  IoIosArrowForward,
+} from "react-icons/io";
 
 const Blog = () => {
   return (
@@ -54,7 +58,7 @@ const Blog = () => {
                 <div className="card">
                   <img
                     className="card__img"
-                    src="/img/fashion.jpg"
+                    src="/img/hair.jpg"
                     alt="fashion"
                   />
                   <span className="card__date">06 FEB, 2021</span>
@@ -65,7 +69,7 @@ const Blog = () => {
                     conse ctetur...{" "}
                     <Link href="/blogPage">
                       <a>
-                        Read More <AiOutlineArrowRight />
+                        Read More <IoMdArrowForward />{" "}
                       </a>
                     </Link>
                   </p>
@@ -75,7 +79,7 @@ const Blog = () => {
                 <div className="card">
                   <img
                     className="card__img"
-                    src="/img/dark-hair.jpg"
+                    src="/img/fashion.jpg"
                     alt="dark hair"
                   />
                   <span className="card__date">10 JUN, 2021</span>
@@ -86,7 +90,7 @@ const Blog = () => {
                     conse ctetur...{" "}
                     <Link href="/blogPage">
                       <a>
-                        Read More <AiOutlineArrowRight />
+                        Read More <IoMdArrowForward />{" "}
                       </a>
                     </Link>
                   </p>
@@ -107,49 +111,7 @@ const Blog = () => {
                     conse ctetur...{" "}
                     <Link href="/blogPage">
                       <a>
-                        Read More <AiOutlineArrowRight />
-                      </a>
-                    </Link>
-                  </p>
-                </div>
-              </div>
-              <div className="col-sm-12 col-md-6">
-                <div className="card">
-                  <img
-                    className="card__img"
-                    src="/img/dark.jpg"
-                    alt="fashion"
-                  />
-                  <span className="card__date">23 DEC, 2020</span>
-                  <h1 className="card__title">Style beyond Imagination</h1>
-                  <p className="card__content">
-                    eiusmod tempor incididunt ut labore et dolore Lorem
-                    ipsumadipisicing elit, sed do magna aliqua dolor sit amet
-                    conse ctetur...{" "}
-                    <Link href="/blogPage">
-                      <a>
-                        Read More <AiOutlineArrowRight />
-                      </a>
-                    </Link>
-                  </p>
-                </div>
-              </div>
-              <div className="col-sm-12 col-md-6">
-                <div className="card">
-                  <img
-                    className="card__img"
-                    src="/img/pink.jpg"
-                    alt="dark hair"
-                  />
-                  <span className="card__date">29 DEC, 2020</span>
-                  <h1 className="card__title">Glam Life</h1>
-                  <p className="card__content">
-                    eiusmod tempor incididunt ut labore et dolore Lorem
-                    ipsumadipisicing elit, sed do magna aliqua dolor sit amet
-                    conse ctetur...{" "}
-                    <Link href="/blogPage">
-                      <a>
-                        Read More <AiOutlineArrowRight />
+                        Read More <IoMdArrowForward />{" "}
                       </a>
                     </Link>
                   </p>
@@ -160,7 +122,49 @@ const Blog = () => {
                   <img
                     className="card__img"
                     src="/img/group.jpg"
-                    alt="young female"
+                    alt="fashion"
+                  />
+                  <span className="card__date">23 DEC, 2020</span>
+                  <h1 className="card__title">Style beyond Imagination</h1>
+                  <p className="card__content">
+                    eiusmod tempor incididunt ut labore et dolore Lorem
+                    ipsumadipisicing elit, sed do magna aliqua dolor sit amet
+                    conse ctetur...{" "}
+                    <Link href="/blogPage">
+                      <a>
+                        Read More <IoMdArrowForward />{" "}
+                      </a>
+                    </Link>
+                  </p>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6">
+                <div className="card">
+                  <img
+                    className="card__img"
+                    src="/img/dark.jpg"
+                    alt="dark hair"
+                  />
+                  <span className="card__date">29 DEC, 2020</span>
+                  <h1 className="card__title">Glam Life</h1>
+                  <p className="card__content">
+                    eiusmod tempor incididunt ut labore et dolore Lorem
+                    ipsumadipisicing elit, sed do magna aliqua dolor sit amet
+                    conse ctetur...{" "}
+                    <Link href="/blogPage">
+                      <a>
+                        Read More <IoMdArrowForward />{" "}
+                      </a>
+                    </Link>
+                  </p>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6">
+                <div className="card">
+                  <img
+                    className="card__img"
+                    src="/img/warm-weather.jpg"
+                    alt="warm weather"
                   />
                   <span className="card__date">29 JUL, 2020</span>
                   <h1 className="card__title">Warm Weather Collection</h1>
@@ -170,13 +174,30 @@ const Blog = () => {
                     conse ctetur...{" "}
                     <Link href="/blogPage">
                       <a>
-                        Read More <AiOutlineArrowRight />
+                        Read More <IoMdArrowForward />{" "}
                       </a>
                     </Link>
                   </p>
                 </div>
               </div>
             </div>
+          </div>
+          <div className="blog__pagination container">
+            <hr />
+            <ul>
+              <IoIosArrowBack />
+              <li>
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <IoIosArrowForward />
+            </ul>
+            <hr />
           </div>
         </div>
       </div>
