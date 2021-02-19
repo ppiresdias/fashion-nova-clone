@@ -20,15 +20,6 @@
     font-family: 'Montserrat';
     font-size: 14px;
 
-    .header-brand-logo{
-        .navbar-brand{
-            color: $primaryTextColor !important;
-            &:hover{
-                color: $primaryTextColor !important;
-            }
-        }
-    }
-
     .header-banner-left{
 
         .header-banner-socials{
@@ -70,6 +61,10 @@
         .navbar-brand{
             font-family: 'Bebas Neue', cursive;
             font-size: 40px;
+            color: $primaryTextColor !important;
+            &:hover{
+                color: $primaryTextColor !important;
+            }
         }
     }
 
