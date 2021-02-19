@@ -15,6 +15,7 @@ const getCheckBoxOptions = (arr) => {
   });
 };
 
+// SEARCH FILTER FOR COLLECTIONS
 const Filter = () => {
     return (
       <section className="filter">
