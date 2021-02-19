@@ -25,10 +25,6 @@ const Collections = () => {
               </div>
               <div className="col-9 collections__gallery gallery">
               <div className="container">
-
-
-
-
                 <div className="gallery-sorter">
                   <div className="gallery-sorter__found">0 results found</div>
                   <div className="gallery-sorter__options-area">
@@ -41,11 +37,6 @@ const Collections = () => {
                     </select>
                   </div>
                 </div>
-
-
-
-
-
                 <div className="row">
                   <div className="col-3 gallery__column"></div>
                   <div className="col-3 gallery__column"></div>
