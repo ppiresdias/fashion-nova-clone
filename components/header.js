@@ -1,152 +1,135 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { Component } from "react";
-import { IoMdMail } from "react-icons/io";
-import { HiChevronDown } from "react-icons/hi";
-import { FaUser, FaHeart, FaShoppingCart } from "react-icons/fa";
+import {SiTiktok, SiInstagram} from "react-icons/si";
+import { HiChevronDown, HiShoppingBag } from "react-icons/hi";
+import { FaUser, FaHeart} from "react-icons/fa";
+import {VscGlobe} from "react-icons/vsc"
 import {
   ImSearch,
-  ImFacebook,
-  ImTwitter,
-  ImYoutube,
-  ImInstagram,
-  ImPinterest,
 } from "react-icons/im";
 
 class Header extends Component {
   render() {
     return (
       <>
-        {/* // Header */}
         <div className="header-wrapper">
-          <div className="container header-container">
-            <div className="row header-top">
-              {/* socials */}
-              <div className="col header__top__socials">
-                <ul className="socials_items">
-                  <li className="social-item">
-                    {" "}
-                    <IoMdMail />{" "}
-                  </li>
-                  <li className="social-item">
-                    {" "}
-                    <ImFacebook />{" "}
-                  </li>
-                  <li className="social-item">
-                    {" "}
-                    <ImTwitter />{" "}
-                  </li>
-                  <li className="social-item">
-                    {" "}
-                    <ImYoutube />{" "}
-                  </li>
-                  <li className="social-item">
-                    {" "}
-                    <ImInstagram />{" "}
-                  </li>
-                  <li className="social-item">
-                    {" "}
-                    <ImPinterest />{" "}
-                  </li>
-                </ul>
-              </div>
-              {/* promo */}
-              <div className="col-6 header__top__promotion">
-                <h6 className="promotion_text">
-                  <span>Free</span> shipping on orders over <span>$50</span>
-                </h6>
-              </div>
-              {/* settings */}
-              <div className="col header__top__shop-settings">
-                <ul className="setting_items">
-                  <li className="setting-item">
-                    English <HiChevronDown />
-                  </li>
-                  <li className="setting-item">
-                    USD <HiChevronDown />
-                  </li>
-                  <li className="setting-item">
-                    <FaUser /> Log in
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* // Navigation */}
-        <nav className="navbar-wrapper navbar navbar-expand-lg">
-          <div className="container navbar-top-container">
-            <Link href="#">
-              <a className="navbar-brand">
-                Fashion<span>NOVA</span>clone
-              </a>
-            </Link>
-            <div className="navbar-search">
-              <form className="form-inline">
-                <input
-                  className="form-control search-input"
-                  type="search"
-                  placeholder="plus black top"
-                  aria-label="Search"
-                />
-                <button className="btn search-btn" type="submit">
-                  <ImSearch />
-                </button>
-              </form>
-            </div>
-            <ul className="shop-links">
-              <li className="shop-link-item">
-                {" "}
-                <FaHeart />{" "}
-              </li>
-              <li className="shop-link-item">
-                {" "}
-                <FaShoppingCart />{" "}
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div className="navbar-wrapper navbar navbar-expand-lg">
-          <div className="container navbar-bottom-container">
-            <div
-              className="nav-links collapse navbar-collapse"
-              id="navbarLinks"
-            >
-              <div className="navbar-nav">
-                <Link href="#">
-                  <a className="nav-link">
-                    Women <HiChevronDown />{" "}
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="nav-link">
-                    Plus <HiChevronDown />{" "}
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="nav-link">
-                    Men <HiChevronDown />{" "}
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="nav-link">
-                    Kids <HiChevronDown />{" "}
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="nav-link">
-                    Beauty <HiChevronDown />{" "}
-                  </a>
-                </Link>
-                <Link href="/blog">
-                  <a className="nav-link">Blog</a>
-                </Link>
-                <Link href="/contactus">
-                  <a className="nav-link">Contact</a>
-                </Link>
-              </div>
-            </div>
-          </div>
+            <section className="main-header-section" id="header">
+                <div className="header-announcement-bar">
+                    <div className="container">
+                        <div className="d-flex align-items-center justify-content-center">                          
+                            <Link href="#">
+                                <a className="announcement-text">
+                                    <span>Free</span> Shipping on Orders over <span>$50</span>
+                                </a>
+                            </Link>
+                        </div>                        
+                    </div>
+                </div>
+                <div className="header-banner">
+                    <div className="container">
+                        <div className="row d-flex align-items-center justify-content-between">
+                            <div className="col header-banner-left d-flex align-items-center">
+                                <div className="socials header-banner-socials d-flex">
+                                    <div className="header-banner-social__item">
+                                        {" "}<SiInstagram />{" "}
+                                        <span className="header-banner-social__item-count">1.6M</span>
+                                    </div>
+                                    <div className="header-banner-social__item">
+                                        {" "}<SiTiktok />{" "}
+                                    </div>
+                                </div>
+                                <div className="header-banner-search">
+                                    <form className="form-inline">
+                                        <button className="btn search-btn" type="submit">
+                                            <ImSearch />
+                                        </button>
+                                        <input
+                                        className="form-control search-input"
+                                        type="search"
+                                        placeholder="Search here..."
+                                        aria-label="Search"
+                                        />
+                                    </form>
+                                </div>
+                            </div>
+                            <div className="col header-banner-logo">
+                                <Link href="#">
+                                    <a className="navbar-brand">nova</a>
+                                </Link>
+                            </div>
+                            <div className="col header-banner-right d-flex justify-content-end">
+                                <div className="header-banner-right__item header-banner-settings">
+                                    {" "} <VscGlobe />{" "}
+                                </div>
+                                <div className="header-banner-right__item header-banner-account">
+                                    {" "} <FaUser />{" "}
+                                </div>
+                                <div className="header-banner-right__item header-wishlist">
+                                    {" "}
+                                    <FaHeart />{" "} 
+                                    <span className="banner-count header-wishlist-count">0</span>
+                                </div>
+                                <div className="header-banner-right__item header-cart">
+                                    {" "}
+                                    <HiShoppingBag />{" "}  
+                                    <span className="banner-count header-cart-count">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="header-nav">
+                    <div className="container">
+                        <div className="navbar navbar-expand-lg">
+                            <div className="collapse navbar-collapse">
+                                <div className="menu d-flex align-items-end justify-content-around">
+                                    <Link href="#">
+                                        <a className="menu-link">
+                                            new <HiChevronDown />{" "}
+                                        </a>
+                                    </Link>
+                                    <Link href="#">
+                                        <a className="menu-link">
+                                            women <HiChevronDown />{" "}
+                                        </a>
+                                    </Link>
+                                    <Link href="#">
+                                        <a className="menu-link">
+                                            men <HiChevronDown />{" "}
+                                        </a>
+                                    </Link>
+                                    <Link href="#">
+                                        <a className="menu-link">
+                                            plus+curve <HiChevronDown />{" "}
+                                        </a>
+                                    </Link>
+                                    <Link href="#">
+                                        <a className="menu-link">
+                                            kids <HiChevronDown />{" "}
+                                        </a>
+                                    </Link>
+                                    <Link href="#">
+                                        <a className="menu-link">
+                                            beauty <HiChevronDown />{" "}
+                                        </a>
+                                    </Link>
+                                    <Link href="#">
+                                        <a className="menu-link">
+                                            sale <HiChevronDown />{" "}
+                                        </a>
+                                    </Link>
+                                    <Link href="#">
+                                        <a className="menu-link">
+                                            collections <HiChevronDown />{" "}
+                                        </a>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
       </>
     );
@@ -154,4 +137,3 @@ class Header extends Component {
 }
 
 export default Header;
-
