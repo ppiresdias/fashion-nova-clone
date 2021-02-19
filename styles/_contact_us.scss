@@ -1,1 +1,83 @@
 // styles for contact us page
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+/*
+font-family: 'Montserrat', sans-serif;
+*/
+
+.contact__wrapper {
+  background-image: url("/img/reachout-sml.jpg");
+  background-repeat: repeat;
+  text-align: center;
+  height: 540px;
+  .contact__heading {
+    font: $heading_light;
+    font-weight: $heading_weight;
+    color: $primaryTextColor;
+    padding-top: 100px;
+    align-items: center;
+  }
+  .contact__subHeading {
+    font-size: 54px;
+    color: rgb(255, 0, 179);
+    text-shadow: -10px 10px 2px rgba(52, 230, 221, 0.986);
+  }
+}
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+.contact__contentJoin {
+  padding: 20px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 80px;
+  height: 500px;
+  font-family: $contact_font;
+  .contact__contentJoinH2 {
+    padding: 10px;
+    text-align: center;
+    font-size: 52px;
+  }
+  .contact__contentJoinH4 {
+    margin-top: 30px;
+  }
+  .contact__contentJoinButton {
+    width: 140px;
+    height: 80px;
+    border: none;
+    background-color: $contact_btnBackground;
+    margin-top: 30px;
+    font-weight: 600;
+    color: $primaryTextColor;
+  }
+}
+.contact__formTitle{
+    margin-top: 80px;
+}
+.contact__form {
+  margin-top: 40px;
+  font-family: $contact_font;
+  text-align: center;
+  margin-bottom: 80px;
+  .contact__formInput {
+    height: 50px;
+    margin-top: 10px;
+  }
+  .contact__formInputCom {
+    height: 150px;
+    margin-top: 10px;
+  }
+  .contact__formButton {
+    background-color: $contact_btnBackground;
+    height: 80px;
+    color: $primaryTextColor;
+    margin-top: 30px;
+  }
+  .contact__formCustomer{
+      margin-top: 20px;
+      text-align: center;
+      padding: 80px;
+  }
+}

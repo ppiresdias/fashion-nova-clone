@@ -141,7 +141,7 @@ class Header extends Component {
                 <Link href="/blog">
                   <a className="nav-link">Blog</a>
                 </Link>
-                <Link href="#">
+                <Link href="/contactus">
                   <a className="nav-link">Contact</a>
                 </Link>
               </div>
