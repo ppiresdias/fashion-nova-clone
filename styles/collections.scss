@@ -1,1 +1,124 @@
 // styles for gallery page
+$spacer: 1rem;
+$p1: $spacer*.25;
+$p2: $spacer*.5;
+$p3: $spacer;
+$p4: $spacer*1.5;
+$p5: $spacer*3;
+
+
+$color_filter_bg: #ffffff;
+$color_filter_header: #000000;
+$color_filter_label: #53585f;
+$font-default: proxima-nova-condensed, Arial, sans-serif;
+
+@mixin flex_center() {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin ff($font-family: $font-default) {
+  font-family: $font-family;
+}
+
+// COLLECTIONS SECTION
+.collections {
+  &__container {
+    padding: $p5 0;
+  }
+
+  &__header {
+    margin-bottom: $p5;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0 auto $p3;
+    width: 50%;
+  }
+
+  &__read-more {
+    color: black;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: $p5;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  &__search-filter {
+    padding: 0;
+  }
+  &__gallery {
+    padding: 0;
+  }
+}
+
+// SEARCH FILTER
+.filter {
+  background-color: $color_filter_bg;
+  width: 100%;
+  height: 100%;
+
+  &__section {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__br {
+    border-top: 1px solid black;
+    margin: 16px 0;
+
+    &--first {
+      margin-top: 0;
+    }
+  }
+
+  &__title {    
+    @include ff();
+    color: $color_filter_header;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &__checkbox-row {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__checkbox {
+    border-color: $color_filter_label;
+    margin: 0;
+  }
+
+
+  &__label {
+    @include ff();
+    cursor: pointer;
+    font-size: 14px;
+    color: $color_filter_label;
+    margin: 0 0 0 8px;
+    text-transform: capitalize;
+  }
+}
+
+// PRODUCT GALLERY
+.gallery {
+  &__column {
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.gallery-sorter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $p4 0;
+  width: 100%;
+  // &__
+}
