@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { Component } from "react";
-import { IoMdMail } from "react-icons/io";
+import { IoMdMail, IoLogoTiktok } from "react-icons/io";
 import { HiChevronDown } from "react-icons/hi";
 import { FaUser, FaHeart, FaShoppingCart } from "react-icons/fa";
 import {

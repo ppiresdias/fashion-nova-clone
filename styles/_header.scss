@@ -1,97 +1,210 @@
-.header-wrapper{
-    background: $headerBackground;
-    color: $primaryTextColor;
-    .header-container{
-        .header-top{
-            .header__top__socials{
-                .socials_items{
-                    .social-item{
-                        display: inline-block;
-                        margin: 10px 10px 0 0;
-                        cursor: pointer;
-                    }
-                }
-            }
-    
-            .header__top__promotion{
-                .promotion_text{
-                    text-align: center;
-                    margin-top: 15px;
-                    span{
-                        color: $primaryColorBold;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-            .header__top__shop-settings{
-                .setting_items{
-                    .setting-item{
-                        display: inline-block;
-                        margin: 10px 15px 0 0;
-                        cursor: pointer;
-                    }
-                }
-            }
+.header-announcement-bar{
+    background: $announcementBgColor;
+    color: $announcementTextColor;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+
+    .announcement-text{
+        color: $announcementTextColor;
+
+        span{
+            color: $announcementTextColorEmphasis;
         }
-        
     }
 }
 
-.navbar-wrapper{
-    background: $primaryColor !important;
-    .navbar-top-container{
-        display: flex;
-        align-items: center;
+.header-banner{
+    background: $primaryColor;
+    color: $primaryTextColor;
+    font-family: 'Montserrat';
+    font-size: 14px;
 
+    .header-brand-logo{
         .navbar-brand{
             color: $primaryTextColor;
-            font-size: 24px;
-            span{
-                font-weight: 700;
-            }
         }
-        .navbar-search{
-            margin-left: 500px;
-
-            .search-input{
-                // height: 30px;
-                border-radius: 0px;
-            }::placeholder{
-                color: $placeholderText;
-            }
-
-            .search-btn{
-                // height: 30px;
-                background: $primaryColorBold;
-                color: $primaryTextColor;
-                border-radius: 0px;              
-            }
-        }
-
-        .shop-links{
-            display: flex;
-
-            .shop-link-item{
-                color: $primaryTextColor;
-                font-size: 20px;
-                margin: 10px 35px 0 0;
-            }
-        }   
-        
     }
 
-    .navbar-bottom-container{
+    .header-banner-left{
 
-        .nav-links{
-            justify-content: center;
-            align-items: flex-end;
-            .nav-link{
-                font-family: 'Open sans' sans-serif;
-                font-weight: 700;
-                font-size: $primaryFontSize;
-                color: $primaryTextColor;
-                margin: 0 25px;
+        .header-banner-socials{
+            .header-banner-social__item{
+                margin-right: 10px;
+                .header-banner-social__item-count{
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .header-banner-search{
+            padding-left: 30px;
+            .search-btn{
+                padding: 0;
+                color: white;
+            }
+            .search-input{
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid white;
+                border-radius: 0;
+                font-family: "Montserrat";
+                &::placeholder{
+                    color: $placeholderText;
+                    font-size: 12px;
+                }
+                &:focus{
+                    outline:white;
+                }
+            }
+        }
+    }
+
+    .header-banner-logo{
+        text-align: center;
+
+        .navbar-brand{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px;
+        }
+    }
+
+    .header-banner-right{
+        font-size: 20px;
+
+        .header-banner-right__item{
+            margin-left: 15px;
+            cursor: pointer;
+
+            .banner-count{
+                font-family: 'Montserrat';
+                font-size: 12px;
             }
         }
     }
 }
+
+.header-nav{
+    background: $primaryColor;
+    color: $primaryTextColor;
+    .menu{
+        width: 100%;
+        margin-bottom: 0px;
+
+        .menu-link{
+            color: $primaryTextColor;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// .header-wrapper{
+//     background: $primaryColor;
+//     hr{
+//         background: $primaryTextColor;
+//     }
+// }
+
+
+
+
+
+// .header-wrapper{
+//     background: $headerBackground;
+//     color: $primaryTextColor;
+//     .header-container{
+//         .header-top{
+//             .header__top__socials{
+//                 .socials_items{
+//                     .social-item{
+//                         display: inline-block;
+//                         margin: 10px 10px 0 0;
+//                         cursor: pointer;
+//                     }
+//                 }
+//             }
+    
+//             .header__top__promotion{
+//                 .promotion_text{
+//                     text-align: center;
+//                     margin-top: 15px;
+//                     span{
+//                         color: $primaryColorBold;
+//                         text-transform: uppercase;
+//                     }
+//                 }
+//             }
+//             .header__top__shop-settings{
+//                 .setting_items{
+//                     .setting-item{
+//                         display: inline-block;
+//                         margin: 10px 15px 0 0;
+//                         cursor: pointer;
+//                     }
+//                 }
+//             }
+//         }
+        
+//     }
+// }
+
+// .navbar-wrapper{
+//     background: $primaryColor !important;
+//     .navbar-top-container{
+//         display: flex;
+//         align-items: center;
+
+//         .navbar-brand{
+//             color: $primaryTextColor;
+//             font-size: 24px;
+//             span{
+//                 font-weight: 700;
+//             }
+//         }
+//         .navbar-search{
+//             margin-left: 500px;
+
+//             .search-input{
+//                 // height: 30px;
+//                 border-radius: 0px;
+//             }::placeholder{
+//                 color: $placeholderText;
+//             }
+
+//             .search-btn{
+//                 // height: 30px;
+//                 background: $primaryColorBold;
+//                 color: $primaryTextColor;
+//                 border-radius: 0px;              
+//             }
+//         }
+
+//         .shop-links{
+//             display: flex;
+
+//             .shop-link-item{
+//                 color: $primaryTextColor;
+//                 font-size: 20px;
+//                 margin: 10px 35px 0 0;
+//             }
+//         }   
+        
+//     }
+
+//     .navbar-bottom-container{
+
+//         .nav-links{
+//             justify-content: center;
+//             align-items: flex-end;
+//             .nav-link{
+//                 font-family: 'Open sans' sans-serif;
+//                 font-weight: 700;
+//                 font-size: $primaryFontSize;
+//                 color: $primaryTextColor;
+//                 margin: 0 25px;
+//             }
+//         }
+//     }
+// }

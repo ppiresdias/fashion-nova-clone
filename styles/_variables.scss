@@ -1,11 +1,14 @@
 // color variables
-$primaryColor: #8ABDD7;
-$primaryColorBold: #4BAADB;
-
+$primaryColor: black;
 $primaryTextColor: white;
 
-$headerBackground: black;
-$placeholderText: #C4C4C4;
+$primaryColorBold: #4BAADB;
+
+$placeholderText: white; //#C4C4C4
+
+$announcementBgColor: pink;
+$announcementTextColor: black;
+$announcementTextColorEmphasis: blue;
 
 //sizes
 $primaryFontSize: 16px;

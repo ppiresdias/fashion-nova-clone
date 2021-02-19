@@ -1,7 +1,6 @@
 // global styles for all pages
 body{
     font-family: 'Open sans' sans-serif;
-
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -15,4 +14,14 @@ body{
 
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: $placeholderText;
+}
+
+a{
+    color: $primaryTextColor;
+    &:hover{
+        text-decoration: none;
+    }
+}
+.socials{
+
 }
