@@ -22,7 +22,7 @@
 
     .header-brand-logo{
         .navbar-brand{
-            color: $primaryTextColor;
+            color: $primaryTextColor !important;
             &:hover{
                 color: $primaryTextColor !important;
             }
