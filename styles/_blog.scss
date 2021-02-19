@@ -1,0 +1,166 @@
+// styles for blog page
+$img-width: 100%;
+$img-height: 250px;
+$title-font: 'Prata',
+serif;
+$title-font-size: 25px;
+$content-font: 'Karla',
+sans-serif;
+
+
+// BLOG //
+.blog {
+
+
+    &__header {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+
+        h1 {
+            font-family: 'Karla', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            margin-bottom: 20px;
+            margin-top: 32px;
+            font-size: 40px;
+            letter-spacing: 0.5px;
+
+        }
+    }
+}
+
+.cards {
+    display: flex;
+
+    @media screen and(max-width: 700px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__row {
+        margin-bottom: 2rem;
+    }
+
+    .left-column {
+        min-width: 300px;
+        margin-right: 5px;
+
+        @media screen and(max-width: 700px) {
+
+            margin-right: 0;
+        }
+
+        h4 {
+            font-weight: 700;
+            font-family: $content-font;
+        }
+
+
+
+        .recent {
+            text-align: center;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid lightgray;
+
+
+
+
+            a {
+                display: block;
+                color: black;
+                text-decoration: none;
+                margin: 5px 0;
+
+                &:hover {
+                    color: lightblue;
+                }
+            }
+
+
+
+
+        }
+
+        .tags {
+            text-align: center;
+
+            margin: 1.5rem 0;
+
+
+            a {
+
+                text-decoration: none;
+                float: left;
+                padding: 5px;
+                color: black;
+                border: 0.5px solid lightblue;
+                margin: 4px;
+
+
+                &:hover {
+                    border-color: black;
+                }
+
+            }
+        }
+
+    }
+
+
+    .card {
+        border: 1px solid white;
+        margin-bottom: 1.5rem;
+        
+
+        a {
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+        }
+
+        &__title {
+            font-family: $title-font;
+            font-size: $title-font-size;
+            font-weight: 400;
+            line-height: 1.4rem;
+            margin-top: 5px;
+            margin-bottom: 15px;
+
+        }
+
+        &__content {
+            font-family: $content-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.6;
+            word-break: break-word;
+            text-align: left;
+            color: gray;
+        }
+
+        &__img {
+            height: 240px;
+            background-size: cover;
+
+        }
+
+        &__date {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            text-transform: uppercase;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        &:hover {
+            border-color: lightblue;
+        }
+
+
+
+    }
+
+}
