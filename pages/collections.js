@@ -2,7 +2,7 @@
 import Head from "next/head";
 import Filter from "../components/collections__Filter";
 
-// COLLECTIONS PAGE
+// COLLECTIONS OR GALLERY PAGE
 const Collections = () => {
   return (
     <>
