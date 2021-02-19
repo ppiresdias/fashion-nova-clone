@@ -4,9 +4,9 @@ import Header from '../components/header'
 export default function Layout(props) {
 	return (
 		<div>
-			<Header />
+			{/* <Header /> */}
 			<div>{props.children}</div>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }

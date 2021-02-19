@@ -4,6 +4,7 @@ import NewCollection from '../components/newCollection'
 import FeaturedProducts from '../components/featuredProducts'
 import ForHimHer from '../components/forhimher'
 import LatestPosts from '../components/latestPosts'
+import InstagramPosts from '../components/instagramPosts'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <FeaturedProducts />
       <ForHimHer />
       <LatestPosts />
+      <InstagramPosts />
     </div>
   )
 }
