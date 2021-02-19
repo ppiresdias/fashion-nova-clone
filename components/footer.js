@@ -1,7 +1,7 @@
 
 import {ImSearch, ImFacebook, ImTwitter, ImYoutube, ImInstagram, ImPinterest} from 'react-icons/im'
-import {FaCcStripe, FaCcVisa, FaCcMastercard, FaCcPaypal, FaCcDiscover} from 'react-icons/fa'
-
+import {FaCcStripe, FaCcVisa, FaCcMastercard, FaCcPaypal, FaCcDiscover, FaSnapchatGhost} from 'react-icons/fa'
+import {SiTiktok} from "react-icons/si"
 const Footer = () => {
 	return (
 		// FOOTER
@@ -9,35 +9,38 @@ const Footer = () => {
 			<div className="container footer-container">
 				<div className="row footer__content">
 					<div className="col footer__menu">
-						<div className="footer__menu__header">Quick Links</div>
+						<div className="footer__menu__header">NOVA</div>
 						<ul className="footer__menu__links">
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
+							<li className="footer__menu__link__item">about us</li>
+							<li className="footer__menu__link__item">blog</li>
+							<li className="footer__menu__link__item">wanna collab?</li>
+							<li className="footer__menu__link__item">affiliate</li>
+							<li className="footer__menu__link__item">careers</li>
+							<li className="footer__menu__link__item">privacy policy</li>
+							<li className="footer__menu__link__item">terms and conditions</li>
 						</ul>
 					</div>
 
 					<div className="col footer__menu">
-						<div className="footer__menu__header">My Account</div>
+						<div className="footer__menu__header">Account</div>
 						<ul className="footer__menu__links">
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
+							<li className="footer__menu__link__item">my account</li>
+							<li className="footer__menu__link__item">my wishlist</li>
+							<li className="footer__menu__link__item">view bag</li>
+							<li className="footer__menu__link__item">track order</li>
+							<li className="footer__menu__link__item">order history</li>
+							<li className="footer__menu__link__item">gift cards</li>
 						</ul>
 					</div>
 
 					<div className="col footer__menu">
 						<div className="footer__menu__header">Customer Service</div>
 						<ul className="footer__menu__links">
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
+							<li className="footer__menu__link__item">contact us</li>
+							<li className="footer__menu__link__item">shipping</li>
+							<li className="footer__menu__link__item">returns</li>
+							<li className="footer__menu__link__item">size guide</li>
+							<li className="footer__menu__link__item">sitemap</li>
 						</ul>
 					</div>
 
@@ -59,11 +62,10 @@ const Footer = () => {
 							</form>
 						</div>
 						<div className="row footer__socials">
+							<div className="footer__social__item"> <ImInstagram/> </div>						
+							<div className="footer__social__item"> <SiTiktok/> </div>
+							<div className="footer__social__item"> <FaSnapchatGhost/> </div>
 							<div className="footer__social__item"> <ImFacebook/> </div>
-							<div className="footer__social__item"> <ImTwitter/> </div>
-							<div className="footer__social__item"> <ImInstagram/> </div>
-							<div className="footer__social__item"> <ImYoutube/> </div>
-							{/* <div className="footer__social__item"> <ImPinterest/> </div> */}
 						</div>
 					</div>
 				</div>
