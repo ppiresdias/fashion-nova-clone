@@ -61,7 +61,7 @@
         .navbar-brand{
             font-family: 'Bebas Neue', cursive;
             font-size: 40px;
-            color: $primaryTextColor;
+            color: $primaryTextColor !important;
             &:hover{
                 color: $primaryTextColor !important;
             }
