@@ -19,12 +19,18 @@
                 .footer__menu__links{
 
                     .footer__menu__link__item{
-                        color: $primaryTextColor;
                         font-size: 14px;
                         font-weight: 300;
                         text-transform: capitalize;
                         padding-bottom: 10px;
                         cursor: pointer;
+
+                        a{
+                            color: $primaryTextColor;
+                            &:hover{
+                                color: $primaryTextHoverColor;
+                            }
+                        }
                     }
                 }
 
@@ -69,6 +75,18 @@
                         &:hover{
                             color: $primaryTextColor;
                         }
+                    }
+                    #instagram-logo:hover{
+                        color: #833AB4;
+                    }
+                    #tiktok-logo:hover{
+                        color: #69C9D0;
+                    }
+                    #snapchat-logo:hover{
+                        color: #FFFC00;
+                    }
+                    #facebook-logo:hover{
+                        color: #4267B2;
                     }
                 }
             }

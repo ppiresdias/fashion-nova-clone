@@ -119,7 +119,7 @@ class Header extends Component {
                                             sale <HiChevronDown />{" "}
                                         </a>
                                     </Link>
-                                    <Link href="#">
+                                    <Link href="/collections">
                                         <a className="menu-link">
                                             collections <HiChevronDown />{" "}
                                         </a>
