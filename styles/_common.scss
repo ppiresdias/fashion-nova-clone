@@ -3,6 +3,9 @@ body {
   font-family: "Open sans" sans-serif;
 }
 
+a:hover{
+  text-decoration: none !important;
+}
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: $placeholderText;
