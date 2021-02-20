@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { Component } from "react";
 import {SiTiktok, SiInstagram} from "react-icons/si";
 import { HiChevronDown, HiShoppingBag } from "react-icons/hi";
-import { FaUser, FaHeart} from "react-icons/fa";
+import { FaUser, FaHeart, FaBars} from "react-icons/fa";
 import {VscGlobe} from "react-icons/vsc"
 import {
   ImSearch,
@@ -27,9 +27,12 @@ class Header extends Component {
                     </div>
                 </div>
                 <div className="header-banner">
-                    <div className="container">
+                    <div className="container-lg">
                         <div className="row d-flex align-items-center justify-content-between">
                             <div className="col header-banner-left d-flex align-items-center">
+                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <FaBars />
+                                </button>
                                 <div className="socials header-banner-socials d-flex">
                                     <div className="header-banner-social__item">
                                         {" "}<SiInstagram />{" "}
@@ -54,7 +57,7 @@ class Header extends Component {
                                 </div>
                             </div>
                             <div className="col header-banner-logo">
-                                <Link href="#">
+                                <Link href="/">
                                     <a className="navbar-brand">nova</a>
                                 </Link>
                             </div>
@@ -82,7 +85,7 @@ class Header extends Component {
                 <div className="header-nav">
                     <div className="container">
                         <div className="navbar navbar-expand-lg">
-                            <div className="collapse navbar-collapse">
+                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <div className="menu d-flex align-items-end justify-content-around">
                                     <Link href="#">
                                         <a className="menu-link">
