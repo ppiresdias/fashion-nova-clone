@@ -22,6 +22,11 @@
 
     .header-banner-left{
 
+        .navbar-toggler{
+            display: none;
+            color: white;
+            cursor: pointer;
+        }
         .header-banner-socials{
             .header-banner-social__item{
                 margin-right: 10px;
@@ -106,4 +111,39 @@
             }
         }
     }
+}
+
+
+/**** MEDIA QUERIES ****/
+
+// laptops
+@media all and (max-width: 1200px){
+    .header-banner{
+        .header-banner-social__item-count{
+            display: none;
+        }
+        .header-banner-search{
+            .search-input{
+                width: 90%;
+            }
+        }
+    }   
+}
+
+// large tablets
+@media all and (max-width: 992px){
+    .header-banner{
+        .header-banner-left{
+            .navbar-toggler{
+                display: inline-block;
+            }
+            .header-banner-social__item{
+                display: none;
+            }
+            .header-banner-search{
+                display: none;
+            }
+        }
+      
+    }   
 }
