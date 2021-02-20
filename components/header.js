@@ -54,7 +54,7 @@ class Header extends Component {
                                 </div>
                             </div>
                             <div className="col header-banner-logo">
-                                <Link href="#">
+                                <Link href="/">
                                     <a className="navbar-brand">nova</a>
                                 </Link>
                             </div>
