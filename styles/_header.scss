@@ -29,6 +29,9 @@
                 .header-banner-social__item-count{
                     font-size: 12px;
                 }
+                &:hover{
+                    color: $primaryTextHoverColor;
+                }
             }
         }
 
@@ -79,6 +82,9 @@
                 font-family: 'Montserrat';
                 font-size: 12px;
             }
+            &:hover{
+                color: $primaryTextHoverColor;
+            }
         }
     }
 }
@@ -95,6 +101,9 @@
             font-family: 'Montserrat';
             font-size: 14px;
             text-transform: uppercase;
+            &:hover{
+                color: $primaryTextHoverColor;
+            }
         }
     }
 }
