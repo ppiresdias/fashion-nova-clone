@@ -86,7 +86,7 @@ class Header extends Component {
                     <div className="container">
                         <div className="navbar navbar-expand-lg">
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div className="menu d-flex align-items-end justify-content-around">
+                                <div className="menu d-flex justify-content-around">
                                     <Link href="#">
                                         <a className="menu-link">
                                             new <HiChevronDown />{" "}
