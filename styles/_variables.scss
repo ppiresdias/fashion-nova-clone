@@ -1,11 +1,22 @@
 // color variables
-$primaryColor: #8ABDD7;
+$primaryColor: rgb(59, 59, 59);
+$primaryTextColor: white;
+$primaryTextHoverColor: rgb(141, 141, 141);
+
 $primaryColorBold: #4BAADB;
 
-$primaryTextColor: white;
+$placeholderText: white; //#C4C4C4
 
-$headerBackground: black;
-$placeholderText: #C4C4C4;
+$announcementBgColor: rgb(156, 152, 153);
+$announcementTextColor: black;
+$announcementTextColorEmphasis: rgb(247, 247, 247);
+
+$muteIconColors: rgb(173, 173, 173);
 
 //sizes
 $primaryFontSize: 16px;
+//Contact Variables
+$contact_font: "Montserrat", sans-serif;
+$heading_light: 100px Montserrat, sans-serif;
+$heading_weight: 800;
+$contact_btnBackground: rgb(255, 0, 179);
