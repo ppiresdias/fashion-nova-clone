@@ -5,6 +5,7 @@
     font-size: 14px;
     font-weight: 600;
     padding: 5px 0;
+    display: none;
     .announcement-text{
         color: $announcementTextColor;
 
@@ -190,7 +191,9 @@
     display: none;
 }
 
-
+.offset-margin-top{
+    margin-top: 142px;
+}
 
 
 

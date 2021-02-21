@@ -15,7 +15,7 @@ class Header extends Component {
       <>
         <div className="header-wrapper">
             <section className="main-header-section" id="header">
-                <div className="header-announcement-bar">
+                <div className="header-announcement-bar show">
                     <div className="container">
                         <div className="d-flex align-items-center justify-content-center">                          
                             <Link href="#">
