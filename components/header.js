@@ -136,7 +136,7 @@ class Header extends Component {
                     </div>
                 </div>
                 <div id="header-jumbo-menu-1" className="header-jumbo-menu">
-                    <div className="container">
+                    <div className="container-lg">
                         <div className="row header-jumbo__pad">
                             <div className="col">
                                 <ul className="jumbo-menu-items">
@@ -203,7 +203,7 @@ class Header extends Component {
                     </div>
                 </div>
                 <div id="header-jumbo-menu-2" className="header-jumbo-menu">
-                    <div className="container">
+                    <div className="container-lg">
                         <div className="row header-jumbo__pad">
                             <div className="col">
                                 <ul className="jumbo-menu-items">
@@ -379,7 +379,7 @@ class Header extends Component {
                     </div>
                 </div>
                 <div id="header-jumbo-menu-3" className="header-jumbo-menu">
-                    <div className="container">
+                    <div className="container-lg">
                     <div className="row header-jumbo__pad">
                             <div className="col">
                                 <ul className="jumbo-menu-items">
@@ -555,7 +555,7 @@ class Header extends Component {
                     </div>
                 </div>
                 <div id="header-jumbo-menu-4" className="header-jumbo-menu">
-                    <div className="container">
+                    <div className="container-lg">
                         <div className="row header-jumbo__pad">
                             <div className="col">
                                 <ul className="jumbo-menu-items">
@@ -731,7 +731,7 @@ class Header extends Component {
                     </div>
                 </div>
                 <div id="header-jumbo-menu-5" className="header-jumbo-menu">
-                    <div className="container">
+                    <div className="container-lg">
                         <div className="row header-jumbo__pad">
                             <div className="col">
                                 <ul className="jumbo-menu-items">
@@ -907,7 +907,7 @@ class Header extends Component {
                     </div>
                 </div>
                 <div id="header-jumbo-menu-6" className="header-jumbo-menu">
-                    <div className="container">
+                    <div className="container-lg">
                         <div className="row header-jumbo__pad">
                             <div className="col">
                                 <ul className="jumbo-menu-items">
@@ -1083,7 +1083,7 @@ class Header extends Component {
                     </div>
                 </div>
                 <div id="header-jumbo-menu-7" className="header-jumbo-menu">
-                    <div className="container">
+                    <div className="container-lg">
                         <div className="row header-jumbo__pad">
                             <div className="col">
                                 <ul className="jumbo-menu-items">
@@ -1150,7 +1150,7 @@ class Header extends Component {
                     </div>
                 </div>
                 <div id="header-jumbo-menu-8" className="header-jumbo-menu">
-                    <div className="container">
+                    <div className="container-lg">
                         <div className="row header-jumbo__pad">
                             <div className="col">
                                 <div className="jumbo-menu-img">

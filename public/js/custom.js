@@ -1,6 +1,5 @@
-const mediaQuery_992 = window.matchMedia('(max-width: 992px)')
 
-$(document).ready(function () {
+jQuery(function () {
 
     let header = document.querySelector('.header-wrapper');
     let announcement = document.querySelector('.header-announcement-bar')
@@ -18,10 +17,7 @@ $(document).ready(function () {
             announcement.classList.add('show')
             new__collection.classList.remove('offset-margin-top')
         }
-    
-        // header.classList.add('fixed-top')
     }, true /** capture event */)
-
 
     // collapsable navigation menu mobile 
     let navMobileCollapseMenuIcon = document.querySelector('#nav-collapse-icon');
@@ -34,6 +30,7 @@ $(document).ready(function () {
 
     navMobileCollapseMenuIcon.addEventListener('click', e => {
         collapsedNav.classList.remove('show');
+        $('.header-jumbo-menu').css('display', 'none')
     })
 
     // fetch all navigation menu links
@@ -44,23 +41,18 @@ $(document).ready(function () {
         navMenus.forEach( menu => {
             menu.addEventListener('click', e => {
                 let rect = menu.getBoundingClientRect();
-                console.log(menu.id)
-                console.log(menu.id.substr(-1, 1))
-                console.log(rect.top, rect.right, rect.bottom, rect.left)
-                console.log('' + (rect.top + rect.bottom) + '')
+                // console.log(menu.id)
+                // console.log(menu.id.substr(-1, 1))
+                // console.log(rect.top, rect.right, rect.bottom, rect.left)
+                // console.log('' + (rect.top + rect.bottom) + '')
                 let navJumboMenu = $('#header-jumbo-menu-' + menu.id.substr(-1, 1))
 
-                console.log("Display: " + navJumboMenu.is(':visible'))
                 if(!navJumboMenu.is(':visible')){
                     navJumboMenu.css('top', '' + (rect.bottom) + 'px')
                     navJumboMenu.slideDown('fast')
                 }else{
                     navJumboMenu.slideUp('fast')
                 }
-              
-                // let jumboMenu = document.querySelector(menu.dataset.target)
-                // hideSubMenus(navMenus, menu.dataset.target)
-                // jumboMenu.classList.add('show')
             })
         })
     }else{
@@ -83,9 +75,6 @@ $(document).ready(function () {
         })
     }
 
-    function handleNavClicked(e){
-        console.log(menu.id)
-    }
     // hide unselected (non-target) submenus
     function hideSubMenus(navMenus, target){
         navMenus.forEach( menu => {
