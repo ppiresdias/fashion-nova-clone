@@ -30,7 +30,7 @@ class Header extends Component {
                     <div className="container-lg">
                         <div className="row d-flex align-items-center justify-content-between">
                             <div className="col header-banner-left d-flex align-items-center">
-                                <button className="navbar-toggler" type="button" data-toggle="collapsable" data-target="" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+                                <button className="navbar-toggler" id="navbar-toggle" type="button" data-toggle="collapsable" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                                     <FaBars />
                                 </button>
                                 <div className="socials header-banner-socials d-flex">
@@ -96,37 +96,37 @@ class Header extends Component {
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" title="women" data-target="#header-jumbo-menu-2">
+                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-2" title="women" data-target="#header-jumbo-menu-2">
                                             women <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" title="men" data-target="#header-jumbo-menu-3">
+                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-3" title="men" data-target="#header-jumbo-menu-3">
                                             men <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" title="plus+curve" data-target="#header-jumbo-menu-4">
+                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-4" title="plus+curve" data-target="#header-jumbo-menu-4">
                                             plus+curve <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" title="kids" data-target="#header-jumbo-menu-5">
+                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-5" title="kids" data-target="#header-jumbo-menu-5">
                                             kids <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" title="beauty" data-target="#header-jumbo-menu-6">
+                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-6" title="beauty" data-target="#header-jumbo-menu-6">
                                             beauty <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" title="sale" data-target="#header-jumbo-menu-7">
+                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-7" title="sale" data-target="#header-jumbo-menu-7">
                                             sale <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="/collections">
-                                        <a className="menu-link header-nav-menu-link" title="collections" data-target="#header-jumbo-menu-8">
+                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-8" title="collections" data-target="#header-jumbo-menu-8">
                                             collections <HiChevronDown />{" "}
                                         </a>
                                     </Link>
@@ -1087,7 +1087,7 @@ class Header extends Component {
                         <div className="row header-jumbo__pad">
                             <div className="col">
                                 <ul className="jumbo-menu-items">
-                                    <li className="jumbo-menu-headingjumbo-menu-item">
+                                    <li className="jumbo-menu-heading jumbo-menu-item">
                                         <Link href="#">
                                             <a className="jumbo-menu-link uppercase ">Sale in</a>
                                         </Link>
