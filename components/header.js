@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import {SiTiktok, SiInstagram} from "react-icons/si";
 import { HiChevronDown, HiShoppingBag } from "react-icons/hi";
 import { FaUser, FaHeart, FaBars} from "react-icons/fa";
-import {VscGlobe} from "react-icons/vsc"
+import {VscGlobe, VscChromeClose} from "react-icons/vsc"
 import {
   ImSearch,
 } from "react-icons/im";
@@ -30,7 +30,7 @@ class Header extends Component {
                     <div className="container-lg">
                         <div className="row d-flex align-items-center justify-content-between">
                             <div className="col header-banner-left d-flex align-items-center">
-                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <button className="navbar-toggler" type="button" data-toggle="collapsable" data-target="" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                                     <FaBars />
                                 </button>
                                 <div className="socials header-banner-socials d-flex">
@@ -85,7 +85,10 @@ class Header extends Component {
                 <div className="header-nav">
                     <div className="container">
                         <div className="navbar navbar-expand-lg">
-                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div className="collapsable navbar-collapsable" id="navbarSupportedContent">
+                                <div className="nav-collapse-mobile-close-icon" id="nav-collapse-icon">
+                                    <VscChromeClose/>
+                                </div>
                                 <div className="menu d-flex justify-content-around">
                                     <Link href="#">
                                         <a className="menu-link">

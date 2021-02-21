@@ -97,6 +97,24 @@
 .header-nav{
     background: $primaryColor;
     color: $primaryTextColor;
+
+    .collapsable{
+        width: 100%;
+
+        .nav-collapse-mobile-close-icon{
+            display: none;
+            &:hover{
+                color: $primaryTextHoverColor;
+            }
+        }
+    }
+    .nav-collapse-mobile-close-icon{
+        font-size: 25px;
+        position: absolute;
+        right: 0;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
     .menu{
         width: 100%;
         margin-bottom: 0px;
@@ -112,6 +130,31 @@
         }
     }
 }
+
+.slide-in
+{
+    position: absolute;
+    left: 200;
+    z-index: -1;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+}
+
+.slide-out{
+    position: absolute;
+    left: 0;
+}
+
+.show{
+    display: block !important;
+}
+
+.hide{
+    display: none;
+}
+
+
+
 
 
 /**** MEDIA QUERIES ****/
@@ -146,7 +189,7 @@
         }    
     } 
     
-    .navbar-collapse {
+    .navbar-collapsable {
         background: $primaryColor;
         position: fixed;
         top: 0; /* adjust to height of navbar */
@@ -154,22 +197,13 @@
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 15px;
-        width: 75%;
+        width: 75% !important;
         height: 100%;
-    }
+        display: none;
 
-    .navbar-collapse.collapsing {
-        left: -75%;
-        transition: height 0s ease;
-    }
-
-    .navbar-collapse.show {
-        left: 0;
-        transition: left 300ms ease-in-out;
-    }
-
-    .navbar-toggler.collapsed ~ .navbar-collapse {
-        transition: left 500ms ease-in-out;
+        .nav-collapse-mobile-close-icon{
+            display: block !important;
+        }
     }
 
     .menu{
@@ -177,4 +211,5 @@
         align-items: flex-start !important;
         padding: 10px 0 0 10px;
     }
+    
 }
