@@ -2,6 +2,7 @@
 
 # files
 .fashion-nova-clone.code-workspace
+.script.sh
 
 # dependencies
 /node_modules

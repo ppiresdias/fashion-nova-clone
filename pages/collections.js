@@ -18,17 +18,17 @@ const Collections = () => {
               <p className="collections__read-more">Read more</p>
             </div>
             <div className="row">
-              <div className="col-3">
+              <div className="d-none d-md-block col-md-3">
                 <div className="container">
                   <Filter />
                 </div>
               </div>
-              <div className="col-9 collections__gallery gallery">
+              <div className="col-12 col-md-9 collections__gallery gallery">
               <div className="container">
-                <div className="gallery-sorter">
-                  <div className="gallery-sorter__found">0 results found</div>
-                  <div className="gallery-sorter__options-area">
-                    <select className="gallery__dropdown" id="gallery__dropdown" name="sortBy">
+                <div className="gallery__sorting">
+                  <div className="gallery__sorting-found">0 results</div>
+                  <div className="gallery__sorting-options">
+                    <select id="gallery__dropdown" className="gallery__dropdown" name="sortBy">
                       <option htmlFor="gallery__dropdown" value="ascending">Featured</option>
                       <option htmlFor="gallery__dropdown" value="descending">Best Sellers</option>
                       <option htmlFor="gallery__dropdown" value="descending">Newest Arrivals</option>
@@ -38,16 +38,28 @@ const Collections = () => {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-3 gallery__column"></div>
-                  <div className="col-3 gallery__column"></div>
-                  <div className="col-3 gallery__column"></div>
-                  <div className="col-3 gallery__column"></div>
-                </div>
-                <div className="row">
-                  <div className="col-3 gallery__column"></div>
-                  <div className="col-3 gallery__column"></div>
-                  <div className="col-3 gallery__column"></div>
-                  <div className="col-3 gallery__column"></div>
+                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
+                    <div className="container"></div>
+                  </div>
+                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
+                    <div className="container"></div>
+                  </div>
+                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
+                    <div className="container"></div>
+                  </div>
+                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
+                    <div className="container"></div>
+                  </div>
+                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
+                    <div className="container"></div>
+                  </div>
+                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
+                    <div className="container"></div>
+                  </div>
+                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
+                    <div className="container"></div>
+                  </div>
+
                 </div>
               </div>
             </div>
