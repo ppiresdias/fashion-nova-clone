@@ -91,42 +91,42 @@ class Header extends Component {
                                 </div>
                                 <div className="menu d-flex justify-content-around">
                                     <Link href="#">
-                                        <a className="menu-link" title="new">
+                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-1" title="new" data-target="#header-jumbo-menu-1">
                                             new <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link" title="women">
+                                        <a className="menu-link header-nav-menu-link" title="women" data-target="#header-jumbo-menu-2">
                                             women <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link" title="men">
+                                        <a className="menu-link header-nav-menu-link" title="men" data-target="#header-jumbo-menu-3">
                                             men <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link" title="plus+curve">
+                                        <a className="menu-link header-nav-menu-link" title="plus+curve" data-target="#header-jumbo-menu-4">
                                             plus+curve <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link" title="kids">
+                                        <a className="menu-link header-nav-menu-link" title="kids" data-target="#header-jumbo-menu-5">
                                             kids <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link" title="beauty">
+                                        <a className="menu-link header-nav-menu-link" title="beauty" data-target="#header-jumbo-menu-6">
                                             beauty <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="#">
-                                        <a className="menu-link" title="sale">
+                                        <a className="menu-link header-nav-menu-link" title="sale" data-target="#header-jumbo-menu-7">
                                             sale <HiChevronDown />{" "}
                                         </a>
                                     </Link>
                                     <Link href="/collections">
-                                        <a className="menu-link" title="collections">
+                                        <a className="menu-link header-nav-menu-link" title="collections" data-target="#header-jumbo-menu-8">
                                             collections <HiChevronDown />{" "}
                                         </a>
                                     </Link>
@@ -201,6 +201,131 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div id="header-jumbo-menu-7" className="header-jumbo-menu">
+                    <div className="container">
+                        <div className="row header-jumbo__pad">
+                            <div className="col">
+                                <ul className="jumbo-menu-items">
+                                    <li className="jumbo-menu-heading jumbo-menu-item">
+                                        <Link href="#">
+                                            <a className="jumbo-menu-link">Sale in</a>
+                                        </Link>
+                                    </li>
+                                    <li className="jumbo-menu-item">
+                                        <Link href="#">
+                                            <a className="jumbo-menu-link">Sale in women</a>
+                                        </Link>
+                                    </li>
+                                    <li className="jumbo-menu-item">
+                                        <Link href="#">
+                                            <a className="jumbo-menu-link">Sale in men</a>
+                                        </Link>
+                                    </li>
+                                    <li className="jumbo-menu-item">
+                                        <Link href="#">
+                                            <a className="jumbo-menu-link">Sale in plus+curve</a>
+                                        </Link>
+                                    </li>
+                                    <li className="jumbo-menu-item">
+                                        <Link href="#">
+                                            <a className="jumbo-menu-link">Sale in kids</a>
+                                        </Link>
+                                    </li>
+                                    <li className="jumbo-menu-item">
+                                        <Link href="#">
+                                            <a className="jumbo-menu-link">Sale in beauty</a>
+                                        </Link>
+                                    </li>
+                                    <li className="jumbo-menu-item">
+                                        <Link href="#">
+                                            <a className="jumbo-menu-link">Sale in collections</a>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="col-8">
+                                <div className="jumbo-menu-img d-flex flex-row justify-content-between">
+                                    <Image
+                                        src="/img/Jeans.jpg"
+                                        alt="New"
+                                        width={250}
+                                        height={312.5}
+                                    />
+                                    <Image
+                                        src="/img/Jumpsuit.jpg"
+                                        alt="New"
+                                        width={250}
+                                        height={312.5}
+                                    />
+                                    <Image
+                                        src="/img/purple__dress.jpg"
+                                        alt="New"
+                                        width={250}
+                                        height={312.5}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-jumbo-menu-8" className="header-jumbo-menu">
+                <div className="container">
+                    <div className="row header-jumbo__pad">
+                        <div className="col">
+                            <div className="jumbo-menu-img">
+                                <Image
+                                    src="/img/Jeans.jpg"
+                                    alt="New"
+                                    width={250}
+                                    height={312.5}
+                                />
+                            </div>
+                            <div className="collection-title">
+                                Collection 1
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="jumbo-menu-img">
+                                <Image
+                                    src="/img/Jeans.jpg"
+                                    alt="New"
+                                    width={250}
+                                    height={312.5}
+                                />
+                            </div>
+                            <div className="collection-title">
+                                Collection 2
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="jumbo-menu-img">
+                                <Image
+                                    src="/img/Jeans.jpg"
+                                    alt="New"
+                                    width={250}
+                                    height={312.5}
+                                />
+                            </div>
+                            <div className="collection-title">
+                                Collection 3
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="jumbo-menu-img">
+                                <Image
+                                    src="/img/Jeans.jpg"
+                                    alt="New"
+                                    width={250}
+                                    height={312.5}
+                                />
+                            </div>
+                            <div className="collection-title">
+                                Collection 4
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </section>
         </div>
