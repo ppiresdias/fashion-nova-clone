@@ -1,16 +1,45 @@
 // import Image from "next/image";
 import Head from "next/head";
 import Filter from "../components/collections__Filter";
+import {useEffect} from "react";
+
 
 // COLLECTIONS OR GALLERY PAGE
 const Collections = () => {
+
+  // TOP BUTTON
+    // needs to remove height: 100% in ../styles/_common.scss
+  useEffect(() => {
+    let topButton = document.getElementById("topButton");
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topButton.classList.add("active");
+      } else {
+        topButton.classList.remove("active");
+      }
+    }
+    
+    window.addEventListener("scroll", scrollFunction);    
+    topButton.addEventListener("click", topFunction);
+  }, []);
+  
+  function topFunction() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <>
         <Head>
             <title>Collections</title>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossOrigin="anonymous"/>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
         </Head>
         <section id="#collections" className="collections">
+          {/* TOP BUTTON */}
+          <button onClick={topFunction} title="Back to top" id="topButton" className="top-button"><i className="fa fa-chevron-up top-button__icon" aria-hidden="true"></i></button>
           <div className="container-fluid collections__container">
             <div className="collections__top">
               <h1 className="collections__header">Spring Collections</h1>
@@ -38,27 +67,42 @@ const Collections = () => {
                   </div>
                 </div>
                 <div className="row">
+
                   <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
+                    <div className="gallery__container">
+                      <div className="gallery__image-container">
+                        <img className="gallery__image" src="/img/collections/top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg" />
+                      </div>
+                      <div className="gallery__product-info product-info">
+                        <div className="product-info__top-container">
+                          <h6>30-70% off sidewide! Use code: Spring</h6>
+                          <h5>Hold on to this vibe tie dye Crop Top - Pink/combo</h5>
+                          <span><strong>$19.99 USD</strong></span>
+                        </div>
+                        <i className="fa fa-chevron-down" aria-hidden="true"></i>
+                        <i className="fa fa-heart-o" aria-hidden="true"></i>
+                        <i className="fa fa-times" aria-hidden="true"></i>
+                        <button className="product-info__button">Add to Bag</button>
+                      </div>
+                    </div>
                   </div>
                   <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
+                    <div className="gallery__container">
+                      <div className="gallery__image-container">
+                        <img className="gallery__image" src="/img/collections/top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg" />
+                      </div>
+                      <div className="gallery__product-info product-info">
+                        <div className="product-info__top-container">
+                          <h6>30-70% off sidewide! Use code: Spring</h6>
+                          <h5>Hold on to this vibe tie dye Crop Top - Pink/combo</h5>
+                          <span><strong>$19.99 USD</strong></span>
+                        </div>
+                        <button className="product-info__button">Add to Bag</button>
+                      </div>
+                    </div>
                   </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
+
+
 
                 </div>
               </div>

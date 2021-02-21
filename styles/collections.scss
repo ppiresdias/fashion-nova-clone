@@ -6,11 +6,14 @@ $p3: $spacer;
 $p4: $spacer*1.5;
 $p5: $spacer*3;
 
-
+$color_top_button_bg: #444444;
+// $color_top_button-hover_bg: #444444;
 $color_filter_bg: #ffffff;
 $color_filter_header: #000000;
 $color_filter_label: #53585f;
 $font-default: proxima-nova-condensed, Arial, sans-serif;
+
+$color-photo-border: #edeff0;
 
 @mixin flex_center() {
   align-items: center;
@@ -21,6 +24,50 @@ $font-default: proxima-nova-condensed, Arial, sans-serif;
 @mixin ff($font-family: $font-default) {
   font-family: $font-family;
 }
+
+.container-fluid {
+  padding: 0;
+}
+
+// GO TO TOP OF PAGE
+.top-button {
+  background-color: $color_top_button_bg;
+  border: none;
+  bottom: $p5;
+  cursor: pointer;
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+  padding: 2px 11px 6px;
+  right: $p3*1.8;
+  position: fixed;
+  z-index: 100;
+
+  &:hover, &.scrolling {
+    // background-color: $gray-600;
+    opacity: .9;
+    transition: opacity .1s ease-in-out;
+  }
+  &.active {
+    cursor: pointer; /* Add a mouse pointer on hover */
+    opacity: 1;
+    transition: all .25s ease-in-out;
+    visibility: visible;
+  }
+  // i {
+
+  //   font-size: 11px;
+  //   color: white;
+  // }
+  &__icon {
+    font-size: 11px;
+    color: white;
+  }  
+}
+
+
+
+
 
 // COLLECTIONS SECTION
 .collections {
@@ -126,12 +173,51 @@ $font-default: proxima-nova-condensed, Arial, sans-serif;
   // PICTURES
   &__column {
     margin-bottom: $p5;
-    .container {
-      border: 1px solid black;
-      // min-width: 200px;
-      width: 100%;
-      height: 400px;
-    }
+    padding: 0;
+  }
+
+  &__container {
+    // border: 1px solid black;
+    min-height: 480px;
+    min-width: 226px;
+    max-height: 585px;
+    max-width: 245px;
+    height: 585px;
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  &__image-container {
+    border: 1px solid $color-photo-border;
+    min-height: 365px;
+    max-height: 585px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__image {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    // object-fit: contain;
+    // object-position: top;
+  }
+  
+  &__product-info {
+    margin: 0;
+    padding: 0;
+    // background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+    // height: auto;
   }
 }
 
