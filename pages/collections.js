@@ -1,14 +1,13 @@
 // import Image from "next/image";
 import Head from "next/head";
 import Filter from "../components/collections__Filter";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 
 // COLLECTIONS OR GALLERY PAGE
 const Collections = () => {
-
   // TOP BUTTON
-    // needs to remove height: 100% in ../styles/_common.scss
+  // needs to remove height: 100% in ../styles/_common.scss
   useEffect(() => {
     let topButton = document.getElementById("topButton");
     function scrollFunction() {
@@ -29,6 +28,40 @@ const Collections = () => {
       behavior: 'smooth'
     });
   }
+
+  // const [activeSwatches, setActiveSwatches] = useState({});
+
+  // Product component, loops for now
+  const getPhotos = (count=1) => {
+    let arr = [];
+    for(let i = 0; i < count; ++i) {
+      // setActiveSwatches({...activeSwatches, i: 0});
+      arr.push(
+        <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column" key={i}>
+          <div className="gallery__container">
+            <div className="gallery__image-container">
+              <img className="gallery__image" src="/img/collections/top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg" />
+            </div>
+            <div className="gallery__product-info product-info">
+              <div className="product-info__top-container">
+                <h6 className="product-info__discount">30-70% off sidewide! Use code: Spring</h6>
+                <p className="product-info__title">Hold on to this vibe tie dye Crop Top - Pink/combo</p>
+                <span className="product-info__price">$19.99 USD</span>
+                <div className="product-info__swatches">
+                  <div className={"swatch swatch--pink swatch--active"}></div>
+                  <div className="swatch swatch--red"></div>
+                  <div className="swatch swatch--blue"></div>
+                </div>
+              </div>
+              <button className="product-info__button bag-button"><span className="bag-button__text">Add to Bag</span><i className="fa fa-chevron-down bag-button__icon" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+    return arr;
+  }
+
 
   return (
     <>
@@ -67,8 +100,8 @@ const Collections = () => {
                   </div>
                 </div>
                 <div className="row">
-
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
+                  {getPhotos(5)}
+                  {/* <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
                     <div className="gallery__container">
                       <div className="gallery__image-container">
                         <img className="gallery__image" src="/img/collections/top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg" />
@@ -79,9 +112,10 @@ const Collections = () => {
                           <h5>Hold on to this vibe tie dye Crop Top - Pink/combo</h5>
                           <span><strong>$19.99 USD</strong></span>
                         </div>
-                        <i className="fa fa-chevron-down" aria-hidden="true"></i>
                         <i className="fa fa-heart-o" aria-hidden="true"></i>
+                        <i className="fa fa-chevron-right" aria-hidden="true"></i>
                         <i className="fa fa-times" aria-hidden="true"></i>
+                        <i className="fa fa-chevron-down" aria-hidden="true"></i>
                         <button className="product-info__button">Add to Bag</button>
                       </div>
                     </div>
@@ -93,14 +127,19 @@ const Collections = () => {
                       </div>
                       <div className="gallery__product-info product-info">
                         <div className="product-info__top-container">
-                          <h6>30-70% off sidewide! Use code: Spring</h6>
-                          <h5>Hold on to this vibe tie dye Crop Top - Pink/combo</h5>
-                          <span><strong>$19.99 USD</strong></span>
+                          <h6 className="product-info__discount">30-70% off sidewide! Use code: Spring</h6>
+                          <p className="product-info__title">Hold on to this vibe tie dye Crop Top - Pink/combo</p>
+                          <span className="product-info__price">$19.99 USD</span>
+                          <div className="product-info__swatches">
+                            <div className="swatch swatch--pink"></div>
+                            <div className="swatch swatch--red swatch--active"></div>
+                            <div className="swatch swatch--blue"></div>
+                          </div>
                         </div>
-                        <button className="product-info__button">Add to Bag</button>
+                        <button className="product-info__button bag-button"><span className="bag-button__text">Add to Bag</span><i className="fa fa-chevron-down bag-button__icon" aria-hidden="true"></i></button>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
 
 
