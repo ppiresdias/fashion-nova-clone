@@ -4,6 +4,70 @@ $title-font-size: 25px;
 $content-font: 'Karla',
 sans-serif;
 
+
+.c-outfit {
+    margin: 4rem 0;
+
+
+    .row {
+       
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        font-family: $content-font;
+        font-weight: 500;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+     
+
+
+        @media screen and(max-width: 900px) {
+            overflow-x: scroll;
+        }
+
+        .card- {
+            width: 260px;
+            position: relative;
+            box-shadow: 0 0 10px rgba(126, 125, 125, 0.1);
+            cursor: pointer;
+
+
+
+            .title {
+                margin-left: 6px;
+                font-size: 12px;
+                line-height: 1.5;
+                color: #232323;
+                letter-spacing: 0;
+            }
+
+
+            .price {
+                font-size: 12px;
+                line-height: 1.5;
+                color: #232323;
+                letter-spacing: 0;
+                margin-right: 6px;
+                position: absolute;
+                right: 0;
+                bottom: 3px;
+
+            }
+
+            img {
+                width: 260px;
+                height: 387px;
+                object-fit: cover;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
 .product {
 
     margin-top: 2rem;
@@ -61,7 +125,7 @@ sans-serif;
 
         .buttons {
             :hover {
-                border-color: lightblue;
+                border-color: gray;
 
             }
 
@@ -254,7 +318,7 @@ sans-serif;
         .price {
             display: inline-block;
             position: absolute;
-            right: 0;
+            right: 15px;
 
 
         }

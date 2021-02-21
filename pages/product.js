@@ -81,6 +81,35 @@ const Product = () => {
           </div>
         </div>
       </div>
+      <div className="outfit-wrapper">
+        <div className="c-outfit container">
+          <h2>Complete the outfit:</h2>
+          <div className="c-outfit__row row">
+            <div className="col-sm-12 col-md-12 c-outfit__cards">
+              <div className="card-">
+                <img src="/img/extra4.jpg" alt="complete outfit" />
+                <span className="title">Freedom T-Shirt</span>
+                <span className="price">$38.52</span>
+              </div>
+              <div className="card-">
+                <img src="/img/extra3.jpg" alt="complete outfit" />
+                <span className="title">Stretch Eco Blue Jeans</span>
+                <span className="price">$38.52</span>
+              </div>
+              <div className="card-">
+                <img src="/img/extra5.jpg" alt="complete outfit" />
+                <span className="title">Stretch Eco Blue Jeans</span>
+                <span className="price">$38.52</span>
+              </div>
+              <div className="card-">
+                <img src="/img/extra1.jpg" alt="complete outfit" />
+                <span className="title">Stretch Eco Blue Jeans</span>
+                <span className="price">$38.52</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
