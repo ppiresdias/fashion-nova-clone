@@ -1,5 +1,13 @@
 import Head from "next/head";
 
+const seeMore = () => {
+  return (
+    <div className="show-more">
+      <i className="fa fa-plus show-more__icon" aria-hidden="true"></i>
+      <span className="show-more__text">Show More</span>
+    </div>);
+}
+
 const getCheckBoxOptions = (arr) => {
     return arr.map((item, index) => {
       return (
@@ -29,17 +37,19 @@ const Filter = () => {
         <div className="filter__section">
           <h4 className="filter__title">SIZE</h4>
           {getCheckBoxOptions(["All", "XS", "S", "M", "L", "XL"])}
+          {seeMore()}
         </div>
         <div className="filter__br" />
         <div className="filter__section">
           <h4 className="filter__title">COLORS</h4>
           {getCheckBoxOptions(["all", "black", "blue", "white", "pink", "brown", "red", "yellow", "green", "gray", "purple"])}
-          <i className="fa fa-plus" aria-hidden="true"></i>
+          {seeMore()}
         </div>
         <div className="filter__br" />
         <div className="filter__section">
           <h4 className="filter__title">PRICE</h4>
           {getCheckBoxOptions(["all", "$0-$25", "$25-$50", "$50-$100", "$100-150", "$150-200"])}
+          {seeMore()}
         </div>
       </section>
       </>

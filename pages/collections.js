@@ -1,27 +1,34 @@
 // import Image from "next/image";
 import Head from "next/head";
 import Filter from "../components/collections__Filter";
-import {useEffect, useState} from "react";
+// import {useEffect} from "react";
 
 
 // COLLECTIONS OR GALLERY PAGE
 const Collections = () => {
+
   // TOP BUTTON
   // needs to remove height: 100% in ../styles/_common.scss
-  useEffect(() => {
-    let topButton = document.getElementById("topButton");
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        topButton.classList.add("active");
-      } else {
-        topButton.classList.remove("active");
-      }
-    }
+  // useEffect(() => {
+  //   let topButton = document.getElementById("topButton");
+  //   function scrollFunction() {
+  //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //       topButton.classList.add("active");
+  //     } else {
+  //       topButton.classList.remove("active");
+  //     }
+  //   }
     
-    window.addEventListener("scroll", scrollFunction);    
-    topButton.addEventListener("click", topFunction);
-  }, []);
+  //   window.addEventListener("scroll", scrollFunction);    
+  //   topButton.addEventListener("click", topFunction);
+  // }, []);
   
+  // function topFunction() {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth'
+  //   });
+  // }
   function topFunction() {
     window.scrollTo({
       top: 0,
@@ -29,7 +36,6 @@ const Collections = () => {
     });
   }
 
-  // const [activeSwatches, setActiveSwatches] = useState({});
 
   // Product component, loops for now
   const getPhotos = (count=1) => {
@@ -37,23 +43,27 @@ const Collections = () => {
     for(let i = 0; i < count; ++i) {
       // setActiveSwatches({...activeSwatches, i: 0});
       arr.push(
-        <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column" key={i}>
+        <div className="col-6 col-md-6 col-lg-4 col-xl-3 gallery__column" key={i}>
           <div className="gallery__container">
             <div className="gallery__image-container">
               <img className="gallery__image" src="/img/collections/top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg" />
+              <i className="fa fa-heart-o gallery__icon gallery__icon--heart" aria-hidden="true"></i>
+              <i className="fa fa-chevron-right gallery__icon gallery__icon--arrow-right" aria-hidden="true"></i>
             </div>
             <div className="gallery__product-info product-info">
               <div className="product-info__top-container">
                 <h6 className="product-info__discount">30-70% off sidewide! Use code: Spring</h6>
                 <p className="product-info__title">Hold on to this vibe tie dye Crop Top - Pink/combo</p>
+              </div>
+              <div className="product-info__bottom-container">
                 <span className="product-info__price">$19.99 USD</span>
                 <div className="product-info__swatches">
-                  <div className={"swatch swatch--pink swatch--active"}></div>
+                  <div className="swatch swatch--first swatch--pink swatch--active"></div>
                   <div className="swatch swatch--red"></div>
                   <div className="swatch swatch--blue"></div>
                 </div>
+                <button className="product-info__button bag-button"><span className="bag-button__text">Add to Bag</span><i className="fa fa-chevron-down bag-button__icon" aria-hidden="true"></i></button>
               </div>
-              <button className="product-info__button bag-button"><span className="bag-button__text">Add to Bag</span><i className="fa fa-chevron-down bag-button__icon" aria-hidden="true"></i></button>
             </div>
           </div>
         </div>
@@ -101,48 +111,6 @@ const Collections = () => {
                 </div>
                 <div className="row">
                   {getPhotos(5)}
-                  {/* <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="gallery__container">
-                      <div className="gallery__image-container">
-                        <img className="gallery__image" src="/img/collections/top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg" />
-                      </div>
-                      <div className="gallery__product-info product-info">
-                        <div className="product-info__top-container">
-                          <h6>30-70% off sidewide! Use code: Spring</h6>
-                          <h5>Hold on to this vibe tie dye Crop Top - Pink/combo</h5>
-                          <span><strong>$19.99 USD</strong></span>
-                        </div>
-                        <i className="fa fa-heart-o" aria-hidden="true"></i>
-                        <i className="fa fa-chevron-right" aria-hidden="true"></i>
-                        <i className="fa fa-times" aria-hidden="true"></i>
-                        <i className="fa fa-chevron-down" aria-hidden="true"></i>
-                        <button className="product-info__button">Add to Bag</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="gallery__container">
-                      <div className="gallery__image-container">
-                        <img className="gallery__image" src="/img/collections/top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg" />
-                      </div>
-                      <div className="gallery__product-info product-info">
-                        <div className="product-info__top-container">
-                          <h6 className="product-info__discount">30-70% off sidewide! Use code: Spring</h6>
-                          <p className="product-info__title">Hold on to this vibe tie dye Crop Top - Pink/combo</p>
-                          <span className="product-info__price">$19.99 USD</span>
-                          <div className="product-info__swatches">
-                            <div className="swatch swatch--pink"></div>
-                            <div className="swatch swatch--red swatch--active"></div>
-                            <div className="swatch swatch--blue"></div>
-                          </div>
-                        </div>
-                        <button className="product-info__button bag-button"><span className="bag-button__text">Add to Bag</span><i className="fa fa-chevron-down bag-button__icon" aria-hidden="true"></i></button>
-                      </div>
-                    </div>
-                  </div> */}
-
-
-
                 </div>
               </div>
             </div>

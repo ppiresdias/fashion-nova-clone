@@ -70,10 +70,6 @@ $color-photo-border: #edeff0;
   }  
 }
 
-
-
-
-
 // COLLECTIONS SECTION
 .collections {
   &__container {
@@ -147,7 +143,6 @@ $color-photo-border: #edeff0;
     margin: 0;
   }
 
-
   &__label {
     @include ff();
     cursor: pointer;
@@ -158,6 +153,22 @@ $color-photo-border: #edeff0;
   }
 }
 
+.show-more {
+  cursor: pointer;
+  margin-top: 8px;
+
+  &__icon {
+    font-size: 13px;
+  }
+  
+  &__text {
+    @include ff();
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 0 8px;
+    text-decoration: underline;
+  }
+}
 
 
 // GALLERY
@@ -182,13 +193,13 @@ $color-photo-border: #edeff0;
   }
 
   &__container {
-    // border: 1px solid black;
+    border: 1px solid black;
     min-height: 480px;
     min-width: 226px;
-    max-height: 585px;
-    max-width: 245px;
-    height: 585px;
-    width: 245px;
+    // max-height: 585px;
+    // max-width: 245px;
+    // height: 585px;
+    // width: 245px;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -203,6 +214,37 @@ $color-photo-border: #edeff0;
     overflow: hidden;
     margin: 0;
     padding: 0;
+    position: relative;
+  }
+
+  &__icon {
+    $margin-right: 10px;
+    color: $color-white;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    
+    &:hover {
+      opacity: .7;
+      transition: opacity .1s ease-in-out;
+    }
+    
+    &--heart {
+      right: $margin-right;
+      top: 12px;
+    }
+
+    &--arrow-right {
+      right: $margin-right;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    &--arrow-left {
+      left: $margin-right;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
   
   &__image {
@@ -223,8 +265,15 @@ $color-photo-border: #edeff0;
   }
 }
 
+$size-swatch-outer-border: 4px;
+$size-swatch: 18px;
+
 .product-info {
-  &__top-container{}
+  &__top-container {}
+  &__bottom-container {
+    bottom: 0;
+  }
+
   &__discount {
     @include ff();
     color: $color_product_discount;
@@ -244,6 +293,8 @@ $color-photo-border: #edeff0;
     color: #000000;
     font-size: 16px;
     font-weight: 600;
+    padding: 0;
+    margin: 0;
   }
   &__button {
     @include flex_center();
@@ -251,6 +302,7 @@ $color-photo-border: #edeff0;
     border: 1px solid $color-black;
     color: $color-white;
     padding: $p2 0;
+    width: 100%;
 
     &:hover {
       background-color: #eeeff0;
@@ -259,22 +311,28 @@ $color-photo-border: #edeff0;
     }
   }
   &__swatches {
+    align-items: center;
     display: flex;
     gap: 25px;
+    // padding: $p3 0 $p4;
+    height: $size-swatch + $size-swatch-outer-border*2 + 16px+22.4px
   }
 }
 
 .swatch {
-  cursor: pointer;
   $size: 18px;
+  box-shadow: inset 0 0 0 1px $color-swatch-border;
   border-radius: 50%;
+  cursor: pointer;
   height: $size;
   width: $size;
-  box-shadow: inset 0 0 0 1px $color-swatch-border;
-  // vertical-align: bottom;
+
+  &--first {
+    margin-left: 4px;
+  }
 
   &--active {
-    box-shadow: inset 0 0 0 1px $color-black, 0 0 0 1px $color-white, 0 0 0 4px $color-swatch-border;
+    box-shadow: inset 0 0 0 1px rgb(119, 119, 119), 0 0 0 1px $color-white, 0 0 0 $size-swatch-outer-border $color-swatch-border;
   }
 
   &--blue {
