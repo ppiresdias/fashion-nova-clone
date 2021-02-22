@@ -1048,20 +1048,20 @@ class Header extends Component {
                             <div className="col">
                                 <div className="jumbo-menu-img">
                                     <Image
-                                        src="/img/floral__dress.jpg"
+                                        src="/img/hawaiian_shirt.jpg"
                                         alt="New"
                                         width={250}
                                         height={312.5}
                                     />
                                 </div>
                                 <div className="collection-title">
-                                    Daisy Collection
+                                    Nova Summer Collection
                                 </div>
                             </div>
                             <div className="col">
                                 <div className="jumbo-menu-img">
                                     <Image
-                                        src="/img/jacket.jpg"
+                                        src="/img/Jacket.jpg"
                                         alt="New"
                                         width={250}
                                         height={312.5}
