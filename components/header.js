@@ -179,24 +179,30 @@ class Header extends Component {
                             </div>
                             <div className="col-8">
                                 <div className="jumbo-menu-img d-flex flex-row justify-content-between">
-                                    <Image
-                                        src="/img/Jeans.jpg"
-                                        alt="New"
-                                        width={250}
-                                        height={312.5}
-                                    />
-                                    <Image
-                                        src="/img/Jumpsuit.jpg"
-                                        alt="New"
-                                        width={250}
-                                        height={312.5}
-                                    />
-                                    <Image
-                                        src="/img/purple__dress.jpg"
-                                        alt="New"
-                                        width={250}
-                                        height={312.5}
-                                    />
+                                    <div>
+                                        <Image
+                                            src="/img/Jeans.jpg"
+                                            alt="New"
+                                            width={250}
+                                            height={312.5}
+                                        />
+                                    </div>
+                                    <div  className="collapse-img">
+                                        <Image
+                                            src="/img/Jumpsuit.jpg"
+                                            alt="New"
+                                            width={250}
+                                            height={312.5}
+                                        />
+                                    </div>
+                                    <div  className="collapse-img">
+                                        <Image
+                                            src="/img/purple__dress.jpg"
+                                            alt="New"
+                                            width={250}
+                                            height={312.5}
+                                        />
+                                    </div>                                   
                                 </div>
                             </div>
                         </div>
@@ -1132,18 +1138,22 @@ class Header extends Component {
                                         width={250}
                                         height={312.5}
                                     />
-                                    <Image
-                                        src="/img/Jumpsuit.jpg"
-                                        alt="New"
-                                        width={250}
-                                        height={312.5}
-                                    />
-                                    <Image
-                                        src="/img/purple__dress.jpg"
-                                        alt="New"
-                                        width={250}
-                                        height={312.5}
-                                    />
+                                     <div  className="collapse-img">
+                                        <Image
+                                            src="/img/Jumpsuit.jpg"
+                                            alt="New"
+                                            width={250}
+                                            height={312.5}
+                                        />
+                                    </div>
+                                    <div  className="collapse-img">
+                                        <Image
+                                            src="/img/purple__dress.jpg"
+                                            alt="New"
+                                            width={250}
+                                            height={312.5}
+                                        />
+                                    </div>  
                                 </div>
                             </div>
                         </div>
