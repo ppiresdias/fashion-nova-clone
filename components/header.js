@@ -853,22 +853,22 @@ class Header extends Component {
                             </div>
                             <div className="col-4">
                                 <div className="jumbo-menu-img d-flex flex-row justify-content-between">
-                                    <div className="collapse-img">
+                                    <div>
                                         <Image
-                                            src="/img/Jeans.jpg"
+                                            src="/img/kids_fashion.jpg"
                                             alt="New"
-                                            width={250}
+                                            width={400}
                                             height={312.5}
                                         />
                                     </div>
-                                    <div  className="collapse-img">
+                                    {/* <div  className="collapse-img">
                                         <Image
-                                            src="/img/Jumpsuit.jpg"
+                                            src="/img/boys_outfit.jpg"
                                             alt="New"
                                             width={250}
                                             height={312.5}
                                         />
-                                    </div>                                 
+                                    </div>                                  */}
                                 </div>
                             </div>
                             
@@ -931,7 +931,15 @@ class Header extends Component {
                                 <div className="jumbo-menu-img d-flex flex-row justify-content-between">
                                     <div>
                                         <Image
-                                            src="/img/Jeans.jpg"
+                                            src="/img/accessories_girl.jpg"
+                                            alt="New"
+                                            width={200}
+                                            height={312.5}
+                                        />
+                                    </div>
+                                    <div  className="collapse-img">
+                                        <Image
+                                            src="/img/makeup_girl.jpg"
                                             alt="New"
                                             width={250}
                                             height={312.5}
@@ -939,15 +947,7 @@ class Header extends Component {
                                     </div>
                                     <div  className="collapse-img">
                                         <Image
-                                            src="/img/Jumpsuit.jpg"
-                                            alt="New"
-                                            width={250}
-                                            height={312.5}
-                                        />
-                                    </div>
-                                    <div  className="collapse-img">
-                                        <Image
-                                            src="/img/purple__dress.jpg"
+                                            src="/img/facemask.jpg"
                                             alt="New"
                                             width={250}
                                             height={312.5}
@@ -1035,53 +1035,53 @@ class Header extends Component {
                             <div className="col">
                                 <div className="jumbo-menu-img">
                                     <Image
-                                        src="/img/Jeans.jpg"
+                                        src="/img/charli_collection.jpg"
                                         alt="New"
                                         width={250}
                                         height={312.5}
                                     />
                                 </div>
                                 <div className="collection-title">
-                                    Collection 1
+                                    Charli X Nova
                                 </div>
                             </div>
                             <div className="col">
                                 <div className="jumbo-menu-img">
                                     <Image
-                                        src="/img/Jeans.jpg"
+                                        src="/img/floral__dress.jpg"
                                         alt="New"
                                         width={250}
                                         height={312.5}
                                     />
                                 </div>
                                 <div className="collection-title">
-                                    Collection 2
+                                    Daisy Collection
                                 </div>
                             </div>
                             <div className="col">
                                 <div className="jumbo-menu-img">
                                     <Image
-                                        src="/img/Jeans.jpg"
+                                        src="/img/jacket.jpg"
                                         alt="New"
                                         width={250}
                                         height={312.5}
                                     />
                                 </div>
                                 <div className="collection-title">
-                                    Collection 3
+                                    Winter Wonderland
                                 </div>
                             </div>
                             <div className="col">
                                 <div className="jumbo-menu-img">
                                     <Image
-                                        src="/img/Jeans.jpg"
+                                        src="/img/beige__dress.jpg"
                                         alt="New"
                                         width={250}
                                         height={312.5}
                                     />
                                 </div>
                                 <div className="collection-title">
-                                    Collection 4
+                                    As seen on Instagram
                                 </div>
                             </div>
                         </div>
