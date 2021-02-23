@@ -94,7 +94,7 @@ class Header extends Component {
                                         new <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-1" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad">
+                                                    <div className="row header-jumbo__pad full_width">
                                                         <div className="col">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
@@ -173,7 +173,7 @@ class Header extends Component {
                                         women <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-2" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad">
+                                                    <div className="row header-jumbo__pad full_width">
                                                         <div className="col">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
@@ -352,7 +352,7 @@ class Header extends Component {
                                         men <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-3" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad">
+                                                    <div className="row header-jumbo__pad full_width">
                                                         <div className="col">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
@@ -531,7 +531,7 @@ class Header extends Component {
                                         plus+curve <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-4" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad">
+                                                    <div className="row header-jumbo__pad full_width">
                                                         <div className="col">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
@@ -710,7 +710,7 @@ class Header extends Component {
                                             kids <HiChevronDown />{" "}
                                             <div id="header-jumbo-menu-5" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad">
+                                                    <div className="row header-jumbo__pad full_width">
                                                         <div className="col">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
@@ -845,7 +845,7 @@ class Header extends Component {
                                             accessories <HiChevronDown />{" "}
                                             <div id="header-jumbo-menu-6" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad">
+                                                    <div className="row header-jumbo__pad full_width">
                                                         <div className="col">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
@@ -934,7 +934,7 @@ class Header extends Component {
                                             sale <HiChevronDown />{" "}
                                             <div id="header-jumbo-menu-7" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad">
+                                                    <div className="row header-jumbo__pad full_width">
                                                         <div className="col">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
