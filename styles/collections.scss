@@ -1,4 +1,7 @@
-// styles for gallery page
+@import "bootstrap/scss/functions";
+// @import "bootstrap/scss/utilities";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins/_breakpoints";
 $spacer: 1rem;
 $p1: $spacer*.25;
 $p2: $spacer*.5;
@@ -19,6 +22,10 @@ $color-swatch-border: #cacaca;
 $font-default: proxima-nova-condensed, Arial, sans-serif;
 
 $color-photo-border: #edeff0;
+
+$size-image-container: 59.25%;
+// $size-button: 7.76%;
+$size-product-info: 100% - $size-image-container;
 
 @mixin flex_center() {
   align-items: center;
@@ -124,7 +131,7 @@ $color-photo-border: #edeff0;
       margin-top: 0;
     }
   }
-
+k
   &__title {    
     @include ff();
     color: $color_filter_header;
@@ -170,10 +177,9 @@ $color-photo-border: #edeff0;
   }
 }
 
-
 // GALLERY
 .gallery {
-  // SORTING
+  // SORTING AREA
   &__sorting {
     display: flex;
     align-items: center;
@@ -188,38 +194,42 @@ $color-photo-border: #edeff0;
 
   // PICTURES
   &__column {
+    border: 1px solid red;
     margin-bottom: $p5;
-    padding: 0;
+    position: relative;
   }
-
+  
   &__container {
     border: 1px solid black;
-    min-height: 480px;
-    min-width: 226px;
-    // max-height: 585px;
-    // max-width: 245px;
-    // height: 585px;
-    // width: 245px;
     display: flex;
     flex-direction: column;
+    height: 0;
     margin: 0;
-    padding: 0;
-
+    padding: 0 0 250%; // https://stackoverflow.com/questions/16495162/using-a-calc-to-create-an-auto-sized-element-according-to-aspect-ratio
+    position: relative;
+    width: 100%;
   }
 
   &__image-container {
+    background-color: $light;
+    // border: 1px solid blue;
+    height: $size-image-container;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  &__image {
     border: 1px solid $color-photo-border;
-    min-height: 365px;
-    max-height: 585px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
   }
 
   &__icon {
     $margin-right: 10px;
-    color: $color-white;
+    color: $color-black;
     cursor: pointer;
     position: absolute;
     z-index: 10;
@@ -246,22 +256,9 @@ $color-photo-border: #edeff0;
       transform: translateY(-50%);
     }
   }
-  
-  &__image {
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-  }
-  
+
   &__product-info {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex:1;
-    flex-direction: column;
-    justify-content: space-between;
+
   }
 }
 
@@ -269,40 +266,76 @@ $size-swatch-outer-border: 4px;
 $size-swatch: 18px;
 
 .product-info {
-  &__top-container {}
-  &__bottom-container {
-    bottom: 0;
-  }
+  bottom: 0;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  height: $size-product-info;
+  position: absolute;
+  width: 100%;
+
+  // &__top-container {
+  //   // background-color: pink;
+  //   display: flex;
+  //   flex-direction: column;
+  //   flex: 1;
+  //   justify-content: space-between;
+  //   top: 0;
+  //   width: 100%;
+  //   position: relative;
+  //   // position: absolute;
+  // }
+  // &__bottom-container {
+  //   // position: relative;
+  //   // position: relative;
+  //   // display: flex;
+  //   // flex-direction: column;
+  //   width: 100%;
+  //   position: relative;
+  //   // bottom: 0;
+  //   background-color: red;
+  // }
 
   &__discount {
     @include ff();
     color: $color_product_discount;
-    font-size: 12px;
+    // font-size: 75%;
+    font-size: .75em;
+    // font-size: 12px;
     font-weight: 700;
-    margin-top: 10px;
+    // margin-top: 10px;
+    padding: .625em 0 .3em;
     text-transform: uppercase;
   }
   &__title {
     @include ff();
     color: $color_product_title;
-    font-size: 15x;
+    // font-size: 94%;
+    font-size: .95em;
+    // font-size: 15px;
     font-weight: 400;
   }
   &__price {    
     @include ff();
     color: #000000;
-    font-size: 16px;
+    // font-size: 100%;
+    // font-size: 16px;
+    font-size: 1em;
     font-weight: 600;
-    padding: 0;
-    margin: 0;
+    padding: 1em 0;
+    // margin: 0;
   }
   &__button {
     @include flex_center();
     background-color: $color-black;
     border: 1px solid $color-black;
+    // bottom: 0;
     color: $color-white;
+    // position: absolute;
     padding: $p2 0;
-    width: 100%;
+    // width: 100%;
 
     &:hover {
       background-color: #eeeff0;
@@ -314,8 +347,24 @@ $size-swatch: 18px;
     align-items: center;
     display: flex;
     gap: 25px;
+    padding: $p3 0;
+    position: relative;
     // padding: $p3 0 $p4;
     height: $size-swatch + $size-swatch-outer-border*2 + 16px+22.4px
+  }
+}
+
+.bag-button {
+  &__text {
+    @include ff();
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  &__icon {
+    font-size: 12px;
+    margin-left: 6px;
   }
 }
 
@@ -344,21 +393,28 @@ $size-swatch: 18px;
   &--red {
     background-color: red;
   }
-
-
 }
 
-
-.bag-button {
-  &__text {
-    @include ff();
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+@include media-breakpoint-down(xl) {
+  .res {
+    color: red;    
   }
-  &__icon {
-    font-size: 12px;
-    margin-left: 6px;
+}
+
+@include media-breakpoint-down(lg) {
+  .res {
+    color: purple;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .res {
+    color: green;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .res {
+    color: orange;
   }
 }

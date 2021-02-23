@@ -9,11 +9,12 @@ $(window).on("load", function() {
   // GO TO TOP BUTTON
   function scrollFunction() {
     let topButton = document.getElementById("topButton");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      topButton.classList.add("active");
-    } else {
+    if (topButton !== null) {
+      if((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)) {
+        topButton.classList.add("active");
+      } else {
       topButton.classList.remove("active");
-    }
+    }}
   }
   
   window.addEventListener("scroll", scrollFunction);    
