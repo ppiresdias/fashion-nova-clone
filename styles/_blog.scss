@@ -1,12 +1,9 @@
 // styles for blog page
 $img-width: 100%;
 $img-height: 250px;
-$title-font: 'Prata',
-serif;
+$title-font: "Prata", serif;
 $title-font-size: 25px;
-$content-font: 'Karla',
-sans-serif;
-
+$content-font: "Karla", sans-serif;
 
 // BLOG //
 .blog {
@@ -55,7 +52,6 @@ sans-serif;
             margin-top: 32px;
             font-size: 40px;
             letter-spacing: 0.5px;
-
         }
     }
 }
@@ -152,8 +148,9 @@ sans-serif;
             line-height: 1.4rem;
             margin-top: 5px;
             margin-bottom: 15px;
-
         }
+        //   .card {
+        //     border: 1px solid white;
 
         &__content {
             font-family: $content-font;
@@ -177,9 +174,19 @@ sans-serif;
         &__img {
             height: 250px;
             object-fit: cover;
-
-
         }
+
+        &:hover {
+            border-color: lightgray;
+        }
+
+        // &__img {
+        //   width: $img-width;
+        //   height: $img-height;
+        //   object-fit: cover;
+        //   border-top-left-radius: 3px;
+        //   border-top-right-radius: 3px;
+        // }
 
         &__date {
             font-style: normal;
@@ -191,11 +198,7 @@ sans-serif;
         }
 
         &:hover {
-            border-color: lightgray;
+            border-color: lightblue;
         }
-
-
-
     }
-
 }
