@@ -9,15 +9,20 @@ const Product = () => {
       </Head>
       <div className="product-wrapper">
         <div className="product container">
+          <div id="myModal" className="modal">
+            <span className="close">&times;</span>
+            <img id="img01" />
+          </div>
+
           <div className="product__row row ">
             <div className="col-sm-12 col-md-6 product__left-column">
               <div className="main-img">
-                <img src="/img/jeans4.jpg" alt="jeans" />
+                <img src="/img/jeans4.jpg" alt="jeans" id="myImg" />
               </div>
               <div className="grid-img">
-                <img src="/img/jeans1.jpg" alt="jeans" />
-                <img src="/img/jeans2.jpg" alt="jeans" />
-                <img src="/img/jeans3.jpg" alt="jeans" />
+                <img src="/img/jeans1.jpg" alt="jeans" id="myImg2" />
+                <img src="/img/jeans2.jpg" alt="jeans" id="myImg3" />
+                <img src="/img/jeans3.jpg" alt="jeans" id="myImg4" />
               </div>
             </div>
             <div className="col-sm-12 col-md-6 product__right-column">
@@ -92,7 +97,7 @@ const Product = () => {
                 <span className="price">$38.52</span>
               </div>
               <div className="card-">
-                <img src="/img/extra3.jpg" alt="complete outfit" />
+                <img src="/img/extra7.jpg" alt="complete outfit" />
                 <span className="title">Stretch Eco Blue Jeans</span>
                 <span className="price">$38.52</span>
               </div>
@@ -103,6 +108,35 @@ const Product = () => {
               </div>
               <div className="card-">
                 <img src="/img/extra1.jpg" alt="complete outfit" />
+                <span className="title">Stretch Eco Blue Jeans</span>
+                <span className="price">$38.52</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="outfit-wrapper">
+        <div className="c-outfit container">
+          <h2>Others also bought</h2>
+          <div className="c-outfit__row row">
+            <div className="col-sm-12 col-md-12 c-outfit__cards">
+              <div className="card-">
+                <img src="/img/extra6.jpg" alt="complete outfit" />
+                <span className="title">Freedom T-Shirt</span>
+                <span className="price">$38.52</span>
+              </div>
+              <div className="card-">
+                <img src="/img/extra3.jpg" alt="complete outfit" />
+                <span className="title">Stretch Eco Blue Jeans</span>
+                <span className="price">$38.52</span>
+              </div>
+              <div className="card-">
+                <img src="/img/extra8.jpg" alt="complete outfit" />
+                <span className="title">Stretch Eco Blue Jeans</span>
+                <span className="price">$38.52</span>
+              </div>
+              <div className="card-">
+                <img src="/img/extra9.jpg" alt="complete outfit" />
                 <span className="title">Stretch Eco Blue Jeans</span>
                 <span className="price">$38.52</span>
               </div>

@@ -93,9 +93,6 @@ sans-serif;
             padding-bottom: 1.5rem;
             border-bottom: 1px solid rgb(241, 241, 241);
 
-
-
-
             a {
                 display: block;
                 color: black;
@@ -103,7 +100,7 @@ sans-serif;
                 margin: 5px 0;
 
                 &:hover {
-                    color: lightblue;
+                    color: gray;
                 }
             }
 
@@ -119,12 +116,11 @@ sans-serif;
 
 
             a {
-
                 text-decoration: none;
                 float: left;
                 padding: 5px;
                 color: black;
-                border: 0.5px solid lightblue;
+                border: 0.5px solid lightgray;
                 margin: 4px;
 
 
@@ -168,6 +164,14 @@ sans-serif;
             word-break: break-word;
             text-align: left;
             color: gray;
+
+            a{
+                color: #212529;
+
+                &:hover{
+                    color: blue;
+                }
+            }
         }
 
         &__img {
@@ -187,7 +191,7 @@ sans-serif;
         }
 
         &:hover {
-            border-color: lightblue;
+            border-color: lightgray;
         }
 
 
