@@ -1,12 +1,9 @@
 // styles for blog page
 $img-width: 100%;
 $img-height: 250px;
-$title-font: 'Prata',
-serif;
+$title-font: "Prata", serif;
 $title-font-size: 25px;
-$content-font: 'Karla',
-sans-serif;
-
+$content-font: "Karla", sans-serif;
 
 // BLOG //
 .blog {
@@ -55,7 +52,6 @@ sans-serif;
             margin-top: 32px;
             font-size: 40px;
             letter-spacing: 0.5px;
-
         }
     }
 }
@@ -93,9 +89,6 @@ sans-serif;
             padding-bottom: 1.5rem;
             border-bottom: 1px solid rgb(241, 241, 241);
 
-
-
-
             a {
                 display: block;
                 color: black;
@@ -103,7 +96,7 @@ sans-serif;
                 margin: 5px 0;
 
                 &:hover {
-                    color: lightblue;
+                    color: gray;
                 }
             }
 
@@ -119,12 +112,11 @@ sans-serif;
 
 
             a {
-
                 text-decoration: none;
                 float: left;
                 padding: 5px;
                 color: black;
-                border: 0.5px solid lightblue;
+                border: 0.5px solid lightgray;
                 margin: 4px;
 
 
@@ -156,7 +148,6 @@ sans-serif;
             line-height: 1.4rem;
             margin-top: 5px;
             margin-bottom: 15px;
-
         }
 
         &__content {
@@ -168,13 +159,23 @@ sans-serif;
             word-break: break-word;
             text-align: left;
             color: gray;
+
+            a{
+                color: #212529;
+
+                &:hover{
+                    color: blue;
+                }
+            }
         }
 
         &__img {
             height: 250px;
             object-fit: cover;
+        }
 
-
+        &:hover {
+            border-color: lightgray;
         }
 
         &__date {
@@ -187,11 +188,7 @@ sans-serif;
         }
 
         &:hover {
-            border-color: lightblue;
+            border-color: lightgray;
         }
-
-
-
     }
-
 }
