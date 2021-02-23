@@ -127,10 +127,53 @@
             text-transform: uppercase;
             &:hover{
                 color: $primaryTextHoverColor;
+                cursor: pointer;  
             }
         }
     }
 }
+
+#header-nav-menu-link-1:hover #header-jumbo-menu-1{
+    display: block;
+    color: red;
+}
+
+#header-nav-menu-link-2:hover #header-jumbo-menu-2{
+    display: block;
+    color: red;
+}
+
+#header-nav-menu-link-3:hover #header-jumbo-menu-3{
+    display: block;
+    color: red;
+}
+
+#header-nav-menu-link-4:hover #header-jumbo-menu-4{
+    display: block;
+    color: red;
+}
+
+#header-nav-menu-link-5:hover #header-jumbo-menu-5{
+    display: block;
+    color: red;
+}
+
+#header-nav-menu-link-6:hover #header-jumbo-menu-6{
+    display: block;
+    color: red;
+}
+
+#header-nav-menu-link-7:hover #header-jumbo-menu-7{
+    display: block;
+    color: red;
+}
+
+#header-nav-menu-link-8:hover #header-jumbo-menu-8{
+    display: block;
+    color: red;
+}
+
+
 
 .header-jumbo-menu{
     background: $navJumboMenuBgColor;

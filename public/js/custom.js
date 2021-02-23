@@ -38,47 +38,47 @@ jQuery(function () {
     $(".header-jumbo-menu").css("display", "none");
   });
 
-  // fetch all navigation menu links
-  let navMenus = document.querySelectorAll(".header-nav-menu-link");
+//   // fetch all navigation menu links
+//   let navMenus = document.querySelectorAll(".header-nav-menu-link");
 
-  if ($("#navbar-toggle").is(":visible")) {
-    // enable click listener
-    navMenus.forEach((menu) => {
-      menu.addEventListener("click", (e) => {
-        let rect = menu.getBoundingClientRect();
-        // console.log(menu.id)
-        // console.log(menu.id.substr(-1, 1))
-        // console.log(rect.top, rect.right, rect.bottom, rect.left)
-        // console.log('' + (rect.top + rect.bottom) + '')
-        let navJumboMenu = $("#header-jumbo-menu-" + menu.id.substr(-1, 1));
+//   if ($("#navbar-toggle").is(":visible")) {
+//     // enable click listener
+//     navMenus.forEach((menu) => {
+//       menu.addEventListener("click", (e) => {
+//         let rect = menu.getBoundingClientRect();
+//         // console.log(menu.id)
+//         // console.log(menu.id.substr(-1, 1))
+//         // console.log(rect.top, rect.right, rect.bottom, rect.left)
+//         // console.log('' + (rect.top + rect.bottom) + '')
+//         let navJumboMenu = $("#header-jumbo-menu-" + menu.id.substr(-1, 1));
 
-        if (!navJumboMenu.is(":visible")) {
-          navJumboMenu.css("top", "" + rect.bottom + "px");
-          navJumboMenu.slideDown("fast");
-        } else {
-          navJumboMenu.slideUp("fast");
-        }
-      });
-    });
-  } else {
-    // enable hover listener
-    // add hover event listener to each navigation menu link
-    // display respective jumbo menu when navigation menu link is hovered over
-    navMenus.forEach((menu) => {
-      menu.addEventListener("mouseenter", (e) => {
-        let jumboMenu = document.querySelector(menu.dataset.target);
-        hideSubMenus(navMenus, menu.dataset.target);
-        jumboMenu.classList.add("show");
-      });
-    });
+//         if (!navJumboMenu.is(":visible")) {
+//           navJumboMenu.css("top", "" + rect.bottom + "px");
+//           navJumboMenu.slideDown("fast");
+//         } else {
+//           navJumboMenu.slideUp("fast");
+//         }
+//       });
+//     });
+//   } else {
+//     // enable hover listener
+//     // add hover event listener to each navigation menu link
+//     // display respective jumbo menu when navigation menu link is hovered over
+//     navMenus.forEach((menu) => {
+//       menu.addEventListener("mouseenter", (e) => {
+//         let jumboMenu = document.querySelector(menu.dataset.target);
+//         hideSubMenus(navMenus, menu.dataset.target);
+//         jumboMenu.classList.add("show");
+//       });
+//     });
 
-    header.addEventListener("mouseleave", (e) => {
-      navMenus.forEach((menu) => {
-        let jumboMenu = document.querySelector(menu.dataset.target);
-        jumboMenu.classList.remove("show");
-      });
-    });
-  }
+//     header.addEventListener("mouseleave", (e) => {
+//       navMenus.forEach((menu) => {
+//         let jumboMenu = document.querySelector(menu.dataset.target);
+//         jumboMenu.classList.remove("show");
+//       });
+//     });
+//   }
 
   // hide unselected (non-target) submenus
   function hideSubMenus(navMenus, target) {
@@ -104,53 +104,53 @@ $("#myImg, #myImg2, #myImg3, #myImg4").on("click", function () {
   modalImg.src = this.src;
 });
 
-    window.addEventListener('resize', function(event){
-        console.log("Visible: " + $("#navbar-toggle").is(':visible'))
-        if ($("#navbar-toggle").is(':visible')){
-            // enable click listener
-            navMenus.forEach( menu => {
-                menu.addEventListener('click', e => {
-                    let rect = menu.getBoundingClientRect();
-                    // console.log(menu.id)
-                    // console.log(menu.id.substr(-1, 1))
-                    // console.log(rect.top, rect.right, rect.bottom, rect.left)
-                    // console.log('' + (rect.top + rect.bottom) + '')
-                    let navJumboMenu = $('#header-jumbo-menu-' + menu.id.substr(-1, 1))
+    // window.addEventListener('resize', function(event){
+    //     console.log("Visible: " + $("#navbar-toggle").is(':visible'))
+    //     if ($("#navbar-toggle").is(':visible')){
+    //         // enable click listener
+    //         navMenus.forEach( menu => {
+    //             menu.addEventListener('click', e => {
+    //                 let rect = menu.getBoundingClientRect();
+    //                 // console.log(menu.id)
+    //                 // console.log(menu.id.substr(-1, 1))
+    //                 // console.log(rect.top, rect.right, rect.bottom, rect.left)
+    //                 // console.log('' + (rect.top + rect.bottom) + '')
+    //                 let navJumboMenu = $('#header-jumbo-menu-' + menu.id.substr(-1, 1))
     
-                    if(!navJumboMenu.is(':visible')){
-                        navJumboMenu.css('top', '' + (rect.bottom) + 'px')
-                        navJumboMenu.slideDown('fast')
-                    }else{
-                        navJumboMenu.slideUp('fast')
-                    }
-                })
+    //                 if(!navJumboMenu.is(':visible')){
+    //                     navJumboMenu.css('top', '' + (rect.bottom) + 'px')
+    //                     navJumboMenu.slideDown('fast')
+    //                 }else{
+    //                     navJumboMenu.slideUp('fast')
+    //                 }
+    //             })
 
-                menu.removeEventListener('mouseenter', e => {
-                    let jumboMenu = document.querySelector(menu.dataset.target)
-                    hideSubMenus(navMenus, menu.dataset.target)
-                    jumboMenu.classList.add('show')
-                })
-            })
-        }else{
-            // enable hover listener
-            // add hover event listener to each navigation menu link
-            // display respective jumbo menu when navigation menu link is hovered over
-            navMenus.forEach( menu => {
-                menu.addEventListener('mouseenter', e => {
-                    let jumboMenu = document.querySelector(menu.dataset.target)
-                    hideSubMenus(navMenus, menu.dataset.target)
-                    jumboMenu.classList.add('show')
-                })
-            })
+    //             menu.removeEventListener('mouseenter', e => {
+    //                 let jumboMenu = document.querySelector(menu.dataset.target)
+    //                 hideSubMenus(navMenus, menu.dataset.target)
+    //                 jumboMenu.classList.add('show')
+    //             })
+    //         })
+    //     }else{
+    //         // enable hover listener
+    //         // add hover event listener to each navigation menu link
+    //         // display respective jumbo menu when navigation menu link is hovered over
+    //         navMenus.forEach( menu => {
+    //             menu.addEventListener('mouseenter', e => {
+    //                 let jumboMenu = document.querySelector(menu.dataset.target)
+    //                 hideSubMenus(navMenus, menu.dataset.target)
+    //                 jumboMenu.classList.add('show')
+    //             })
+    //         })
         
-            header.addEventListener('mouseleave', e => {
-                navMenus.forEach( menu => {
-                    let jumboMenu = document.querySelector(menu.dataset.target)
-                    jumboMenu.classList.remove('show')
-                })
-            })
-        }
-    });
+    //         header.addEventListener('mouseleave', e => {
+    //             navMenus.forEach( menu => {
+    //                 let jumboMenu = document.querySelector(menu.dataset.target)
+    //                 jumboMenu.classList.remove('show')
+    //             })
+    //         })
+    //     }
+    // });
 $(".close").on("click", function () {
   modal.style.display = "none";
 });

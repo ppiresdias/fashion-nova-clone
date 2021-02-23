@@ -89,11 +89,10 @@ class Header extends Component {
                                 <div className="nav-collapse-mobile-close-icon" id="nav-collapse-icon">
                                     <VscChromeClose/>
                                 </div>
-                                <div className="menu d-flex justify-content-around">
-                                    <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-1" title="new" data-target="#header-jumbo-menu-1">
-                                            new <HiChevronDown />{" "}
-                                            <div id="header-jumbo-menu-1" className="header-jumbo-menu">
+                                <ul className="menu wrappers d-flex justify-content-around">
+                                    <li className="menu-link header-nav-menu-link hover" id="header-nav-menu-link-1" title="new" data-target="#header-jumbo-menu-1">
+                                        new <HiChevronDown />{" "}
+                                        <div id="header-jumbo-menu-1" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row header-jumbo__pad">
                                                         <div className="col">
@@ -166,12 +165,10 @@ class Header extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </Link>
-                                    <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-2" title="women" data-target="#header-jumbo-menu-2">
-                                            women <HiChevronDown />{" "}
-                                            <div id="header-jumbo-menu-2" className="header-jumbo-menu">
+                                    </li>
+                                    <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-2" title="women" data-target="#header-jumbo-menu-2">
+                                        women <HiChevronDown />{" "}
+                                        <div id="header-jumbo-menu-2" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row header-jumbo__pad">
                                                         <div className="col">
@@ -347,12 +344,10 @@ class Header extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </Link>
-                                    <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-3" title="men" data-target="#header-jumbo-menu-3">
-                                            men <HiChevronDown />{" "}
-                                            <div id="header-jumbo-menu-3" className="header-jumbo-menu">
+                                    </li>
+                                    <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-3" title="men" data-target="#header-jumbo-menu-3">
+                                        men <HiChevronDown />{" "}
+                                        <div id="header-jumbo-menu-3" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row header-jumbo__pad">
                                                         <div className="col">
@@ -528,12 +523,10 @@ class Header extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </Link>
-                                    <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-4" title="plus+curve" data-target="#header-jumbo-menu-4">
-                                            plus+curve <HiChevronDown />{" "}
-                                            <div id="header-jumbo-menu-4" className="header-jumbo-menu">
+                                    </li>
+                                    <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-4" title="plus+curve" data-target="#header-jumbo-menu-4">
+                                        plus+curve <HiChevronDown />{" "}
+                                        <div id="header-jumbo-menu-4" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row header-jumbo__pad">
                                                         <div className="col">
@@ -709,10 +702,8 @@ class Header extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </Link>
-                                    <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-5" title="kids" data-target="#header-jumbo-menu-5">
+                                    </li>
+                                    <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-5" title="kids" data-target="#header-jumbo-menu-5">
                                             kids <HiChevronDown />{" "}
                                             <div id="header-jumbo-menu-5" className="header-jumbo-menu">
                                                 <div className="container-lg">
@@ -845,10 +836,8 @@ class Header extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </Link>
-                                    <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-6" title="beauty" data-target="#header-jumbo-menu-6">
+                                    </li>
+                                    <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-6" title="beauty" data-target="#header-jumbo-menu-6">
                                             accessories <HiChevronDown />{" "}
                                             <div id="header-jumbo-menu-6" className="header-jumbo-menu">
                                                 <div className="container-lg">
@@ -933,10 +922,8 @@ class Header extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </Link>
-                                    <Link href="#">
-                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-7" title="sale" data-target="#header-jumbo-menu-7">
+                                    </li>
+                                    <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-7" title="sale" data-target="#header-jumbo-menu-7">
                                             sale <HiChevronDown />{" "}
                                             <div id="header-jumbo-menu-7" className="header-jumbo-menu">
                                                 <div className="container-lg">
@@ -1009,10 +996,8 @@ class Header extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </Link>
-                                    <Link href="/collections">
-                                        <a className="menu-link header-nav-menu-link" id="header-nav-menu-link-8" title="collections" data-target="#header-jumbo-menu-8">
+                                    </li>
+                                    <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-8" title="collections" data-target="#header-jumbo-menu-8">
                                             collections <HiChevronDown />{" "}
                                             <div id="header-jumbo-menu-8" className="header-jumbo-menu">
                                                 <div className="container-lg">
@@ -1072,9 +1057,8 @@ class Header extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
