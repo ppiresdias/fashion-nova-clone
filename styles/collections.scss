@@ -23,9 +23,9 @@ $font-default: proxima-nova-condensed, Arial, sans-serif;
 
 $color-photo-border: #edeff0;
 
-$size-image-container: 59.25%;
+// $size-image-container: 59.25%;
 // $size-button: 7.76%;
-$size-product-info: 100% - $size-image-container;
+// $size-product-info: 100% - $size-image-container;
 
 @mixin flex_center() {
   align-items: center;
@@ -194,37 +194,53 @@ k
 
   // PICTURES
   &__column {
-    border: 1px solid red;
+    // border: 1px solid red;
     margin-bottom: $p5;
-    position: relative;
+    // position: relative;
+    // height: 0;
+    // margin: 0;
+    // padding: 0 0 250%; // https://stackoverflow.com/questions/16495162/using-a-calc-to-create-an-auto-sized-element-according-to-aspect-ratio
   }
   
   &__container {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    height: 0;
-    margin: 0;
-    padding: 0 0 250%; // https://stackoverflow.com/questions/16495162/using-a-calc-to-create-an-auto-sized-element-according-to-aspect-ratio
+    border: none !important;
+    // border: 1px solid black;
+    // display: flex;
+    // flex-direction: column;
+    // height: 0;
+    // margin: 0;
+    // padding: 0 0 100%; // https://stackoverflow.com/questions/16495162/using-a-calc-to-create-an-auto-sized-element-according-to-aspect-ratio
+    // position: absolute;
+    // width: 100%;
+  }
+  
+  &__image-container {
+    // flex: 1;
+    // height: $size-image-container;
+    // background-color: $secondary;
+    // border: 1px solid blue;
+    // left: 0;
     position: relative;
+    // height: 100%;
+    // position: absolute;
+    // top: 0;
     width: 100%;
   }
 
-  &__image-container {
-    background-color: $light;
-    // border: 1px solid blue;
-    height: $size-image-container;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
+  // &__carousel {
+  //   position: absolute;
+  //   display: flex;
+  //   width: 200%;
+  // }
   
   &__image {
     border: 1px solid $color-photo-border;
     cursor: pointer;
     width: 100%;
+    // position: relative;
     height: auto;
+    // top: 50%;
+    // transform: translateY(-50%);
   }
 
   &__icon {
@@ -266,71 +282,60 @@ $size-swatch-outer-border: 4px;
 $size-swatch: 18px;
 
 .product-info {
-  bottom: 0;
-  padding: 0;
+  padding: 0 !important;
   display: flex;
-  flex: 1;
   flex-direction: column;
-  justify-content: space-between;
-  height: $size-product-info;
-  position: absolute;
-  width: 100%;
-
-  // &__top-container {
-  //   // background-color: pink;
-  //   display: flex;
-  //   flex-direction: column;
-  //   flex: 1;
-  //   justify-content: space-between;
-  //   top: 0;
-  //   width: 100%;
-  //   position: relative;
-  //   // position: absolute;
-  // }
-  // &__bottom-container {
-  //   // position: relative;
-  //   // position: relative;
-  //   // display: flex;
-  //   // flex-direction: column;
-  //   width: 100%;
-  //   position: relative;
-  //   // bottom: 0;
-  //   background-color: red;
-  // }
+  justify-content: flex-end;
+  // flex: 1;
 
   &__discount {
     @include ff();
+    // display: block;
     color: $color_product_discount;
-    // font-size: 75%;
     font-size: .75em;
-    // font-size: 12px;
     font-weight: 700;
-    // margin-top: 10px;
     padding: .625em 0 .3em;
     text-transform: uppercase;
+    align-self: flex-start;
   }
   &__title {
     @include ff();
+    // display: block;
+    // background-color: pink;
     color: $color_product_title;
-    // font-size: 94%;
+    // align-items: center;
+    // display: flex;
     font-size: .95em;
-    // font-size: 15px;
     font-weight: 400;
+    min-height: 55px;
+    max-height: 55px;
   }
   &__price {    
     @include ff();
+    // display: block;
     color: #000000;
-    // font-size: 100%;
-    // font-size: 16px;
     font-size: 1em;
     font-weight: 600;
-    padding: 1em 0;
-    // margin: 0;
+    // padding: 5px 0 2px;
   }
+  
+  &__swatches {
+    // background-color: purple;
+    align-items: center;
+    display: flex;
+    gap: 25px;
+    padding: $p3 0;
+    position: relative;
+    // padding: $p3 0 $p4;
+    padding-bottom: $p4;
+    height: $size-swatch + $size-swatch-outer-border*2 + 16px*2;
+  }
+
   &__button {
     @include flex_center();
     background-color: $color-black;
     border: 1px solid $color-black;
+    display: block;
     // bottom: 0;
     color: $color-white;
     // position: absolute;
@@ -342,15 +347,6 @@ $size-swatch: 18px;
       color: $color-black;
       transition: all .1s ease-in-out;
     }
-  }
-  &__swatches {
-    align-items: center;
-    display: flex;
-    gap: 25px;
-    padding: $p3 0;
-    position: relative;
-    // padding: $p3 0 $p4;
-    height: $size-swatch + $size-swatch-outer-border*2 + 16px+22.4px
   }
 }
 
