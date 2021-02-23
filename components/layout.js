@@ -5,7 +5,7 @@ export default function Layout(props) {
 	return (
 		<div>
 			<Header />
-			<div>{props.children}</div>
+			<div className="content-wrapper">{props.children}</div>
 			<Footer />
 		</div>
 	);

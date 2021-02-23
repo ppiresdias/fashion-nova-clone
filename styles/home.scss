@@ -1,1 +1,190 @@
 /******** Home/Landing Page Styles ***********/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.new__collection {
+  text-transform: uppercase;
+  background: right 30% / cover no-repeat
+    url('https://source.unsplash.com/dhD_FiNkuzw/600x880');
+  padding: 0 2rem;
+  height: 30rem;
+  max-height: 30rem;
+  min-height: 25rem;
+  @media screen and (min-width: 575px) {
+    background: right 10% / cover no-repeat
+      url('https://source.unsplash.com/dhD_FiNkuzw/1920x1080');
+    height: 50rem;
+    max-height: 50rem;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1950px) {
+    width: 50%;
+    margin: 0 auto;
+  }
+  h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    @media screen and (min-width: 720px) {
+      font-size: 5rem;
+    }
+  }
+}
+
+.feature__products {
+  margin: 0 1rem;
+  .card {
+    border: none;
+  }
+  .previous__price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 1rem;
+  }
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5rem 0;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+}
+
+.himher {
+  @media screen and (min-width: 1950px) {
+    margin: 10rem auto;
+    width: 50%;
+  }
+  margin: 10rem 0;
+
+  .for__her,
+  .for__him {
+    &::before {
+      background-color: rgba(0, 0, 0, 0.35);
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  h3,
+  a {
+    z-index: 2;
+  }
+
+  .for__her__content,
+  .for__him__content {
+    height: 35rem;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 4rem;
+    color: white;
+  }
+
+  .for__him__content {
+    background: center / cover no-repeat
+      url('https://source.unsplash.com/GwcXIzetYqM/');
+  }
+
+  .for__her__content {
+    background: center / cover no-repeat
+        url('https://source.unsplash.com/JfbpNdj4KAs/1920x1080'),
+      rgba(0, 0, 0, 0.5);
+  }
+}
+
+.latest__posts {
+  .row {
+    padding: 5rem 0;
+  }
+  .card {
+    border: none;
+    div > img {
+      object-fit: cover;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      .card-title {
+        text-align: center;
+      }
+      .card-text {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+}
+
+.instagram__posts {
+  @media screen and (min-width: 1950px) {
+    width: 60%;
+    margin: 0 auto;
+  }
+  margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .row {
+    cursor: pointer;
+    .instagram__posts__card {
+      margin: 0 0.5rem 0.5rem 0.5rem !important;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      svg,
+      a {
+        display: none;
+        position: absolute;
+        z-index: 2;
+      }
+      a {
+        top: 18rem;
+        padding: 0.7rem 2rem;
+        text-transform: uppercase;
+      }
+
+      img {
+        object-fit: cover;
+      }
+    }
+    div {
+      &:hover {
+        .instagram__posts__card__item {
+          display: block;
+        }
+        &::before {
+          background-color: rgba(0, 0, 0, 0.35);
+          content: '';
+          display: block;
+          height: 100%;
+          position: absolute;
+          width: 100%;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}

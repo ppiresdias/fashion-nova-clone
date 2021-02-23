@@ -1,6 +1,8 @@
 
+import Link from "next/link";
 import {ImSearch, ImFacebook, ImTwitter, ImYoutube, ImInstagram, ImPinterest} from 'react-icons/im'
-import {FaCcStripe, FaCcVisa, FaCcMastercard, FaCcPaypal, FaCcDiscover} from 'react-icons/fa'
+import {FaCcStripe, FaCcVisa, FaCcMastercard, FaCcPaypal, FaCcDiscover, FaInstagram, FaSnapchatGhost} from 'react-icons/fa'
+import {SiTiktok} from "react-icons/si"
 
 const Footer = () => {
 	return (
@@ -9,35 +11,110 @@ const Footer = () => {
 			<div className="container footer-container">
 				<div className="row footer__content">
 					<div className="col footer__menu">
-						<div className="footer__menu__header">Quick Links</div>
+						<div className="footer__menu__header">NOVA</div>
 						<ul className="footer__menu__links">
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>about us</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="/blog">
+									<a>blog</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>wanna collab?</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>affiliate</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>careers</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>privacy policy</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>terms and conditions</a>
+                                </Link>
+							</li>
 						</ul>
 					</div>
 
 					<div className="col footer__menu">
-						<div className="footer__menu__header">My Account</div>
+						<div className="footer__menu__header">Account</div>
 						<ul className="footer__menu__links">
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>my account</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>my wishlist</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>view bag</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>track order</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>order history</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>gift cards</a>
+                                </Link>
+							</li>
 						</ul>
 					</div>
 
 					<div className="col footer__menu">
 						<div className="footer__menu__header">Customer Service</div>
 						<ul className="footer__menu__links">
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
-							<li className="footer__menu__link__item">Home</li>
+							<li className="footer__menu__link__item">
+								<Link href="/contactus">
+									<a>contact us</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>shipping</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>returns</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>size guide</a>
+                                </Link>
+							</li>
+							<li className="footer__menu__link__item">
+								<Link href="#">
+									<a>sitemap</a>
+                                </Link>
+							</li>
 						</ul>
 					</div>
 
@@ -48,7 +125,7 @@ const Footer = () => {
 						</div>
 						<div className="row footer__signup">
 							<form className="form-inline">
-								<input className="form-control newsletter-input" type="search" placeholder="plus black top" aria-label="Search"/>
+								<input className="form-control newsletter-input" type="search" placeholder="Enter email" aria-label="Search"/>
 								<button className="btn newsletter-btn" type="submit">
 								<ImSearch/>
 								</button>
@@ -59,11 +136,10 @@ const Footer = () => {
 							</form>
 						</div>
 						<div className="row footer__socials">
-							<div className="footer__social__item"> <ImFacebook/> </div>
-							<div className="footer__social__item"> <ImTwitter/> </div>
-							<div className="footer__social__item"> <ImInstagram/> </div>
-							<div className="footer__social__item"> <ImYoutube/> </div>
-							{/* <div className="footer__social__item"> <ImPinterest/> </div> */}
+							<div className="footer__social__item" id="instagram-logo"> <FaInstagram/> </div>						
+							<div className="footer__social__item" id="tiktok-logo"> <SiTiktok/> </div>
+							<div className="footer__social__item" id="snapchat-logo"> <FaSnapchatGhost/> </div>
+							<div className="footer__social__item" id="facebook-logo"> <ImFacebook/> </div>
 						</div>
 					</div>
 				</div>

@@ -85,6 +85,7 @@ const blogPage = () => {
             </div>
             <div className="col-sm-12 col-md-12">
               <div className="blog-page__comment">
+                <h2>Leave a comment</h2>
                 <label>Name</label>
                 <input placeholder="Your name" />
                 <label>Email Address</label>

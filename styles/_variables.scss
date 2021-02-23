@@ -1,11 +1,28 @@
 // color variables
-$primaryColor: #8abdd7;
-$primaryColorBold: #4baadb;
 
+// text
+$primaryColor: rgb(59, 59, 59);
 $primaryTextColor: white;
+$primaryTextHoverColor: rgb(141, 141, 141);
 
-$headerBackground: black;
-$placeholderText: #c4c4c4;
+$primaryColorBold: #4BAADB;
+
+$placeholderText: white; //#C4C4C4
+
+// announcement
+$announcementBgColor: rgb(156, 152, 153);
+$announcementTextColor: black;
+$announcementTextColorEmphasis: rgb(247, 247, 247);
+
+$muteIconColors: rgb(173, 173, 173);
+
+// nav menu
+$navJumboMenuBgColor: white;
+$navJumboMenuTextColor: black;
+$navJumboMenuTextHoverColor: rgb(141, 141, 141);
+
+
+
 
 //sizes
 $primaryFontSize: 16px;
