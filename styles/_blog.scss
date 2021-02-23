@@ -149,8 +149,6 @@ $content-font: "Karla", sans-serif;
             margin-top: 5px;
             margin-bottom: 15px;
         }
-        //   .card {
-        //     border: 1px solid white;
 
         &__content {
             font-family: $content-font;
@@ -179,14 +177,6 @@ $content-font: "Karla", sans-serif;
         &:hover {
             border-color: lightgray;
         }
-
-        // &__img {
-        //   width: $img-width;
-        //   height: $img-height;
-        //   object-fit: cover;
-        //   border-top-left-radius: 3px;
-        //   border-top-right-radius: 3px;
-        // }
 
         &__date {
             font-style: normal;
