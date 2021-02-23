@@ -823,16 +823,11 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-4">
+                                                        <div className="col-5">
                                                             <div className="jumbo-menu-img d-flex flex-row justify-content-between">
                                                                 <div>
                                                                     <img src="/img/kids_fashion.jpg" alt="kids fashion" style={{width: '400px'},{height: '312.5px'}} />
-                                                                    {/* <Image
-                                                                        src="/img/kids_fashion.jpg"
-                                                                        alt="New"
-                                                                        width={400}
-                                                                        height={312.5}
-                                                                    /> */}
+                                                                    
                                                                 </div>
                                                             </div>
                                                         </div>

@@ -133,39 +133,69 @@
     }
 }
 
-#header-nav-menu-link-1:hover #header-jumbo-menu-1{
-    display: block;
+#header-nav-menu-link-1:hover{
+    & > div#header-jumbo-menu-1{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+} 
+
+#header-nav-menu-link-2:hover{
+    & > div#header-jumbo-menu-2{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
-#header-nav-menu-link-2:hover #header-jumbo-menu-2{
-    display: block;
+#header-nav-menu-link-3:hover{
+    & > div#header-jumbo-menu-3{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
-#header-nav-menu-link-3:hover #header-jumbo-menu-3{
-    display: block;
+#header-nav-menu-link-4:hover{
+    & > div#header-jumbo-menu-4{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
-#header-nav-menu-link-4:hover #header-jumbo-menu-4{
-    display: block;
+#header-nav-menu-link-5:hover{
+    & > div#header-jumbo-menu-5{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
-#header-nav-menu-link-5:hover #header-jumbo-menu-5{
-    display: block;
+#header-nav-menu-link-6:hover{
+    & > div#header-jumbo-menu-6{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
-#header-nav-menu-link-6:hover #header-jumbo-menu-6{
-    display: block;
+#header-nav-menu-link-7:hover{
+    & > div#header-jumbo-menu-7{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
-#header-nav-menu-link-7:hover #header-jumbo-menu-7{
-    display: block;
+#header-nav-menu-link-8:hover{
+    & > div#header-jumbo-menu-8{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
-
-#header-nav-menu-link-8:hover #header-jumbo-menu-8{
-    display: block;
-}
-
-
 
 .header-jumbo-menu{
     background: $navJumboMenuBgColor;
@@ -173,7 +203,13 @@
     left: 0;
     z-index: 1;
     width: 100%;
-    display: none;
+    margin-top: 8px;
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 20px 20px -5px $navJumboMenuShadowColor;
+    transition: all .4s ease-in-out;
+    transform: translate(0, 20px);
 
     .header-jumbo__pad{
         padding: 30px;
