@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Swatch from "./collections__swatch";
 
 const seeMore = () => {
   return (
@@ -25,6 +26,12 @@ const getCheckBoxOptions = (arr) => {
   });
 };
 
+const getSwatches = (arr) => {
+  return arr.map((item, index) => {
+    return <div className="filter__swatch-row"><Swatch first={index ? false : true} color={item} key={index} /><label className="filter__label">{item}</label></div>
+  });
+}
+
 // SEARCH FILTER FOR COLLECTIONS
 const Filter = () => {
     return (
@@ -42,7 +49,8 @@ const Filter = () => {
         <div className="filter__br" />
         <div className="filter__section">
           <h4 className="filter__title">COLORS</h4>
-          {getCheckBoxOptions(["all", "black", "blue", "white", "pink", "brown", "red", "yellow", "green", "gray", "purple"])}
+          {getSwatches(["black", "blue", "white", "pink", "brown", "red", "yellow", "green", "gray", "purple"])}
+          {/* {getCheckBoxOptions(["black", "blue", "white", "pink", "brown", "red", "yellow", "green", "gray", "purple"])} */}
           {seeMore()}
         </div>
         <div className="filter__br" />
