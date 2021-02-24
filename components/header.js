@@ -78,6 +78,157 @@ class Header extends Component {
                                     <HiShoppingBag />{" "}  
                                     <span className="banner-count header-cart-count">0</span>
                                 </div>
+                                <div className="shopping-bag-section" id="shopping-bag">
+                                    <div className="shopping-cart-close__icon" id="shopping-cart-close-icon">
+                                        <VscChromeClose/>
+                                    </div>
+                                    <div className="shopping-cart-heading">
+                                        Shopping Cart
+                                    </div>
+                                    <hr/>
+                                    <div className="shopping-cart-items d-flex flex-column">
+                                        <div className="row shopping-cart-item">
+                                            <div className="col-4 shopping-cart-item__img"> 
+                                                <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '100px'}} />
+                                            </div>
+                                            <div className="col shopping-cart-item__info d-flex flex-column">
+                                                <div className="shopping-cart-item__title item_info">Rose Red Dress</div>
+                                                <div className="shopping-cart-item__price item_info">
+                                                    <strike className="item_original_price">US$19.99</strike> 
+                                                    <span className="item_discount_price">US$12.99</span> 
+                                                    (<span className="item_discount_percentage">30%</span> off)
+                                                </div>
+                                                <div className="shopping-cart-item__size item_info">
+                                                    Size: <span className="item_size">6</span>
+                                                </div>
+                                                <div className="shopping-cart-item__color item_info">
+                                                    Color:   
+                                                    <div className="item_color"></div> 
+                                                    <span className="item_color-name">red</span>
+                                                </div>
+                                                <div className="row item_info shopping-cart-item__functions">
+                                                    <div className="col item_adjust_count">
+                                                        <div className="row">
+                                                            <span className="col item_count_sub"> &minus; </span>
+                                                            <span className="col item_count">1</span>
+                                                            <span className="col item_count_add"> &#43; </span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div className="col item_remove">remove</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row shopping-cart-item">
+                                            <div className="col-4 shopping-cart-item__img"> 
+                                                <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '100px'}} />
+                                            </div>
+                                            <div className="col shopping-cart-item__info d-flex flex-column">
+                                                <div className="shopping-cart-item__title item_info">Rose Red Dress</div>
+                                                <div className="shopping-cart-item__price item_info">
+                                                    <strike className="item_original_price">US$19.99</strike> 
+                                                    <span className="item_discount_price">US$12.99</span> 
+                                                    (<span className="item_discount_percentage">30%</span> off)
+                                                </div>
+                                                <div className="shopping-cart-item__size item_info">
+                                                    Size: <span className="item_size">6</span>
+                                                </div>
+                                                <div className="shopping-cart-item__color item_info">
+                                                    Color:   
+                                                    <div className="item_color"></div> 
+                                                    <span className="item_color-name">red</span>
+                                                </div>
+                                                <div className="row item_info shopping-cart-item__functions">
+                                                    <div className="col item_adjust_count">
+                                                        <div className="row">
+                                                            <span className="col item_count_sub"> &minus; </span>
+                                                            <span className="col item_count">1</span>
+                                                            <span className="col item_count_add"> &#43; </span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div className="col item_remove">remove</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row shopping-cart-item">
+                                            <div className="col-4 shopping-cart-item__img"> 
+                                                <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '100px'}} />
+                                            </div>
+                                            <div className="col shopping-cart-item__info d-flex flex-column">
+                                                <div className="shopping-cart-item__title item_info">Rose Red Dress</div>
+                                                <div className="shopping-cart-item__price item_info">
+                                                    <strike className="item_original_price">US$19.99</strike> 
+                                                    <span className="item_discount_price">US$12.99</span> 
+                                                    (<span className="item_discount_percentage">30%</span> off)
+                                                </div>
+                                                <div className="shopping-cart-item__size item_info">
+                                                    Size: <span className="item_size">6</span>
+                                                </div>
+                                                <div className="shopping-cart-item__color item_info">
+                                                    Color:   
+                                                    <div className="item_color"></div> 
+                                                    <span className="item_color-name">red</span>
+                                                </div>
+                                                <div className="row item_info shopping-cart-item__functions">
+                                                    <div className="col item_adjust_count">
+                                                        <div className="row">
+                                                            <span className="col item_count_sub"> &minus; </span>
+                                                            <span className="col item_count">1</span>
+                                                            <span className="col item_count_add"> &#43; </span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div className="col item_remove">remove</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row shopping-cart-item">
+                                            <div className="col-4 shopping-cart-item__img"> 
+                                                <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '100px'}} />
+                                            </div>
+                                            <div className="col shopping-cart-item__info d-flex flex-column">
+                                                <div className="shopping-cart-item__title item_info">Rose Red Dress</div>
+                                                <div className="shopping-cart-item__price item_info">
+                                                    <strike className="item_original_price">US$19.99</strike> 
+                                                    <span className="item_discount_price">US$12.99</span> 
+                                                    (<span className="item_discount_percentage">30%</span> off)
+                                                </div>
+                                                <div className="shopping-cart-item__size item_info">
+                                                    Size: <span className="item_size">6</span>
+                                                </div>
+                                                <div className="shopping-cart-item__color item_info">
+                                                    Color:   
+                                                    <div className="item_color"></div> 
+                                                    <span className="item_color-name">red</span>
+                                                </div>
+                                                <div className="row item_info shopping-cart-item__functions">
+                                                    <div className="col item_adjust_count">
+                                                        <div className="row">
+                                                            <span className="col item_count_sub"> &minus; </span>
+                                                            <span className="col item_count">1</span>
+                                                            <span className="col item_count_add"> &#43; </span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div className="col item_remove">remove</div>
+                                                </div>
+                                            </div>
+                                        </div>                                       
+                                    </div>
+                                    <div className="shopping-cart-actions">
+                                        <div className="shopping-cart-total d-flex justify-content-between">
+                                            <div className="">subtotal:</div>
+                                            <div className="shopping-cart-subtotal-amount">US$89.99</div>
+                                        </div>
+                                        <div className="shopping-cart__buttons primary-action">
+                                            Checkout
+                                        </div>
+                                        <div className="shopping-cart__buttons secondary-action">
+                                            Continue Shopping
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

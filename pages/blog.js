@@ -6,6 +6,7 @@ import {
   IoIosArrowBack,
   IoIosArrowForward,
 } from "react-icons/io";
+import {BsSearch} from "react-icons/bs";
 
 const Blog = () => {
   return (
@@ -24,6 +25,10 @@ const Blog = () => {
         <div className="cards-wrapper">
           <div className="cards container">
             <div className="row flex-column left-column">
+             {/*  <div className=" search">
+                <BsSearch />
+                <input placeholder="Search" />
+                </div> */}
               <div className="recent">
                 <h4>RECENT ARTICLES</h4>
                 <Link href="/blogpage">
@@ -54,7 +59,7 @@ const Blog = () => {
             </div>
 
             <div className="cards__row row">
-              <div className="col-sm-12 col-md-6">
+              <div className="col-sm-12 col-md-12 col-lg-6">
                 <div className="card">
                   <img
                     className="card__img"
@@ -75,7 +80,7 @@ const Blog = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6">
+              <div className="col-sm-12 col-md-12 col-lg-6">
                 <div className="card">
                   <img
                     className="card__img"
@@ -96,7 +101,7 @@ const Blog = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6">
+              <div className="col-sm-12 col-md-12 col-lg-6">
                 <div className="card">
                   <img
                     className="card__img"
@@ -117,7 +122,7 @@ const Blog = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6">
+              <div className="col-sm-12 col-md-12 col-lg-6">
                 <div className="card">
                   <img
                     className="card__img"
@@ -138,7 +143,7 @@ const Blog = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6">
+              <div className="col-sm-12 col-md-12 col-lg-6">
                 <div className="card">
                   <img
                     className="card__img"
@@ -159,7 +164,7 @@ const Blog = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6">
+              <div className="col-sm-12 col-md-12 col-lg-6">
                 <div className="card">
                   <img
                     className="card__img"

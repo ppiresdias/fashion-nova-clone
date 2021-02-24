@@ -29,16 +29,31 @@ jQuery(function () {
 
   hamburgerMenuButton.addEventListener("click", (e) => {
     collapsedNav.classList.add("show");
-    headerSearch.classList.add("show");
+    // headerSearch.classList.add("show");
   });
 
   navMobileCollapseMenuIcon.addEventListener("click", (e) => {
     collapsedNav.classList.remove("show");
-    headerSearch.classList.remove("show");
+    // headerSearch.classList.remove("show");
     //$(".header-jumbo-menu").css("display", "none");
   });
 
 });
+
+
+// shopping cart
+let openShoppingBag = document.querySelector('.header-cart');
+let closeShoppingBag = document.querySelector('#shopping-cart-close-icon');
+let shoppingBag = document.querySelector('#shopping-bag');
+
+openShoppingBag.addEventListener("click", (e) => {
+    shoppingBag.classList.add('show');
+})
+
+closeShoppingBag.addEventListener("click", (e) => {
+  shoppingBag.classList.remove('show');
+})
+
 
 const modalImg = document.getElementById("img01");
 const modal = document.getElementById("myModal");
