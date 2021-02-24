@@ -107,7 +107,7 @@ class Header extends Component {
                                         new <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-1" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad full_width">
+                                                    <div className="row d-flex justify-content-around header-jumbo__pad full_width">
                                                         <div className="col">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
@@ -171,9 +171,9 @@ class Header extends Component {
                                         women <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-2" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad full_width">
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                    <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link">Shop All</a>
@@ -196,8 +196,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">Tops</a>
@@ -235,8 +235,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">bottoms</a>
@@ -274,8 +274,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">Outerwear</a>
@@ -313,8 +313,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">More</a>
@@ -350,9 +350,9 @@ class Header extends Component {
                                         men <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-3" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad full_width">
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                    <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link">Shop All</a>
@@ -375,8 +375,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">Tops</a>
@@ -414,8 +414,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">bottoms</a>
@@ -453,8 +453,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">Outerwear</a>
@@ -492,8 +492,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">More</a>
@@ -529,9 +529,9 @@ class Header extends Component {
                                         plus+curve <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-4" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad full_width">
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                    <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link">Shop All</a>
@@ -554,8 +554,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">Tops</a>
@@ -593,8 +593,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">bottoms</a>
@@ -632,8 +632,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">Outerwear</a>
@@ -671,8 +671,8 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-sm">
-                                                            <ul className="jumbo-menu-items">
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">More</a>
@@ -708,9 +708,9 @@ class Header extends Component {
                                             kids <HiChevronDown />{" "}
                                             <div id="header-jumbo-menu-5" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad full_width">
+                                                    <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">
                                                         <div className="col-md">
-                                                            <ul className="jumbo-menu-items">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link">Shop All</a>
@@ -744,7 +744,7 @@ class Header extends Component {
                                                             </ul>
                                                         </div>
                                                         <div className="col-md">
-                                                            <ul className="jumbo-menu-items">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">Girls</a>
@@ -783,7 +783,7 @@ class Header extends Component {
                                                             </ul>
                                                         </div>
                                                         <div className="col-md">
-                                                            <ul className="jumbo-menu-items">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">Boys</a>
@@ -837,7 +837,7 @@ class Header extends Component {
                                             accessories <HiChevronDown />{" "}
                                             <div id="header-jumbo-menu-6" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad full_width">
+                                                    <div className="row d-flex justify-content-around header-jumbo__pad full_width">
                                                         <div className="col">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
@@ -911,7 +911,7 @@ class Header extends Component {
                                             sale <HiChevronDown />{" "}
                                             <div id="header-jumbo-menu-7" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row header-jumbo__pad full_width">
+                                                    <div className="row d-flex justify-content-around header-jumbo__pad full_width">
                                                         <div className="col">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
@@ -975,8 +975,8 @@ class Header extends Component {
                                         collections <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-8" className="header-jumbo-menu">
                                             <div className="container-lg">
-                                                <div className=" d-flex justify-content-around header-jumbo__pad full_width">
-                                                    <div className="">
+                                                <div className="row d-flex justify-content-around header-jumbo__pad full_width">
+                                                    <div className="mar_bottom_20">
                                                         <div className="jumbo-menu-img">
                                                             <img src="/img/charli_collection.jpg" alt="charli collection" style={{width: '200px'}} />
                                                         </div>
@@ -984,7 +984,7 @@ class Header extends Component {
                                                             Charli X Nova
                                                         </div>
                                                     </div>
-                                                    <div className="">
+                                                    <div className="mar_bottom_20">
                                                    
                                                         <div className="jumbo-menu-img">
                                                             <img src="/img/hawaiian_shirt.jpg" alt="boy with hawaiian shirt" style={{width: '200px'}} />
@@ -994,7 +994,7 @@ class Header extends Component {
                                                             Nova Summer Collection
                                                         </div>
                                                     </div>
-                                                    <div className="">
+                                                    <div className="mar_bottom_20">
                                                    
                                                         <div className="jumbo-menu-img">
                                                             <img src="/img/Jacket.jpg" alt="girl with winter jacket" style={{width: '200px'}} />
@@ -1004,7 +1004,7 @@ class Header extends Component {
                                                             Winter Wonderland
                                                         </div>
                                                     </div>
-                                                    <div className="">
+                                                    <div className="mar_bottom_20">
                                                     
                                                         <div className="jumbo-menu-img">
                                                             <img src="/img/beige__dress.jpg" alt="girl with beige dress" style={{width: '200px'}} />                                                         
