@@ -6,6 +6,7 @@ function c() {
 }
 
 $(window).on("load", function() {
+
   // GO TO TOP BUTTON
   function scrollFunction() {
     let topButton = document.getElementById("topButton");
@@ -16,109 +17,58 @@ $(window).on("load", function() {
       topButton.classList.remove("active");
     }}
   }
+  window.addEventListener("scroll", scrollFunction);  
   
-  window.addEventListener("scroll", scrollFunction);    
-  
-  // will add this to the _document.js
+  // ADD THIS TO _document.js
   // const topFunction = () => {
   //   window.scrollTo({
   //     top: 0,
   //     behavior: 'smooth'
   //   });
   // }
-
-  function shiftLeft(carousel) {
-    $(carousel).removeClass("gallery__image-container--right");
-    $(carousel).addClass("gallery__image-container--left");
-  }
-  function shiftRight(carousel) {
-    $(carousel).removeClass("gallery__image-container--left");
-    $(carousel).addClass("gallery__image-container--right");
-  }
-
-  // function parentHandler(parent, left=true) {
-  //   if(left === true) {
-  //     shiftLeft($(parent).find(".gallery__carousel"));
-  //   } else {
-  //     shiftRight($(parent).find(".gallery__carousel"));
-  //   }
-  // }
+  
 
   // GALLERY ARROWS
   $(".gallery__image-container").on({
     mouseenter: function() {
-      // let carousel = ;
-      // c($(this))
+      // when mouse enters, if carousel is right, move it left; if it's left, move it right
       if($(this).hasClass("gallery__image-container--right")) {
         shiftLeft($(this));
       } else {
-        $(this).on("mouseleave", function() {shiftRight($(this));});
         shiftRight($(this));
+        // restore right shift upon mouse leave
+        $(this).on("mouseleave", function() {shiftRight($(this));});
       }
-      // shiftLeft($(this).find(".gallery__carousel"));
-      // if($(this).hasClass("gallery__image-container--active")) {}
     },
     mouseleave: function() {
-      // c($(this))
-      // shiftRight($(this).find(".gallery__carousel"));
-      // if($(this).hasClass("gallery__image-container--active")) {
-      // }
-      
       shiftRight($(this));
-      // $(this).off("mouseenter");
-      // let carousel = $(".gallery__carousel");
-      // $(carousel).removeClass("gallery__carousel--left");
-      // $(carousel).addClass("gallery__carousel--right");
     }
   });
 
   $(".gallery__image-container .gallery__icon--arrow-left").on({
     click: function() {
-      // alert('clicked')
-      // c($(this).parent())
-      // let carousel = ;
-      // c(carousel)
-      // $(this).parent().off('mouseenter mouseleave');
       shiftRight($(this).parent());
-      // $(this).parent().off('mouseleave');
-      // $(carousel).off('mouseenter');
-      // $(this).parent().off('mouseleave');
-      // let parent = $(this).parent();
-      // c(parent)
-      // $(parent).removeClass("gallery__image-container--active");
-      // shiftRight($(parent).find(".gallery__carousel"));
-      // shiftLeft($(this).parent().find(".gallery__carousel"));
-      // let carousel = 
-      // $(carousel).addClass()
     }
   });
   $(".gallery__image-container .gallery__icon--arrow-right").on({
     click: function() {
-      // $(this).parent().off('mouseenter');
-      // $(this).parent().off('mouseleave');
-      // $($(this).parent()).off('mouseenter mouseleave');
-      // shiftLeft($(this).parent().find(".gallery__carousel"));
-      // let carousel = 
-      // $(carousel).addClass()
-      // let parent = $(this).parent();
-      // $(parent).removeClass("gallery__image-container--active");
-      // shiftLeft($(parent).find(".gallery__carousel"));
-      $(this).parent().off('mouseleave');
+      // when right arrow is clicked, temporarily remove the on mouseleave right shift
       shiftLeft($(this).parent());
+      $(this).parent().off('mouseleave');
     }
   });
-  // $(".gallery__image-container").on({
-  //   mouseover: function() {
-  //     $(this).find(".gallery__icon--arrow-left").show();
-  //     $(this).find(".gallery__icon--arrow-right").hide();
-  //   },
-  //   mouseleave: function() {
-  //     $(this).find(".gallery__icon--arrow-left").hide();
-  //     $(this).find(".gallery__icon--arrow-right").show();
-  //   }
-  // });
+
+  function shiftLeft(carousel_parent) {
+    $(carousel_parent).removeClass("gallery__image-container--right");
+    $(carousel_parent).addClass("gallery__image-container--left");
+  }
+
+  function shiftRight(carousel_parent) {
+    $(carousel_parent).removeClass("gallery__image-container--left");
+    $(carousel_parent).addClass("gallery__image-container--right");
+  }
   
-  // SWATCH ACTIVE
+  // SWATCH HANDLER
   $(".swatch").on({
     click: function() {
       let active = "swatch--active";

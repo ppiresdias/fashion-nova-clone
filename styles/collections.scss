@@ -1,8 +1,7 @@
 @import "bootstrap/scss/functions";
-// @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins/_breakpoints";
-$spacer: 1rem;
+// $spacer: 1rem;
 $p1: $spacer*.25;
 $p2: $spacer*.5;
 $p3: $spacer;
@@ -12,20 +11,21 @@ $p5: $spacer*3;
 $color-white: #ffffff;
 $color-black: #000000;
 $color_top_button_bg: #444444;
+$font-default: proxima-nova-condensed, Arial, sans-serif;
+
+// LEFT SIDE
 $color_filter_bg: #ffffff;
 $color_filter_header: #000000;
 $color_filter_label: #53585f;
+
+// RIGHT SIDE
 $color_product_discount: rgb(227, 44, 43);
 $color_product_title: #53585f;
 $color_product_price: #53585f;
 $color-swatch-border: #cacaca;
-$font-default: proxima-nova-condensed, Arial, sans-serif;
-
 $color-photo-border: #edeff0;
-
-// $size-image-container: 59.25%;
-// $size-button: 7.76%;
-// $size-product-info: 100% - $size-image-container;
+$size-swatch-outer-border: 4px;
+$size-swatch: 18px;
 
 @mixin flex_center() {
   align-items: center;
@@ -179,6 +179,7 @@ k
 
 // GALLERY
 .gallery {
+
   // SORTING AREA
   &__sorting {
     display: flex;
@@ -192,55 +193,22 @@ k
     text-transform: uppercase;
   }
 
-  // PICTURES
+  // PICTURES SECTION
   &__column {
-    // border: 1px solid red;
     margin-bottom: $p5;
-    // position: relative;
-    // height: 0;
-    // margin: 0;
-    // padding: 0 0 250%; // https://stackoverflow.com/questions/16495162/using-a-calc-to-create-an-auto-sized-element-according-to-aspect-ratio
   }
   
   &__container {
     border: none !important;
-    // border: 1px solid black;
-    // display: flex;
-    // flex-direction: column;
-    // height: 0;
-    // margin: 0;
-    // padding: 0 0 100%; // https://stackoverflow.com/questions/16495162/using-a-calc-to-create-an-auto-sized-element-according-to-aspect-ratio
-    // position: absolute;
-    // width: 100%;
   }
   
+  // CAROUSEL, IMAGES, ICONS
   &__image-container {
-    // flex: 1;
-    // height: $size-image-container;
-    // background-color: $secondary;
-    // border: 1px solid blue;
-    // left: 0;
     position: relative;
     overflow: hidden;
-    // height: 100%;
-    // position: absolute;
-    // top: 0;
     width: 100%;
 
-    // &:hover {
-    //   // .gallery__carousel--left {
-    //   //   // transform: translateX(-50%);
-    //   // }
-    //   .gallery__icon {
-    //     &--arrow-left{
-    //       opacity: 1;
-    //     }
-    //     &--arrow-right{
-    //       opacity: 0;
-    //     }
-    //   }
-    // }
-
+    // CAROUSEL HANDLER
     &--right {
       .gallery__icon {
         &--arrow-left {
@@ -251,6 +219,7 @@ k
         }
       }
     }
+
     &--left {
       .gallery__carousel {
         transform: translateX(-50%);
@@ -263,13 +232,11 @@ k
           opacity: 0;
         }
       }
-      // &:hover {
-      // }
     }
   }
 
+  // IMAGE CONTAINER / CAROUSEL
   &__carousel {
-    // position: absolute;
     display: flex;
     width: 200%;
     transition: transform .35s ease-in-out;
@@ -279,57 +246,53 @@ k
     border: 1px solid $color-photo-border;
     cursor: pointer;
     width: 50%;
-    // position: relative;
     height: auto;
-    // top: 50%;
-    // transform: translateY(-50%);
   }
 
+  // $padding-icon: 0;
+  $padding-icon: 12px;
+  $border-icon: 2px;
   &__icon {
     $margin-right: 10px;
     color: $color-black;
     cursor: pointer;
     position: absolute;
     z-index: 10;
-    
-    // &:hover {
-    //   opacity: .7;
-    //   transition: opacity .1s ease-in-out;
-    // }
+    // padding: $padding-icon;
+    &:hover, &:active {
+      outline: #e04c39 solid $border-icon;
+      // outline-offset: $padding-icon;
+    }
     
     &--heart {
-      right: $margin-right;
-      top: 12px;
+      right: $border-icon;
+      top: $border-icon;
+      padding: $padding-icon;
+      // right: $padding-icon;
+      // top: 12px - $padding-icon;
     }
 
     &--arrow-right {
-      // opacity: 1;
-      right: $margin-right;
+      // right: $padding-icon;
+      right: $border-icon;
       top: 50%;
+      padding: $padding-icon $padding-icon*1.25;
       transform: translateY(-50%);
-      // visibility: visible;
       transition: opacity .25s ease-in-out;
     }
     
     &--arrow-left {
-      // display: none;
-      left: $margin-right;
-      // opacity: 0;
+      // left: $padding-icon;
+      left: $border-icon;
       top: 50%;
+      padding: $padding-icon $padding-icon*1.25;
       transform: translateY(-50%);
-      // visibility: hidden;
       transition: opacity .25s ease-in-out;
     }
   }
-
-  &__product-info {
-
-  }
 }
 
-$size-swatch-outer-border: 4px;
-$size-swatch: 18px;
-
+// PRODUCT INFO DIV
 .product-info {
   padding: 0 !important;
   display: flex;
@@ -349,11 +312,7 @@ $size-swatch: 18px;
   }
   &__title {
     @include ff();
-    // display: block;
-    // background-color: pink;
     color: $color_product_title;
-    // align-items: center;
-    // display: flex;
     font-size: .95em;
     font-weight: 400;
     min-height: 55px;
@@ -361,21 +320,17 @@ $size-swatch: 18px;
   }
   &__price {    
     @include ff();
-    // display: block;
     color: #000000;
     font-size: 1em;
     font-weight: 600;
-    // padding: 5px 0 2px;
   }
   
   &__swatches {
-    // background-color: purple;
     align-items: center;
     display: flex;
     gap: 25px;
     padding: $p3 0;
     position: relative;
-    // padding: $p3 0 $p4;
     padding-bottom: $p4;
     height: $size-swatch + $size-swatch-outer-border*2 + 16px*2;
   }
@@ -385,11 +340,8 @@ $size-swatch: 18px;
     background-color: $color-black;
     border: 1px solid $color-black;
     display: block;
-    // bottom: 0;
     color: $color-white;
-    // position: absolute;
     padding: $p2 0;
-    // width: 100%;
 
     &:hover {
       background-color: #eeeff0;
