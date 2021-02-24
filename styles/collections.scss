@@ -131,12 +131,22 @@ $size-swatch: 18px;
       margin-top: 0;
     }
   }
-k
+
   &__title {    
     @include ff();
     color: $color_filter_header;
     font-size: 12px;
     text-transform: uppercase;
+  }
+
+  &__swatch-row {
+    display: flex;
+    margin-bottom: $p2;
+
+    .swatch--active {
+      margin-left: -$size-swatch-outer-border/4;
+      margin-bottom: -$size-swatch-outer-border/4;
+    }
   }
 
   &__checkbox-row {
@@ -249,43 +259,40 @@ k
     height: auto;
   }
 
-  // $padding-icon: 0;
   $padding-icon: 12px;
+  $size-icon-div: 40px;
   $border-icon: 2px;
   &__icon {
-    $margin-right: 10px;
-    color: $color-black;
+    @include flex_center();
     cursor: pointer;
     position: absolute;
+    height: $size-icon-div;
+    width: $size-icon-div;
     z-index: 10;
-    // padding: $padding-icon;
+
+    i {
+      color: $color-black;
+    }
+
     &:hover, &:active {
       outline: #e04c39 solid $border-icon;
-      // outline-offset: $padding-icon;
     }
     
     &--heart {
       right: $border-icon;
       top: $border-icon;
-      padding: $padding-icon;
-      // right: $padding-icon;
-      // top: 12px - $padding-icon;
     }
 
     &--arrow-right {
-      // right: $padding-icon;
       right: $border-icon;
       top: 50%;
-      padding: $padding-icon $padding-icon*1.25;
       transform: translateY(-50%);
       transition: opacity .25s ease-in-out;
     }
     
     &--arrow-left {
-      // left: $padding-icon;
       left: $border-icon;
       top: 50%;
-      padding: $padding-icon $padding-icon*1.25;
       transform: translateY(-50%);
       transition: opacity .25s ease-in-out;
     }
