@@ -86,6 +86,19 @@ class Header extends Component {
                     <div className="container">
                         <div className="navbar navbar-expand-lg">
                             <div className="collapsable navbar-collapsable" id="navbarSupportedContent">
+                                <div className="collapsed-nav-search">
+                                    <form className="form-inline">
+                                        <button className="btn search-btn" type="submit">
+                                            <ImSearch />
+                                        </button>
+                                        <input
+                                        className="form-control search-input"
+                                        type="search"
+                                        placeholder="Search here..."
+                                        aria-label="Search"
+                                        />
+                                    </form>
+                                </div>
                                 <div className="nav-collapse-mobile-close-icon" id="nav-collapse-icon">
                                     <VscChromeClose/>
                                 </div>
@@ -135,33 +148,18 @@ class Header extends Component {
                                                             </ul>
                                                         </div>
                                                         <div className="col-8">
-                                                            <div className="jumbo-menu-img d-flex flex-row justify-content-between">
+                                                            <div className="jumbo-menu-img d-flex flex-row justify-content-around">
                                                                 <div>
-                                                                    <img src="/img/Jeans.jpg" alt="new jeans" style={{width: '250px'},{height: '312.5px'}} />
-                                                                    {/* <Image
-                                                                        src="/img/Jeans.jpg"
-                                                                        alt="New"
-                                                                        width={250}
-                                                                        height={312.5}
-                                                                    /> */}
+                                                                    <img src="/img/Jeans.jpg" alt="new jeans" style={{width: '200px'}} />
+                                                                  
                                                                 </div>
                                                                 <div  className="collapse-img">
-                                                                    <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '250px'},{height: '312.5px'}} />
-                                                                    {/* <Image
-                                                                        src="/img/Jumpsuit.jpg"
-                                                                        alt="New"
-                                                                        width={250}
-                                                                        height={312.5}
-                                                                    /> */}
+                                                                    <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '200px'}} />
+                                                                    
                                                                 </div>
-                                                                <div  className="collapse-img">
-                                                                    <img src="/img/purple__dress.jpg" alt="new purple dress" style={{width: '250px'},{height: '312.5px'}} />
-                                                                    {/* <Image
-                                                                        src="/img/purple__dress.jpg"
-                                                                        alt="New"
-                                                                        width={250}
-                                                                        height={312.5}
-                                                                    /> */}
+                                                                <div  className="collapse-img collapse-img-primary">
+                                                                    <img src="/img/purple__dress.jpg" alt="new purple dress" style={{width: '200px'}} />
+                                                                   
                                                                 </div>                                   
                                                             </div>
                                                         </div>
@@ -174,7 +172,7 @@ class Header extends Component {
                                         <div id="header-jumbo-menu-2" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row header-jumbo__pad full_width">
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -198,7 +196,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -237,7 +235,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -276,7 +274,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -315,7 +313,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -353,7 +351,7 @@ class Header extends Component {
                                         <div id="header-jumbo-menu-3" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row header-jumbo__pad full_width">
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -377,7 +375,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -416,7 +414,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -455,7 +453,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -494,7 +492,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -532,7 +530,7 @@ class Header extends Component {
                                         <div id="header-jumbo-menu-4" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row header-jumbo__pad full_width">
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -556,7 +554,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -595,7 +593,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -634,7 +632,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -673,7 +671,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-sm">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -711,7 +709,7 @@ class Header extends Component {
                                             <div id="header-jumbo-menu-5" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row header-jumbo__pad full_width">
-                                                        <div className="col">
+                                                        <div className="col-md-auto">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -745,7 +743,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-md-auto">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -784,7 +782,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col">
+                                                        <div className="col-md-auto">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -826,8 +824,7 @@ class Header extends Component {
                                                         <div className="col-5">
                                                             <div className="jumbo-menu-img d-flex flex-row justify-content-between">
                                                                 <div>
-                                                                    <img src="/img/kids_fashion.jpg" alt="kids fashion" style={{width: '400px'},{height: '312.5px'}} />
-                                                                    
+                                                                    <img src="/img/kids_fashion.jpg" alt="kids fashion" style={{width: '400px'}} />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -891,33 +888,18 @@ class Header extends Component {
                                                             </ul>
                                                         </div>
                                                         <div className="col-8">
-                                                            <div className="jumbo-menu-img d-flex flex-row justify-content-between">
+                                                            <div className="jumbo-menu-img d-flex flex-row justify-content-around">
                                                                 <div>
-                                                                    <img src="/img/accessories_girl.jpg" alt="accessories" style={{width: '200px'},{height: '312.5px'}} />
-                                                                    {/* <Image
-                                                                        src="/img/accessories_girl.jpg"
-                                                                        alt="New"
-                                                                        width={200}
-                                                                        height={312.5}
-                                                                    /> */}
+                                                                    <img src="/img/accessories_girl.jpg" alt="accessories" style={{width: '200px'}} />
+                                                                    
                                                                 </div>
-                                                                <div  className="collapse-img">
-                                                                    <img src="/img/makeup_girl.jpg" alt="girl with makeup" style={{width: '250px'},{height: '312.5px'}} />
-                                                                    {/* <Image
-                                                                        src="/img/makeup_girl.jpg"
-                                                                        alt="New"
-                                                                        width={250}
-                                                                        height={312.5}
-                                                                    /> */}
+                                                                <div className="collapse-img">
+                                                                    <img src="/img/makeup_girl.jpg" alt="girl with makeup" style={{width: '250px'}} />
+                                                                   
                                                                 </div>
-                                                                <div  className="collapse-img">
-                                                                    <img src="/img/facemask.jpg" alt="boy with face mask" style={{width: '250px'},{height: '312.5px'}} />
-                                                                    {/* <Image
-                                                                        src="/img/facemask.jpg"
-                                                                        alt="New"
-                                                                        width={250}
-                                                                        height={312.5}
-                                                                    /> */}
+                                                                <div className="collapse-img collapse-img-primary">
+                                                                    <img src="/img/facemask.jpg" alt="boy with face mask" style={{width: '250px'}} />
+                                                                   
                                                                 </div>                                   
                                                             </div>
                                                         </div>
@@ -970,33 +952,18 @@ class Header extends Component {
                                                             </ul>
                                                         </div>
                                                         <div className="col-8">
-                                                            <div className="jumbo-menu-img d-flex flex-row justify-content-between">
+                                                            <div className="jumbo-menu-img d-flex flex-row justify-content-around">
                                                                 <div>
-                                                                    <img src="/img/Jeans.jpg" alt="new jeans" style={{width: '250px'},{height: '312.5px'}} />
-                                                                    {/* <Image
-                                                                        src="/img/Jeans.jpg"
-                                                                        alt="New"
-                                                                        width={250}
-                                                                        height={312.5}
-                                                                    /> */}
+                                                                    <img src="/img/Jeans.jpg" alt="new jeans" style={{width: '200px'}} />
+                                                                    
                                                                 </div>
                                                                 <div  className="collapse-img">
-                                                                    <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '250px'},{height: '312.5px'}} />
-                                                                    {/* <Image
-                                                                        src="/img/Jumpsuit.jpg"
-                                                                        alt="New"
-                                                                        width={250}
-                                                                        height={312.5}
-                                                                    /> */}
+                                                                    <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '200px'}} />
+                                                                    
                                                                 </div>
                                                                 <div  className="collapse-img">
-                                                                    <img src="/img/purple__dress.jpg" alt="new purple dress" style={{width: '250px'},{height: '312.5px'}} />
-                                                                    {/* <Image
-                                                                        src="/img/purple__dress.jpg"
-                                                                        alt="New"
-                                                                        width={250}
-                                                                        height={312.5}
-                                                                    /> */}
+                                                                    <img src="/img/purple__dress.jpg" alt="new purple dress" style={{width: '200px'}} />
+                                                                    
                                                                 </div>  
                                                             </div>
                                                         </div>
@@ -1008,41 +975,39 @@ class Header extends Component {
                                         collections <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-8" className="header-jumbo-menu">
                                             <div className="container-lg">
-                                                <div className="row d-flex justify-content-between header-jumbo__pad full_width">
-                                                    <div className="col">
-                                                       
+                                                <div className=" d-flex justify-content-around header-jumbo__pad full_width">
+                                                    <div className="">
                                                         <div className="jumbo-menu-img">
-                                                            <img src="/img/charli_collection.jpg" alt="charli collection" style={{width: '100%'},{height: '300px'}} />
+                                                            <img src="/img/charli_collection.jpg" alt="charli collection" style={{width: '200px'}} />
                                                         </div>
                                                         <div className="collection-title">
                                                             Charli X Nova
                                                         </div>
                                                     </div>
-                                                    <div className="col">
+                                                    <div className="">
                                                    
                                                         <div className="jumbo-menu-img">
-                                                            <img src="/img/hawaiian_shirt.jpg" alt="boy with hawaiian shirt" style={{width: '100%'},{height: '300px'}} />
+                                                            <img src="/img/hawaiian_shirt.jpg" alt="boy with hawaiian shirt" style={{width: '200px'}} />
                                                                 
                                                         </div>
                                                         <div className="collection-title">
                                                             Nova Summer Collection
                                                         </div>
                                                     </div>
-                                                    <div className="col">
+                                                    <div className="">
                                                    
                                                         <div className="jumbo-menu-img">
-                                                            <img src="/img/Jacket.jpg" alt="girl with winter jacket" style={{width: '100%'},{height: '300px'}} />
+                                                            <img src="/img/Jacket.jpg" alt="girl with winter jacket" style={{width: '200px'}} />
                                                             
                                                         </div>
                                                         <div className="collection-title">
                                                             Winter Wonderland
                                                         </div>
                                                     </div>
-                                                    <div className="col">
+                                                    <div className="">
                                                     
                                                         <div className="jumbo-menu-img">
-                                                            <img src="/img/beige__dress.jpg" alt="girl with beige dress" style={{width: '100%'},{height: '300px'}} />
-                                                          
+                                                            <img src="/img/beige__dress.jpg" alt="girl with beige dress" style={{width: '200px'}} />                                                         
                                                         </div>
                                                         <div className="collection-title">
                                                             As seen on Instagram
