@@ -18,7 +18,7 @@
 .header-banner{
     background: $primaryColor;
     color: $primaryTextColor;
-    font-family: 'Montserrat';
+    font-family: $primaryFont;
     font-size: 14px;
 
     .header-banner-left{
@@ -85,12 +85,179 @@
             cursor: pointer;
 
             .banner-count{
-                font-family: 'Montserrat';
+                font-family: $primaryFont;
                 font-size: 12px;
             }
             &:hover{
                 color: $primaryTextHoverColor;
             }
+        }
+
+        .shopping-bag-section{
+            display: none;
+            background: white;
+            color: black;
+            position: fixed; 
+            top: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0 15px 15px 15px;
+            width: 380px !important;
+            font-family: $primaryFont;
+            overflow: hidden;
+            z-index: 110;
+            box-shadow: 0 20px 20px -5px $navJumboMenuShadowColor;
+
+            .shopping-cart-close__icon{
+                display: block !important;
+                font-size: 25px;
+                color: grey;
+                position: absolute;
+                left: 0;
+                padding: 10px 20px;
+                cursor: pointer;
+                &:hover{
+                    color: black;
+                }
+            }
+
+            .shopping-cart-heading{
+                margin-top: 15px;
+                text-align: center;
+                text-transform: capitalize;
+            }
+            hr{
+                margin-top: 20px;
+            }
+
+            .shopping-cart-items{
+                font-size: 14px;
+                overflow: scroll;
+                height: 100%;
+                padding-bottom: 250px;
+
+                .shopping-cart-item{
+                    border-bottom: 1px solid $muteIconColors;
+                    margin: 5px 0;
+                }
+                .item_info{
+                    margin-bottom: 5px;
+                }
+
+                .shopping-cart-item__title{
+                    color: $muteIconColors;
+                }
+
+                .shopping-cart-item__price{
+                    color: red;
+                    text-transform: uppercase;
+
+                    .item_original_price{
+                        color: black;
+                        font-style: italic;
+                    }
+
+                    .item_discount_price{
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+
+                .shopping-cart-item__color{
+                    .item_color{
+                        background: red;
+                        display: inline-block;
+                        position: relative;
+                        top: 2px;
+                        margin: 0 5px;
+                        border-radius: 50%;
+                        min-height: 12px;
+                        min-width: 12px;
+                    }
+                }
+
+                .item_adjust_count{
+
+                    .item_count{
+                        font-weight: 600;
+                    }
+
+                    .item_count_sub{
+                        font-size: 16px;
+                        color: $muteIconColors;
+                        &:hover{
+                            cursor: pointer;
+                            font-weight: 600;
+                            color: black;
+                        }
+                    }
+
+                    .item_count_add{
+                        font-size: 16px;
+                        color: $muteIconColors;
+                        &:hover{
+                            cursor: pointer;
+                            font-weight: 600;
+                            color: black;
+                        }
+                    }
+                    
+                }
+
+                .item_remove{
+                    color: $muteIconColors;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+
+            .shopping-cart-actions{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                z-index: 150;
+                background: white;
+                padding: 10px;
+
+                .shopping-cart-total{
+                    margin-bottom: 10px;
+                    text-transform: capitalize;
+
+                    .shopping-cart-subtotal-amount{
+                        color: red;
+                        font-weight: 600;
+                    }
+                }
+
+                .shopping-cart__buttons{
+                    padding: 5px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                }
+
+                .primary-action{
+                    background: black;
+                    color: white;
+                    &:hover{
+                        background: rgb(82, 80, 80);
+                    }
+                }
+
+                .secondary-action{
+                    background: white;
+                    color: black;
+                    border: 1px solid black;
+                }
+
+                
+            }
+
         }
     }
 }
@@ -120,7 +287,7 @@
                 border: none;
                 border-bottom: 1px solid white;
                 border-radius: 0;
-                font-family: "Montserrat";
+                font-family: $primaryFont;
                 width: 300px;
                 
                 &::placeholder{
@@ -146,7 +313,7 @@
 
         .menu-link{
             color: $primaryTextColor;
-            font-family: 'Montserrat';
+            font-family: $primaryFont;
             font-size: 14px;
             text-transform: uppercase;
             &:hover{
@@ -290,8 +457,8 @@
     display: block !important;
 }
 
-.hide{
-    display: none;
+.hidden{
+    display: none !important;
 }
 
 .offset-margin-top{
