@@ -52,17 +52,8 @@ $content-font: "Karla", sans-serif;
             margin-top: 32px;
             font-size: 40px;
             letter-spacing: 0.5px;
-
-    h1 {
-      font-family: "Karla", sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      margin-bottom: 20px;
-      margin-top: 32px;
-      font-size: 40px;
-      letter-spacing: 0.5px;
+        }
     }
-  }
 }
 
 .cards {
@@ -98,9 +89,6 @@ $content-font: "Karla", sans-serif;
             padding-bottom: 1.5rem;
             border-bottom: 1px solid rgb(241, 241, 241);
 
-
-
-
             a {
                 display: block;
                 color: black;
@@ -108,7 +96,7 @@ $content-font: "Karla", sans-serif;
                 margin: 5px 0;
 
                 &:hover {
-                    color: lightblue;
+                    color: gray;
                 }
             }
 
@@ -124,12 +112,11 @@ $content-font: "Karla", sans-serif;
 
 
             a {
-
                 text-decoration: none;
                 float: left;
                 padding: 5px;
                 color: black;
-                border: 0.5px solid lightblue;
+                border: 0.5px solid lightgray;
                 margin: 4px;
 
 
@@ -161,50 +148,47 @@ $content-font: "Karla", sans-serif;
             line-height: 1.4rem;
             margin-top: 5px;
             margin-bottom: 15px;
+        }
 
-  .card {
-    border: 1px solid white;
+        &__content {
+            font-family: $content-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.6;
+            word-break: break-word;
+            text-align: left;
+            color: gray;
 
-    a {
-      font-weight: 600;
-      display: block;
-      margin-top: 10px;
-    }
+            a{
+                color: #212529;
+
+                &:hover{
+                    color: blue;
+                }
+            }
+        }
 
         &__img {
             height: 250px;
             object-fit: cover;
-
-
         }
 
-    &__content {
-      font-family: $content-font;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.6;
-      word-break: break-word;
-      text-align: left;
-      color: gray;
+        &:hover {
+            border-color: lightgray;
+        }
+
+        &__date {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            text-transform: uppercase;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        &:hover {
+            border-color: lightgray;
+        }
     }
-
-    &__img {
-      width: $img-width;
-      height: $img-height;
-      object-fit: cover;
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-    }
-
-
-
-    }
-
-    &:hover {
-      border-color: lightblue;
-    }
-  }
-}
-}
 }

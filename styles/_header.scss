@@ -108,6 +108,30 @@
                 color: $primaryTextHoverColor;
             }
         }
+        .collapsed-nav-search{
+            display: none;
+            padding-left: 30px;
+            .search-btn{
+                padding: 0;
+                color: white;
+            }
+            .search-input{
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid white;
+                border-radius: 0;
+                font-family: "Montserrat";
+                width: 300px;
+                
+                &::placeholder{
+                    color: $placeholderText;
+                    font-size: 12px;
+                }
+                &:focus{
+                    outline:white;
+                }
+            }
+        }
     }
     .nav-collapse-mobile-close-icon{
         font-size: 25px;
@@ -127,8 +151,73 @@
             text-transform: uppercase;
             &:hover{
                 color: $primaryTextHoverColor;
+                cursor: pointer;  
             }
         }
+    }
+}
+
+#header-nav-menu-link-1:hover{
+    & > div#header-jumbo-menu-1{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+} 
+
+#header-nav-menu-link-2:hover{
+    & > div#header-jumbo-menu-2{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-3:hover{
+    & > div#header-jumbo-menu-3{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-4:hover{
+    & > div#header-jumbo-menu-4{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-5:hover{
+    & > div#header-jumbo-menu-5{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-6:hover{
+    & > div#header-jumbo-menu-6{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-7:hover{
+    & > div#header-jumbo-menu-7{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-8:hover{
+    & > div#header-jumbo-menu-8{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
 
@@ -138,7 +227,13 @@
     left: 0;
     z-index: 1;
     width: 100%;
-    display: none;
+    margin-top: 8px;
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 20px 20px -5px $navJumboMenuShadowColor;
+    transition: all .4s ease-in-out;
+    transform: translate(0, 20px);
 
     .header-jumbo__pad{
         padding: 30px;
@@ -166,6 +261,10 @@
 
         .jumbo-menu-img{
             cursor: pointer;
+
+            img{
+                height: 275px;
+            }
         }
         .collection-title{
             cursor: pointer;
@@ -199,6 +298,18 @@
     margin-top: 142px;
 }
 
+.full_width{
+    width: 100%;
+}
+
+.mar_bottom_20{
+    margin-bottom: 20px;
+}
+
+
+
+
+
 
 
 /**** MEDIA QUERIES ****/
@@ -228,12 +339,7 @@
                 display: none;
             }
             .header-banner-search{
-                display: none;
-                width: 150%;
-                position: absolute;
-                top: -30px;
-                left: 0;
-                z-index: 110;
+                display: none !important;
             }
         }    
 
@@ -243,17 +349,26 @@
     } 
     
     .navbar-collapsable {
-        background: $primaryColor;
-        position: fixed;
-        top: 0; /* adjust to height of navbar */
+        background: $primaryColor; 
+        position: fixed; 
+        top: 0;
         left: 0;
+        bottom: 0;
         padding: 0 15px 15px 15px;
         width: 100% !important;
-        height: 100%;
+        // height: 100%;
         display: none;
+        overflow-y: scroll;
 
+        .collapsed-nav-search{
+            display: block !important;
+            width: 150%;
+            position: absolute;
+            top: 10px;
+        }
         .nav-collapse-mobile-close-icon{
             display: block !important;
+            position: fixed;
         }
     }
 
@@ -271,12 +386,17 @@
         width: 100%;
         z-index: 100;
     }
+
+    .collapse-img-primary{
+        display: none;
+    }
 }
 
 @media all and (max-width: 768px){
     .header-banner-right{
         font-size: 16px !important;
     }
+
 }
 
 @media all and (max-width: 576px){
