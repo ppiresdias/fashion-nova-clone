@@ -1,9 +1,11 @@
 // styles for blog page
 $img-width: 100%;
 $img-height: 250px;
-$title-font: "Prata", serif;
+$title-font: "Prata",
+serif;
 $title-font-size: 25px;
-$content-font: "Karla", sans-serif;
+$content-font: "Karla",
+sans-serif;
 
 // BLOG //
 .blog {
@@ -59,6 +61,8 @@ $content-font: "Karla", sans-serif;
 .cards {
     display: flex;
 
+
+
     @media screen and(max-width: 700px) {
         flex-direction: column;
         align-items: center;
@@ -73,7 +77,6 @@ $content-font: "Karla", sans-serif;
         margin-right: 5px;
 
         @media screen and(max-width: 700px) {
-
             margin-right: 0;
         }
 
@@ -82,12 +85,41 @@ $content-font: "Karla", sans-serif;
             font-family: $content-font;
         }
 
+        .search {
+            border: 1px solid black;
+            height: fit-content;
+            width: 300px;
+           
+          
+           
 
+            :first-child{
+                margin-left: 5px;
+                
+            }
+
+            input {
+                
+                border: none;
+                padding: 2px 0;
+               
+              
+
+                ::placeholder {
+                    color: black;
+
+                }
+            }
+
+        }
 
         .recent {
             text-align: center;
-            padding-bottom: 1.5rem;
+            padding: 1.5rem 0;
             border-bottom: 1px solid rgb(241, 241, 241);
+
+
+
 
             a {
                 display: block;
@@ -133,7 +165,7 @@ $content-font: "Karla", sans-serif;
     .card {
         border: 1px solid white;
         margin-bottom: 1.5rem;
-
+        overflow: hidden;
 
         a {
             font-weight: 600;
@@ -160,10 +192,10 @@ $content-font: "Karla", sans-serif;
             text-align: left;
             color: gray;
 
-            a{
+            a {
                 color: #212529;
 
-                &:hover{
+                &:hover {
                     color: blue;
                 }
             }
@@ -176,6 +208,11 @@ $content-font: "Karla", sans-serif;
 
         &:hover {
             border-color: lightgray;
+
+            img {
+                transition: 1.3s;
+                transform: scale(1.04);
+            }
         }
 
         &__date {
