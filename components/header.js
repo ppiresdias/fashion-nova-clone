@@ -709,7 +709,7 @@ class Header extends Component {
                                             <div id="header-jumbo-menu-5" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row header-jumbo__pad full_width">
-                                                        <div className="col-md-auto">
+                                                        <div className="col-md">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -743,7 +743,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-md-auto">
+                                                        <div className="col-md">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
@@ -782,7 +782,7 @@ class Header extends Component {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div className="col-md-auto">
+                                                        <div className="col-md">
                                                             <ul className="jumbo-menu-items">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
