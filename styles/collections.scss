@@ -221,22 +221,64 @@ k
     // border: 1px solid blue;
     // left: 0;
     position: relative;
+    overflow: hidden;
     // height: 100%;
     // position: absolute;
     // top: 0;
     width: 100%;
+
+    // &:hover {
+    //   // .gallery__carousel--left {
+    //   //   // transform: translateX(-50%);
+    //   // }
+    //   .gallery__icon {
+    //     &--arrow-left{
+    //       opacity: 1;
+    //     }
+    //     &--arrow-right{
+    //       opacity: 0;
+    //     }
+    //   }
+    // }
+
+    &--right {
+      .gallery__icon {
+        &--arrow-left {
+          opacity: 0;
+        }
+        &--arrow-right {
+          opacity: 1;
+        }
+      }
+    }
+    &--left {
+      .gallery__carousel {
+        transform: translateX(-50%);
+      }
+      .gallery__icon {
+        &--arrow-left {
+          opacity: 1;
+        }
+        &--arrow-right {
+          opacity: 0;
+        }
+      }
+      // &:hover {
+      // }
+    }
   }
 
-  // &__carousel {
-  //   position: absolute;
-  //   display: flex;
-  //   width: 200%;
-  // }
+  &__carousel {
+    // position: absolute;
+    display: flex;
+    width: 200%;
+    transition: transform .35s ease-in-out;
+  }
   
   &__image {
     border: 1px solid $color-photo-border;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
     // position: relative;
     height: auto;
     // top: 50%;
@@ -250,10 +292,10 @@ k
     position: absolute;
     z-index: 10;
     
-    &:hover {
-      opacity: .7;
-      transition: opacity .1s ease-in-out;
-    }
+    // &:hover {
+    //   opacity: .7;
+    //   transition: opacity .1s ease-in-out;
+    // }
     
     &--heart {
       right: $margin-right;
@@ -261,15 +303,22 @@ k
     }
 
     &--arrow-right {
+      // opacity: 1;
       right: $margin-right;
       top: 50%;
       transform: translateY(-50%);
+      // visibility: visible;
+      transition: opacity .25s ease-in-out;
     }
     
     &--arrow-left {
+      // display: none;
       left: $margin-right;
+      // opacity: 0;
       top: 50%;
       transform: translateY(-50%);
+      // visibility: hidden;
+      transition: opacity .25s ease-in-out;
     }
   }
 

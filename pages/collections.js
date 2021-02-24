@@ -15,19 +15,20 @@ const Collections = () => {
   // Product component, loops for now
   const getPhotos = (count=10) => {
     let arr = [];
-    let s = "dadfadsf"
     let photos = {0: ["Hold on to this vibe tie dye Crop Top - Pink/combo", "001-top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg", "001-top2-07-20-20Studio4_EF_CP_11-51-59_36_T8134_PinkCombo_2982_JK_360x.webp"], 1: ["Grind Time Beyond", "002-top1-11-07-19_Studio_1_DV_KYS_14-11-53_24__BNL1117_Nude__7_EH.jpg", "002-top2-11-07-19_Studio_1_DV_KYS_14-11-53_24__BNL1117_Nude__14_EH_360x.jpg"]};
     for(let i = 0; i < count; ++i) {
       let index = i % 2;
       arr.push(
+        <>
         <div className="col-6 col-md-6 col-lg-4 col-xl-3 gallery__column" key={i}>
           <div className="card gallery__container h-100">
-            <div className="gallery__image-container card-img-top">
-              <img className="gallery__image gallery__image--first" src={`/img/collections/${photos[index][1]}`} />
-              {/* <div className="gallery__carousel">
+            <div className="gallery__image-container gallery__image-container--right card-img-top">
+              <div className="gallery__carousel">
+                <img className="gallery__image gallery__image--first" src={`/img/collections/${photos[index][1]}`} />
                 <img className="gallery__image gallery__image--second" src={`/img/collections/${photos[index][2]}`} />
-              </div> */}
+              </div>
               <i className="fa fa-heart-o gallery__icon gallery__icon--heart" aria-hidden="true"></i>
+              <i className="fa fa-chevron-left gallery__icon gallery__icon--arrow-left" aria-hidden="true"></i>
               <i className="fa fa-chevron-right gallery__icon gallery__icon--arrow-right" aria-hidden="true"></i>
             </div>
             <div className="card-body product-info">
@@ -42,37 +43,11 @@ const Collections = () => {
               <button className="product-info__button bag-button"><span className="bag-button__text">Add to Bag</span><i className="fa fa-chevron-down bag-button__icon" aria-hidden="true"></i></button>
             </div>
           </div>
-        </div>
+        </div></>
       );
     }
     return arr;
   }
-
-
-
-  // <div className="col-6 col-md-6 col-lg-4 col-xl-3 gallery__column" key={i}>
-  //   <div className="gallery__container">
-  //     <div className="gallery__image-container">
-  //     <img className="gallery__image" src={`/img/collections/${photos[index][0]}`} />
-  //       <i className="fa fa-heart-o gallery__icon gallery__icon--heart" aria-hidden="true"></i>
-  //       <i className="fa fa-chevron-right gallery__icon gallery__icon--arrow-right" aria-hidden="true"></i>
-  //     </div>
-  //     <div className="product-info">
-  //         <span className="product-info__discount">30-70% off sidewide! Use code: Spring</span>
-  //         <span className="product-info__title">Hold on to this vibe tie dye Crop Top - Pink/combo</span>
-  //         <span className="product-info__price">$19.99 USD</span>
-  //         <div className="product-info__swatches bg-primary">
-  //           {Math.random() < 0.5 ? <><div className="swatch swatch--first swatch--pink swatch--active"></div>
-  //           <div className="swatch swatch--red"></div>
-  //           <div className="swatch swatch--blue"></div></> : <></>}
-  //         </div>
-  //         <button className="product-info__button bag-button"><span className="bag-button__text">Add to Bag</span><i className="fa fa-chevron-down bag-button__icon" aria-hidden="true"></i></button>
-  //       </div>
-  //       <div className="product-info__top-container">
-  //       {/* <div className="product-info__bottom-container">              </div> */}
-  //     </div>
-  //   </div>
-  // </div>
 
   return (
     <>
