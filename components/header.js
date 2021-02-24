@@ -894,11 +894,11 @@ class Header extends Component {
                                                                     
                                                                 </div>
                                                                 <div className="collapse-img">
-                                                                    <img src="/img/makeup_girl.jpg" alt="girl with makeup" style={{width: '250px'}} />
+                                                                    <img src="/img/makeup_girl.jpg" alt="girl with makeup" style={{width: '200px'}} />
                                                                    
                                                                 </div>
                                                                 <div className="collapse-img collapse-img-primary">
-                                                                    <img src="/img/facemask.jpg" alt="boy with face mask" style={{width: '250px'}} />
+                                                                    <img src="/img/facemask.jpg" alt="boy with face mask" style={{width: '200px'}} />
                                                                    
                                                                 </div>                                   
                                                             </div>
