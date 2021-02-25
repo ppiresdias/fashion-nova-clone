@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Filter from "../components/collections__Filter";
-import Swatch from "../components/collections__swatch";
+import Card from "../components/collections__Card";
 
 // COLLECTIONS OR GALLERY PAGE
 const Collections = () => {
@@ -11,48 +11,24 @@ const Collections = () => {
     });
   }
 
-  const getSwatches = (arr) => {
-    return arr.map((item, index) => {
-      return <Swatch first={index ? false : true} color={item} key={index} />;
-    });
-  }
+  // const getSwatches = (arr) => {
+  //   return arr.map((item, index) => {
+  //     return <Swatch first={index ? false : true} color={item} key={index} />;
+  //   });
+  // }
 
   // Product component, loops for now
   const getPhotos = (count=10) => {
     let arr = [];
     let photos = {0: ["Hold on to this vibe tie dye Crop Top - Pink/combo", "001-top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg", "001-top2-07-20-20Studio4_EF_CP_11-51-59_36_T8134_PinkCombo_2982_JK_360x.webp"], 1: ["Grind Time Beyond", "002-top1-11-07-19_Studio_1_DV_KYS_14-11-53_24__BNL1117_Nude__7_EH.jpg", "002-top2-11-07-19_Studio_1_DV_KYS_14-11-53_24__BNL1117_Nude__14_EH_360x.jpg"]};
+    
     for(let i = 0; i < count; ++i) {
       let index = i % 2;
+      let photo = photos[index];
       arr.push(
-        <>
         <div className="col-6 col-md-6 col-lg-4 col-xl-3 gallery__column" key={i}>
-          <div className="card gallery__container h-100">
-            <div className="gallery__image-container gallery__image-container--right card-img-top">
-              <div className="gallery__carousel">
-                <img className="gallery__image gallery__image--first" src={`/img/collections/${photos[index][1]}`} />
-                <img className="gallery__image gallery__image--second" src={`/img/collections/${photos[index][2]}`} />
-              </div>
-              <div className="gallery__icon gallery__icon--heart">
-                <i className="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
-              <div className="gallery__icon gallery__icon--arrow-left">
-                <i className="fa fa-chevron-left" aria-hidden="true"></i>
-              </div>
-              <div className="gallery__icon gallery__icon--arrow-right">
-                <i className="fa fa-chevron-right" aria-hidden="true"></i>
-              </div>
-            </div>
-            <div className="card-body product-info">
-              <div className="product-info__discount">{Math.random() < 0.5 ? "30-70% off sidewide! Use code: Spring" : "10% off sidewide! Use code: Winter" }</div>
-              <div className="product-info__title">{photos[index][0]}</div>
-              <div className="product-info__price">$19.99 USD</div>
-              <div className="product-info__swatches">
-              {Math.random() < 0.2 ? <></> : getSwatches(["red", "blue", "green"])}
-              </div>
-              <button className="product-info__button bag-button"><span className="bag-button__text">Add to Bag</span><i className="fa fa-chevron-down bag-button__icon" aria-hidden="true"></i></button>
-            </div>
-          </div>
-        </div></>
+          <Card title={photo[0]} photo1={photo[1]} photo2={photo[2]} />
+        </div>
       );
     }
     return arr;
@@ -82,19 +58,29 @@ const Collections = () => {
               </div>
               <div className="col-12 col-md-9 collections__gallery gallery">
               <div className="container">
-                <div className="gallery__sorting">
-                  <div className="gallery__sorting-found">0 results</div>
-                  <div className="gallery__sorting-options">
-                    <select id="gallery__dropdown" className="gallery__dropdown" name="sortBy">
-                      <option htmlFor="gallery__dropdown" value="ascending">Featured</option>
-                      <option htmlFor="gallery__dropdown" value="descending">Best Sellers</option>
-                      <option htmlFor="gallery__dropdown" value="descending">Newest Arrivals</option>
-                      <option htmlFor="gallery__dropdown" value="descending">Price: How to Low</option>
-                      <option htmlFor="gallery__dropdown" value="descending">Price: Low to High</option>
-                    </select>
+                <div className="gallery__sorting row">
+                  <div className="gallery__sorting-found col-6 p-0">100 results</div>
+                  <div className="gallery__sorting-options col-6 p-0 bg-warning">
+                    <div className="row bg-success">
+                      <div className="col-6 bg-danger">
+                        <div className="gallery__filter">
+                         <span className="gallery__filter-text">FILTER</span>
+                          <i className="gallery__filter-icon fa fa-sliders" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div className="col-6 bg-primary">
+                        <select id="gallery__dropdown" className="gallery__dropdown" name="sortBy">
+                          <option htmlFor="gallery__dropdown" value="descending">Featured</option>
+                          <option htmlFor="gallery__dropdown" value="descending">Best Sellers</option>
+                          <option htmlFor="gallery__dropdown" value="descending">Newest Arrivals</option>
+                          <option htmlFor="gallery__dropdown" value="descending">Price: High to Low</option>
+                          <option htmlFor="gallery__dropdown" value="ascending">Price: Low to High</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                {/* <p className="res">This is text</p> */}
+                <p className="res">This is text</p>
                 <div className="row">
                   {getPhotos()}
                 </div>

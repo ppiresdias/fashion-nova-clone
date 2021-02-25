@@ -132,7 +132,7 @@ $size-swatch: 18px;
     }
   }
 
-  &__title {    
+  &__title {
     @include ff();
     color: $color_filter_header;
     font-size: 12px;
@@ -197,9 +197,34 @@ $size-swatch: 18px;
     justify-content: space-between;
     padding: 0 0 $p4;
     width: 100%;
+    // background-color: $success;
+
   }
+  &__sorting-found {
+  }
+  &__sorting-options {
+    // background-color: blue;
+    // align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // width: 100%;
+  }
+
+  &__filter {
+    align-items: center;
+    background-color: $color-white;
+    border: 1px solid $color-black;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px $p2;
+    text-transform: uppercase;
+    width: 88%;
+  }
+  
   &__dropdown {
-    padding: $p1 $p1;
+    // border: 1px solid $color-black;
+    padding: $p3 $p2;
     text-transform: uppercase;
   }
 
@@ -309,21 +334,32 @@ $size-swatch: 18px;
 
   &__discount {
     @include ff();
-    // display: block;
+    align-self: flex-start;
     color: $color_product_discount;
     font-size: .75em;
     font-weight: 700;
     padding: .625em 0 .3em;
     text-transform: uppercase;
-    align-self: flex-start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
   }
   &__title {
     @include ff();
     color: $color_product_title;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     font-size: .95em;
     font-weight: 400;
-    min-height: 55px;
-    max-height: 55px;
+    min-height: 49px;
+    max-height: 49px;
+    margin-bottom: $p1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
   }
   &__price {    
     @include ff();
@@ -415,10 +451,24 @@ $size-swatch: 18px;
   .res {
     color: green;
   }
+
+  //   // PRODUCT INFO DIV
+  .product-info {
+    &__title {
+      min-height: 70px;
+      max-height: 70px;
+      margin-bottom: .3em;
+      // margin-bottom: 0;
+      -webkit-line-clamp: 3;
+    }
+    &__price {
+    }
+    
+  }
 }
 
 @include media-breakpoint-down(sm) {
   .res {
-    color: orange;
+    color: purple;
   }
 }
