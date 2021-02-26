@@ -68,14 +68,15 @@ const Collections = () => {
                           <i className="gallery__filter-icon fa fa-sliders" aria-hidden="true"></i>
                         </div>
                       </div>
-                      <div className="col-6 bg-primary">
-                        <select id="gallery__dropdown" className="gallery__dropdown" name="sortBy">
-                          <option htmlFor="gallery__dropdown" value="descending">Featured</option>
+                      <div className="col-6 gallery__dropdown-container">
+                        <select id="gallery__dropdown dropdown-menu-right h-100" className="gallery__dropdown" name="sortBy">
+                          <option htmlFor="gallery__dropdown" value="descending" selected>Featured</option>
                           <option htmlFor="gallery__dropdown" value="descending">Best Sellers</option>
                           <option htmlFor="gallery__dropdown" value="descending">Newest Arrivals</option>
                           <option htmlFor="gallery__dropdown" value="descending">Price: High to Low</option>
                           <option htmlFor="gallery__dropdown" value="ascending">Price: Low to High</option>
                         </select>
+                        <i className="fa fa-chevron-down gallery__dropdown-icon" aria-hidden="true"></i>
                       </div>
                     </div>
                   </div>
