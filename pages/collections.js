@@ -1,16 +1,73 @@
-// import Image from "next/image";
 import Head from "next/head";
 import Filter from "../components/collections__Filter";
+import Swatch from "../components/collections__swatch";
 
 // COLLECTIONS OR GALLERY PAGE
 const Collections = () => {
+  function topFunction() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  const getSwatches = (arr) => {
+    return arr.map((item, index) => {
+      return <Swatch first={index ? false : true} color={item} key={index} />;
+    });
+  }
+
+  // Product component, loops for now
+  const getPhotos = (count=10) => {
+    let arr = [];
+    let photos = {0: ["Hold on to this vibe tie dye Crop Top - Pink/combo", "001-top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg", "001-top2-07-20-20Studio4_EF_CP_11-51-59_36_T8134_PinkCombo_2982_JK_360x.webp"], 1: ["Grind Time Beyond", "002-top1-11-07-19_Studio_1_DV_KYS_14-11-53_24__BNL1117_Nude__7_EH.jpg", "002-top2-11-07-19_Studio_1_DV_KYS_14-11-53_24__BNL1117_Nude__14_EH_360x.jpg"]};
+    for(let i = 0; i < count; ++i) {
+      let index = i % 2;
+      arr.push(
+        <>
+        <div className="col-6 col-md-6 col-lg-4 col-xl-3 gallery__column" key={i}>
+          <div className="card gallery__container h-100">
+            <div className="gallery__image-container gallery__image-container--right card-img-top">
+              <div className="gallery__carousel">
+                <img className="gallery__image gallery__image--first" src={`/img/collections/${photos[index][1]}`} />
+                <img className="gallery__image gallery__image--second" src={`/img/collections/${photos[index][2]}`} />
+              </div>
+              <div className="gallery__icon gallery__icon--heart">
+                <i className="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+              <div className="gallery__icon gallery__icon--arrow-left">
+                <i className="fa fa-chevron-left" aria-hidden="true"></i>
+              </div>
+              <div className="gallery__icon gallery__icon--arrow-right">
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div className="card-body product-info">
+              <div className="product-info__discount">{Math.random() < 0.5 ? "30-70% off sidewide! Use code: Spring" : "10% off sidewide! Use code: Winter" }</div>
+              <div className="product-info__title">{photos[index][0]}</div>
+              <div className="product-info__price">$19.99 USD</div>
+              <div className="product-info__swatches">
+              {Math.random() < 0.2 ? <></> : getSwatches(["red", "blue", "green"])}
+              </div>
+              <button className="product-info__button bag-button"><span className="bag-button__text">Add to Bag</span><i className="fa fa-chevron-down bag-button__icon" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div></>
+      );
+    }
+    return arr;
+  }
+
   return (
     <>
         <Head>
             <title>Collections</title>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossOrigin="anonymous"/>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossOrigin="anonymous"/>
         </Head>
         <section id="#collections" className="collections">
+          {/* TOP BUTTON */}
+          <button onClick={topFunction} title="Back to top" id="topButton" className="top-button"><i className="fa fa-chevron-up top-button__icon" aria-hidden="true"></i></button>
           <div className="container-fluid collections__container">
             <div className="collections__top">
               <h1 className="collections__header">Spring Collections</h1>
@@ -37,29 +94,9 @@ const Collections = () => {
                     </select>
                   </div>
                 </div>
+                {/* <p className="res">This is text</p> */}
                 <div className="row">
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-3 gallery__column">
-                    <div className="container"></div>
-                  </div>
-
+                  {getPhotos()}
                 </div>
               </div>
             </div>

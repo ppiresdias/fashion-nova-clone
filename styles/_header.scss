@@ -18,7 +18,7 @@
 .header-banner{
     background: $primaryColor;
     color: $primaryTextColor;
-    font-family: 'Montserrat';
+    font-family: $primaryFont;
     font-size: 14px;
 
     .header-banner-left{
@@ -85,12 +85,179 @@
             cursor: pointer;
 
             .banner-count{
-                font-family: 'Montserrat';
+                font-family: $primaryFont;
                 font-size: 12px;
             }
             &:hover{
                 color: $primaryTextHoverColor;
             }
+        }
+
+        .shopping-bag-section{
+            display: none;
+            background: white;
+            color: black;
+            position: fixed; 
+            top: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0 15px 15px 15px;
+            width: 380px !important;
+            font-family: $primaryFont;
+            overflow: hidden;
+            z-index: 110;
+            box-shadow: 0 20px 20px -5px $navJumboMenuShadowColor;
+
+            .shopping-cart-close__icon{
+                display: block !important;
+                font-size: 25px;
+                color: grey;
+                position: absolute;
+                left: 0;
+                padding: 10px 20px;
+                cursor: pointer;
+                &:hover{
+                    color: black;
+                }
+            }
+
+            .shopping-cart-heading{
+                margin-top: 15px;
+                text-align: center;
+                text-transform: capitalize;
+            }
+            hr{
+                margin-top: 20px;
+            }
+
+            .shopping-cart-items{
+                font-size: 14px;
+                overflow: scroll;
+                height: 100%;
+                padding-bottom: 250px;
+
+                .shopping-cart-item{
+                    border-bottom: 1px solid $muteIconColors;
+                    margin: 5px 0;
+                }
+                .item_info{
+                    margin-bottom: 5px;
+                }
+
+                .shopping-cart-item__title{
+                    color: $muteIconColors;
+                }
+
+                .shopping-cart-item__price{
+                    color: red;
+                    text-transform: uppercase;
+
+                    .item_original_price{
+                        color: black;
+                        font-style: italic;
+                    }
+
+                    .item_discount_price{
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+
+                .shopping-cart-item__color{
+                    .item_color{
+                        background: red;
+                        display: inline-block;
+                        position: relative;
+                        top: 2px;
+                        margin: 0 5px;
+                        border-radius: 50%;
+                        min-height: 12px;
+                        min-width: 12px;
+                    }
+                }
+
+                .item_adjust_count{
+
+                    .item_count{
+                        font-weight: 600;
+                    }
+
+                    .item_count_sub{
+                        font-size: 16px;
+                        color: $muteIconColors;
+                        &:hover{
+                            cursor: pointer;
+                            font-weight: 600;
+                            color: black;
+                        }
+                    }
+
+                    .item_count_add{
+                        font-size: 16px;
+                        color: $muteIconColors;
+                        &:hover{
+                            cursor: pointer;
+                            font-weight: 600;
+                            color: black;
+                        }
+                    }
+                    
+                }
+
+                .item_remove{
+                    color: $muteIconColors;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+
+            .shopping-cart-actions{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                z-index: 150;
+                background: white;
+                padding: 10px;
+
+                .shopping-cart-total{
+                    margin-bottom: 10px;
+                    text-transform: capitalize;
+
+                    .shopping-cart-subtotal-amount{
+                        color: red;
+                        font-weight: 600;
+                    }
+                }
+
+                .shopping-cart__buttons{
+                    padding: 5px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                }
+
+                .primary-action{
+                    background: black;
+                    color: white;
+                    &:hover{
+                        background: rgb(82, 80, 80);
+                    }
+                }
+
+                .secondary-action{
+                    background: white;
+                    color: black;
+                    border: 1px solid black;
+                }
+
+                
+            }
+
         }
     }
 }
@@ -108,6 +275,30 @@
                 color: $primaryTextHoverColor;
             }
         }
+        .collapsed-nav-search{
+            display: none;
+            padding-left: 30px;
+            .search-btn{
+                padding: 0;
+                color: white;
+            }
+            .search-input{
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid white;
+                border-radius: 0;
+                font-family: $primaryFont;
+                width: 300px;
+                
+                &::placeholder{
+                    color: $placeholderText;
+                    font-size: 12px;
+                }
+                &:focus{
+                    outline:white;
+                }
+            }
+        }
     }
     .nav-collapse-mobile-close-icon{
         font-size: 25px;
@@ -122,13 +313,78 @@
 
         .menu-link{
             color: $primaryTextColor;
-            font-family: 'Montserrat';
+            font-family: $primaryFont;
             font-size: 14px;
             text-transform: uppercase;
             &:hover{
                 color: $primaryTextHoverColor;
+                cursor: pointer;  
             }
         }
+    }
+}
+
+#header-nav-menu-link-1:hover{
+    & > div#header-jumbo-menu-1{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+} 
+
+#header-nav-menu-link-2:hover{
+    & > div#header-jumbo-menu-2{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-3:hover{
+    & > div#header-jumbo-menu-3{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-4:hover{
+    & > div#header-jumbo-menu-4{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-5:hover{
+    & > div#header-jumbo-menu-5{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-6:hover{
+    & > div#header-jumbo-menu-6{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-7:hover{
+    & > div#header-jumbo-menu-7{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#header-nav-menu-link-8:hover{
+    & > div#header-jumbo-menu-8{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
 
@@ -138,7 +394,13 @@
     left: 0;
     z-index: 1;
     width: 100%;
-    display: none;
+    margin-top: 8px;
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 20px 20px -5px $navJumboMenuShadowColor;
+    transition: all .4s ease-in-out;
+    transform: translate(0, 20px);
 
     .header-jumbo__pad{
         padding: 30px;
@@ -166,6 +428,10 @@
 
         .jumbo-menu-img{
             cursor: pointer;
+
+            img{
+                height: 275px;
+            }
         }
         .collection-title{
             cursor: pointer;
@@ -191,13 +457,25 @@
     display: block !important;
 }
 
-.hide{
-    display: none;
+.hidden{
+    display: none !important;
 }
 
 .offset-margin-top{
     margin-top: 142px;
 }
+
+.full_width{
+    width: 100%;
+}
+
+.mar_bottom_20{
+    margin-bottom: 20px;
+}
+
+
+
+
 
 
 
@@ -228,12 +506,7 @@
                 display: none;
             }
             .header-banner-search{
-                display: none;
-                width: 150%;
-                position: absolute;
-                top: -30px;
-                left: 0;
-                z-index: 110;
+                display: none !important;
             }
         }    
 
@@ -243,17 +516,26 @@
     } 
     
     .navbar-collapsable {
-        background: $primaryColor;
-        position: fixed;
-        top: 0; /* adjust to height of navbar */
+        background: $primaryColor; 
+        position: fixed; 
+        top: 0;
         left: 0;
+        bottom: 0;
         padding: 0 15px 15px 15px;
         width: 100% !important;
-        height: 100%;
+        // height: 100%;
         display: none;
+        overflow-y: scroll;
 
+        .collapsed-nav-search{
+            display: block !important;
+            width: 150%;
+            position: absolute;
+            top: 10px;
+        }
         .nav-collapse-mobile-close-icon{
             display: block !important;
+            position: fixed;
         }
     }
 
@@ -271,12 +553,17 @@
         width: 100%;
         z-index: 100;
     }
+
+    .collapse-img-primary{
+        display: none;
+    }
 }
 
 @media all and (max-width: 768px){
     .header-banner-right{
         font-size: 16px !important;
     }
+
 }
 
 @media all and (max-width: 576px){
