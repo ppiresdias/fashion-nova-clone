@@ -45,8 +45,8 @@ const Collections = () => {
           {/* TOP BUTTON */}
           <button onClick={topFunction} title="Back to top" id="topButton" className="top-button"><i className="fa fa-chevron-up top-button__icon" aria-hidden="true"></i></button>
           <div className="container-fluid collections__container">
-            <div className="container-fluid collections__modal shadow-lg">
-              <i className="fa fa-times" aria-hidden="true"></i>
+            <div className="container-fluid collections__modal" id="collections__modal">
+              <i className="fa fa-times-circle collections__modal-close" id="collections__modal-close" aria-hidden="true"></i>
               <Filter />
             </div>
             <div className="collections__top">
@@ -57,7 +57,9 @@ const Collections = () => {
             <div className="row">
               <div className="d-none d-md-block col-md-3">
                 <div className="container">
-                  <Filter />
+                  <section className="filter">
+                    <Filter />
+                  </section>
                 </div>
               </div>
               <div className="col-12 col-md-9 collections__gallery gallery">
@@ -67,13 +69,13 @@ const Collections = () => {
                     <div className="gallery__sorting-options sorting-options col-12 col-md-6 order-0 order-md-1">
                       <div className="row sorting-options__row">
                         <div className="col-6 col-md-0 col-lg-4 col-xl-6">
-                          <div className="gallery__filter">
-                          <span className="gallery__filter-text">FILTER</span>
+                          <div className="gallery__filter" id="gallery__filter">
+                            <span className="gallery__filter-text">FILTER</span>
                             <i className="gallery__filter-icon fa fa-sliders" aria-hidden="true"></i>
                           </div>
                         </div>
                         <div className="col-6 col-md-12 col-lg-8 col-xl-6 gallery__dropdown-container">
-                          <select id="gallery__dropdown dropdown-menu-right h-100" className="gallery__dropdown" name="sortBy">
+                          <select className="gallery__dropdown" id="gallery__dropdown" name="sortBy">
                             <option htmlFor="gallery__dropdown" value="descending" selected>Featured</option>
                             <option htmlFor="gallery__dropdown" value="descending">Best Sellers</option>
                             <option htmlFor="gallery__dropdown" value="descending">Newest Arrivals</option>
@@ -85,8 +87,8 @@ const Collections = () => {
                       </div>
                     </div>
                   </div>
-                  <p className="res">This is text</p>
-                  <div className="row">
+                  {/* <p className="res">This is text</p> */}
+                  <div className="row gallery__row">
                     {getPhotos()}
                   </div>
                 </div>
