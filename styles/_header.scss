@@ -481,6 +481,12 @@
 
 /**** MEDIA QUERIES ****/
 
+@media all and (min-width: 1950px){
+   #shopping-bag{
+        width: 500px !important;
+    }
+}
+
 // laptops
 @media all and (max-width: 1200px){
     .header-banner{
@@ -514,7 +520,11 @@
         //     display: none;
         // }
     } 
-    
+   
+    .header-nav{
+        display: none;
+    }
+
     .navbar-collapsable {
         background: $primaryColor; 
         position: fixed; 
@@ -561,7 +571,10 @@
 
 @media all and (max-width: 768px){
     .header-banner-right{
-        font-size: 16px !important;
+        
+        .header-banner-right__item{
+            font-size: 16px;
+        }
     }
 
 }
@@ -575,5 +588,48 @@
 
     .collapse-img{
         display: none;
+    }
+
+    .announcement-text{
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .header-banner-right{
+        .header-banner-right__item{
+            font-size: 14px;
+        }
+    }
+}
+
+@media all and (max-width: 400px){
+    .header-banner-left{
+        flex: 0 0 16.666667%;
+        max-width: 10% !important;
+
+        .navbar-toggler{
+            font-size: 14px;
+        }
+    }
+
+    .header-banner-logo{
+        .navbar-brand{
+            font-size: 32px !important;
+        }
+    }
+
+    .header-banner-right{
+        .header-banner-right__item{
+            font-size: 12px;
+        }
+    }
+
+    .collapsed-nav-search{
+        padding-left: 0px !important;
+
+        .search-input{
+            width: 50% !important;
+        }
     }
 }
