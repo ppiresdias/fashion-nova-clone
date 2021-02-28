@@ -24,16 +24,19 @@ jQuery(function () {
   // collapsable navigation menu mobile
   let navMobileCollapseMenuIcon = document.querySelector("#nav-collapse-icon");
   let collapsedNav = document.querySelector(".navbar-collapsable");
+  let navMenu = document.querySelector('.header-nav');
   let hamburgerMenuButton = document.querySelector(".navbar-toggler");
   let headerSearch = document.querySelector(".header-banner-search");
 
   hamburgerMenuButton.addEventListener("click", (e) => {
     collapsedNav.classList.add("show");
+    navMenu.classList.add("show");
     // headerSearch.classList.add("show");
   });
 
   navMobileCollapseMenuIcon.addEventListener("click", (e) => {
     collapsedNav.classList.remove("show");
+    navMenu.classList.remove("show");
     // headerSearch.classList.remove("show");
     //$(".header-jumbo-menu").css("display", "none");
   });
