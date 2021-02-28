@@ -79,19 +79,4 @@ $(window).on("load", function() {
     }
   });
 
-  let collections_modal = $("#collections__modal");
-  $("#gallery__filter").on({
-    click: function() {
-      $(collections_modal).addClass("collections__modal--active");
-      // $(collections_modal).style({display: "block"});
-    }
-  });
-  
-  $("#collections__modal-close").on({
-    click: function() {
-      $(collections_modal).removeClass("collections__modal--active");
-      // $(collections_modal).style({display: "none"});
-    }
-  });
-
 });
