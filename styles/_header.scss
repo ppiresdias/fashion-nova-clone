@@ -501,7 +501,6 @@
     }   
 }
 
-// large tablets
 @media all and (max-width: 992px){
     .header-banner{
         .header-banner-left{
@@ -576,7 +575,6 @@
             font-size: 16px;
         }
     }
-
 }
 
 @media all and (max-width: 576px){
@@ -592,6 +590,12 @@
 
     .announcement-text{
         font-size: 12px;
+    }
+
+    .footer__bottom{
+        .newsletter-input{
+            width: 75%;
+        }
     }
 }
 
