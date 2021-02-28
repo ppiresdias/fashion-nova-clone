@@ -1,7 +1,7 @@
 .header-announcement-bar{
     background: $announcementBgColor;
     color: $announcementTextColor;
-    font-family: 'Montserrat';
+    font-family: $primaryFont;
     font-size: 14px;
     font-weight: 600;
     padding: 5px 0;
@@ -52,7 +52,7 @@
                 border: none;
                 border-bottom: 1px solid white;
                 border-radius: 0;
-                font-family: "Montserrat";
+                font-family: $primaryFont;
                 &::placeholder{
                     color: $placeholderText;
                     font-size: 12px;
@@ -68,7 +68,7 @@
         text-align: center;
 
         .navbar-brand{
-            font-family: 'Bebas Neue', cursive;
+            font-family: 'Bebas Neue';
             font-size: 40px;
             color: $primaryTextColor !important;
             &:hover{

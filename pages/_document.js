@@ -10,6 +10,9 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel='preconnect' href='https://fonts.googleapis.com' crossOrigin />
+          <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" />
           <link
             href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Prata&display=swap"
             rel="stylesheet"
