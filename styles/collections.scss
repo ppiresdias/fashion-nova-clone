@@ -1,12 +1,12 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins/_breakpoints";
-// $spacer: 1rem;
+$spacer: 1rem;
 $p1: $spacer*.25;
 $p2: $spacer*.5;
 $p3: $spacer;
 $p4: $spacer*1.5;
 $p5: $spacer*3;
+
+// https://getbootstrap.com/docs/4.5/layout/overview/#responsive-breakpoints
+$breakpoint: (lg: 1199.98px, md: 991.98px, sm: 767.98px, xs: 575.98px);
 
 $color-white: #ffffff;
 $color-black: #000000;
@@ -86,7 +86,12 @@ $size-swatch: 18px;
 // COLLECTIONS SECTION
 .collections {
   &__container {
+    position: relative;
     padding: $p5 0;
+  }
+
+  &__modal {
+    display: none;
   }
 
   &__header {
@@ -202,7 +207,7 @@ $size-swatch: 18px;
     align-items: center;
     justify-content: space-between;
     padding: 0 0 $p4;
-    width: 100%;
+    // width: 100%;
     // background-color: $success;
 
   }
@@ -229,7 +234,7 @@ $size-swatch: 18px;
     width: 100%;
   }
   
-  // DROPDOWN ICON FIX
+  // DROPDOWN
   &__dropdown-container {
     position: relative;
   }
@@ -243,13 +248,33 @@ $size-swatch: 18px;
 
   &__dropdown {
     appearance: none;
-    padding: 13px 13px;
+    padding: 11px 13px;
     text-transform: uppercase;
     height: 100%;
     width: 100%;
   }
-
+  
   // PICTURES SECTION
+  &__row {
+    // margin-left: 0;
+    // margin-right: 0;
+    // & > .col,
+    // & > [class*="col-"] {
+    //   $spacing: px($p2) + 1px;
+    //   $size_row: 4;
+    //   &:nth-child(#{$size_row}n+1) {
+    //     padding-right: $spacing;
+    //   }
+    //   &:nth-child(#{$size_row}n+#{$size_row}) {
+    //     padding-left: $spacing;
+    //   }
+    //   &:not(:nth-child(#{$size_row}n+1)):not(:nth-child(#{$size_row}n+#{$size_row})) {
+    //     padding-left: $spacing;
+    //     padding-right: $spacing;
+    //   }
+    // }
+  }
+  
   &__column {
     margin-bottom: $p5;
   }
@@ -445,32 +470,63 @@ $size-swatch: 18px;
     box-shadow: inset 0 0 0 1px rgb(119, 119, 119), 0 0 0 1px $color-white, 0 0 0 $size-swatch-outer-border $color-swatch-border;
   }
 
-  &--blue {
-    background-color: #006eff;
-  }
-  &--pink {
-    background-color: #e795e3;
-  }
-  &--red {
-    background-color: red;
-  }
+
 }
 
-@include media-breakpoint-down(xl) {
-  .res {
-    color: red;    
-  }
-}
+.res {color: red;}
 
-@include media-breakpoint-down(lg) {
+// https://www.sitepoint.com/using-sass-maps/
+// Large devices (desktops, less than 1200px)
+@media (min-width: 0) and (max-width: #{map-get($breakpoint, lg)}) {
   .res {
     color: purple;
   }
+  .collections {
+    &__description {
+      width: 75%;
+    }
+  }
+
+  .gallery {
+    &__row {
+      // margin-left: 0;
+      // margin-right: 0;
+      // & > .col, & > [class*="col-"] {
+      //   $spacing: px($p2) + 1.5px;
+      //   // $spacing: 0;
+      //   $size_row: 3;
+      //   padding-left: 0;
+      //   padding-right: 0;
+
+      //   &:nth-child(#{$size_row}n+1) {
+      //     padding-right: $spacing;
+      //   }
+      //   &:nth-child(#{$size_row}n+#{$size_row}) {
+      //     padding-left: $spacing;
+      //     // padding-right: 0;
+      //   }
+      //   &:not(:nth-child(#{$size_row}n+1)):not(:nth-child(#{$size_row}n+#{$size_row})) {
+      //     padding-left: $spacing;
+      //     padding-right: $spacing;
+      //   }
+      // }
+    }
+  }
 }
 
-@include media-breakpoint-down(md) {
+// Medium devices (tablets, less than 992px)
+@media (min-width: 0) and (max-width: #{map-get($breakpoint, md)}) {
   .res {
     color: green;
+  }
+
+
+  .collections {
+    position: relative;
+    &__description {
+      width: 85%;
+    }
+
   }
 
   //   // PRODUCT INFO DIV
@@ -484,17 +540,149 @@ $size-swatch: 18px;
     }
     &__price {
     }
-    
+  }
+
+  .gallery {
+    &__dropdown-container {
+      // width: 100%;
+    }
+    // &__row {
+    //   // margin-left: 0;
+    //   // margin-right: 0;
+    //   & > .col,
+    //   & > [class*="col-"] {
+    //     $spacing: $p2;
+    //     &:nth-child(odd) {
+    //       padding-right: $spacing;
+    //     }
+    //     &:nth-child(even) {
+    //       padding-left: $spacing;
+    //     }
+    //   }
+    // }
   }
 }
 
-@include media-breakpoint-down(sm) {
+// Small devices (landscape phones, less than 768px)
+// @media (min-width: #{map-get($breakpoint, xs)}) and (max-width: #{map-get($breakpoint, sm)}) {
+@media (min-width: 0) and (max-width: #{map-get($breakpoint, sm)}) {
   .res {
-    color: purple;
+    color: orange;
   }
+
+  .collections {
+    position: relative;
+    &__description {
+      width: 85%;
+    }
+
+    &__container {
+      // padding: $p3 0;
+    }
+
+    &__modal {
+      
+      background-color: rgba(0, 0, 0, .75);
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      overflow-y: scroll !important;
+      // overflow-y: hidden;
+      overscroll-behavior: contain;
+      height: auto;
+      
+      padding: $p3 0;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateX(-100%);
+      transition: transform .5s ease-in-out;
+      z-index: 100;
+
+      // HIDE SCROLLBAR
+      // https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      &--active {
+        box-shadow: -12px 10px 30px -25px rgba(0, 0, 0, .75);
+        transform: translateX(0);
+      }
+
+      .filter {
+        background-color: $color-white;
+        padding: $p3 $p4;
+        height: auto;
+        width: 75vw;
+      }
+    }
+    &__modal-close {
+      align-self: flex-end;
+      color: $color-white;
+      cursor: pointer;
+      font-size: 28px;
+      padding-right: 8px;
+    }
+  }
+
+
   .gallery {
+    &__sorting {
+      padding-bottom: $p1;
+    }
+
+    &__sorting-found {
+      padding-top: $p3;
+    }
     &__filter {
       display: flex;
     }
+
+    &__dropdown {
+      // appearance: none;
+      // $padding: 4px;
+      // padding-top: $padding;
+      // padding-bottom: $padding;
+      // text-transform: uppercase;
+      // height: 100%;
+      // width: 100%;
+    }
+  
+  }
+
+  .sorting-options {
+    &__row {
+      margin-left: 0;
+      margin-right: 0;
+      & > .col,
+      & > [class*="col-"] {
+        $spacing: 2.5px;
+        $size_row: 2;
+
+        &:nth-child(#{$size_row}n+1) {
+          padding-right: $spacing;
+        }
+        &:nth-child(#{$size_row}n+#{$size_row}) {
+          padding-left: $spacing;
+        }
+        &:not(:nth-child(#{$size_row}n+1)):not(:nth-child(#{$size_row}n+#{$size_row})) {
+          padding-left: $spacing;
+          padding-right: $spacing;
+        }
+      }
+    }
   }
 }
+
+// // Extra small
+// @media (min-width: 0) and (max-width: #{map-get($breakpoint, xs)}) {
+//   .res {
+//     color: blue;
+//   }
+// }

@@ -20,7 +20,7 @@ const Collections = () => {
   // Product component, loops for now
   const getPhotos = (count=10) => {
     let arr = [];
-    let photos = {0: ["Hold on to this vibe tie dye Crop Top - Pink/combo", "001-top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg", "001-top2-07-20-20Studio4_EF_CP_11-51-59_36_T8134_PinkCombo_2982_JK_360x.webp"], 1: ["Grind Time Beyond", "002-top1-11-07-19_Studio_1_DV_KYS_14-11-53_24__BNL1117_Nude__7_EH.jpg", "002-top2-11-07-19_Studio_1_DV_KYS_14-11-53_24__BNL1117_Nude__14_EH_360x.jpg"]};
+    let photos = {0: ["Hold on to this vibe tie dye Crop Top - Pink/combo", "001-top1-HoldOnToThisVibeTieDyeCropTop-Pinkcombo_MER.jpg", "001-top2-07-20-20Studio4_EF_CP_11-51-59_36_T8134_PinkCombo_2982_JK_360x.webp"], 1: ["Grind Time Beyond Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio eos culpa dignissimos, laborum fuga, maxime enim recusandae, perferendis consectetur nam!", "002-top1-11-07-19_Studio_1_DV_KYS_14-11-53_24__BNL1117_Nude__7_EH.jpg", "002-top2-11-07-19_Studio_1_DV_KYS_14-11-53_24__BNL1117_Nude__14_EH_360x.jpg"]};
     
     for(let i = 0; i < count; ++i) {
       let index = i % 2;
@@ -45,6 +45,10 @@ const Collections = () => {
           {/* TOP BUTTON */}
           <button onClick={topFunction} title="Back to top" id="topButton" className="top-button"><i className="fa fa-chevron-up top-button__icon" aria-hidden="true"></i></button>
           <div className="container-fluid collections__container">
+            <div className="container-fluid collections__modal" id="collections__modal">
+              <i className="fa fa-times-circle collections__modal-close" id="collections__modal-close" aria-hidden="true"></i>
+              <Filter />
+            </div>
             <div className="collections__top">
               <h1 className="collections__header">Spring Collections</h1>
               <p className="collections__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti odio eos culpa dignissimos, laborum fuga, maxime enim recusandae, perferendis consectetur nam!</p>
@@ -53,40 +57,40 @@ const Collections = () => {
             <div className="row">
               <div className="d-none d-md-block col-md-3">
                 <div className="container">
-                  <Filter />
+                    <Filter />
                 </div>
               </div>
               <div className="col-12 col-md-9 collections__gallery gallery">
-              <div className="container">
-                <div className="gallery__sorting row">
-                  <div className="gallery__sorting-found col-6 p-0">100 results</div>
-                  <div className="gallery__sorting-options col-6 p-0 bg-warning">
-                    <div className="row bg-success">
-                      <div className="col-6 bg-danger">
-                        <div className="gallery__filter">
-                         <span className="gallery__filter-text">FILTER</span>
-                          <i className="gallery__filter-icon fa fa-sliders" aria-hidden="true"></i>
+                <div className="container">
+                  <div className="row gallery__sorting">
+                    <div className="gallery__sorting-found col-12 col-md-6 order-1 order-md-0">100 results</div>
+                    <div className="gallery__sorting-options sorting-options col-12 col-md-6 order-0 order-md-1">
+                      <div className="row sorting-options__row">
+                        <div className="col-6 col-md-0 col-lg-4 col-xl-6">
+                          <div className="gallery__filter" id="gallery__filter">
+                            <span className="gallery__filter-text">FILTER</span>
+                            <i className="gallery__filter-icon fa fa-sliders" aria-hidden="true"></i>
+                          </div>
                         </div>
-                      </div>
-                      <div className="col-6 gallery__dropdown-container">
-                        <select id="gallery__dropdown dropdown-menu-right h-100" className="gallery__dropdown" name="sortBy">
-                          <option htmlFor="gallery__dropdown" value="descending" selected>Featured</option>
-                          <option htmlFor="gallery__dropdown" value="descending">Best Sellers</option>
-                          <option htmlFor="gallery__dropdown" value="descending">Newest Arrivals</option>
-                          <option htmlFor="gallery__dropdown" value="descending">Price: High to Low</option>
-                          <option htmlFor="gallery__dropdown" value="ascending">Price: Low to High</option>
-                        </select>
-                        <i className="fa fa-chevron-down gallery__dropdown-icon" aria-hidden="true"></i>
+                        <div className="col-6 col-md-12 col-lg-8 col-xl-6 gallery__dropdown-container">
+                          <select className="gallery__dropdown" id="gallery__dropdown" name="sortBy">
+                            <option htmlFor="gallery__dropdown" value="descending" selected>Featured</option>
+                            <option htmlFor="gallery__dropdown" value="descending">Best Sellers</option>
+                            <option htmlFor="gallery__dropdown" value="descending">Newest Arrivals</option>
+                            <option htmlFor="gallery__dropdown" value="descending">Price: High to Low</option>
+                            <option htmlFor="gallery__dropdown" value="ascending">Price: Low to High</option>
+                          </select>
+                          <i className="fa fa-chevron-down gallery__dropdown-icon" aria-hidden="true"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <p className="res">This is text</p>
-                <div className="row">
-                  {getPhotos()}
+                  {/* <p className="res">This is text</p> */}
+                  <div className="row gallery__row">
+                    {getPhotos()}
+                  </div>
                 </div>
               </div>
-            </div>
 
             </div>
           </div>
