@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Filter from "../components/collections__Filter";
 import Card from "../components/collections__Card";
+import Carousel from "../components/collections__Carousel";
 
 // COLLECTIONS OR GALLERY PAGE
 const Collections = () => {
@@ -40,6 +41,7 @@ const Collections = () => {
             <title>Collections</title>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossOrigin="anonymous"/>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossOrigin="anonymous"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"></link>
         </Head>
         <section id="#collections" className="collections">
           {/* TOP BUTTON */}
@@ -92,6 +94,9 @@ const Collections = () => {
                 </div>
               </div>
 
+            </div>
+            <div className="">
+              <Carousel />
             </div>
           </div>
         </section>

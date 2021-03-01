@@ -1,3 +1,5 @@
+// import { tns } from "tiny-slider/dist/tiny-slider";
+
 // simple print function
 function c() {
   for (let i = 0; i < arguments.length; i++) {
@@ -11,11 +13,21 @@ $(window).on("load", function() {
   function scrollFunction() {
     let topButton = document.getElementById("topButton");
     if (topButton !== null) {
-      if((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)) {
+      if(document.documentElement.scrollTop > 20) {
         topButton.classList.add("active");
       } else {
-      topButton.classList.remove("active");
-    }}
+        topButton.classList.remove("active");
+      }
+      
+      let scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+      let bottom = $(".footer-wrapper").height();
+      
+      if(scrollBottom < bottom) {
+        topButton.classList.add("top-button--bottom");
+      } else {
+        topButton.classList.remove("top-button--bottom");
+      }
+    } 
   }
   window.addEventListener("scroll", scrollFunction);  
   
@@ -94,4 +106,44 @@ $(window).on("load", function() {
     }
   });
 
+
+
+
+    // TINY SLIDER
+    let slider = tns({
+      // autoplay: true,
+      container: '.carousel__slider',
+      controls: true,
+      controlsPosition: "top",
+      // controlsText: ["prev", "next"],
+      controlsText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+      // edgePadding: 20,
+      gutter: 20,
+      items: 5,
+      lazyload: false,
+      loop: true,
+      mode: 'carousel',
+      nav: true,
+      // navContainer: true,
+      navPosition: "top",
+      preventScrollOnTouch: "auto",
+      responsive: {
+        414: {
+          items: 1
+        },
+        640: {
+          items: 2
+        },
+        700: {
+          items: 3
+        },
+        900: {
+          items: 5
+        }},
+      rewind: true,
+      slideBy: 'page',
+      speed: 750,
+      touch: true
+    
+    });
 });

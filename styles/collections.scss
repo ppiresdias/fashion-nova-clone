@@ -66,21 +66,28 @@ $size-swatch: 18px;
     opacity: .9;
     transition: opacity .1s ease-in-out;
   }
+
   &.active {
     cursor: pointer; /* Add a mouse pointer on hover */
     opacity: 1;
     transition: all .25s ease-in-out;
     visibility: visible;
   }
-  // i {
 
-  //   font-size: 11px;
-  //   color: white;
-  // }
   &__icon {
     font-size: 11px;
-    color: white;
+    color: $color-white;
   }  
+
+  &--bottom {
+    background-color: $color-white;
+    transition: all .1s ease-in-out;
+    .top-button {
+      &__icon {
+        color: $color_top_button_bg;
+      }
+    }
+  }
 }
 
 // COLLECTIONS SECTION
@@ -472,6 +479,166 @@ $size-swatch: 18px;
 
 
 }
+
+
+$size_carousel_font: 20px;
+$size_carousel_header_margin_bottom: 5px;
+$size_carousel_height: 285px;
+$size_carousel_padding_x: 20px;
+$size_carousel_padding_y: 30px;
+$size_carousel_squares_gap: 15px;
+$color_card_link: #0066c0;
+$color_card_link_hover: #c45500;
+$color_card_link_active: #bd7e4e;
+
+$color_arrows_bg: rgba(255, 255, 255, .2);
+$color_arrows: #050607;
+$color_arrows_outline: rgba(128, 128, 128, .2);
+
+$color_arrows_bg: rgba(221, 221, 221, 0.1);
+$color_arrows_bg_inactive: rgba(221, 221, 221, 0.1);
+$color_arrows_bg_hover: rgba(255, 255, 255, 0.6);
+$color_arrows_bg_hover_inactive: rgba(255, 255, 255, 0.3);
+$color_arrows: rgba(255, 255, 255, 1.0);
+$color_arrows_inactive: rgba(255, 255, 255, 0.3);
+$color_arrows_outline: rgba(128, 128, 128, .2);
+// @mixin color_arrows_bg_hover() {
+//   background-color: rgba(207, 207, 207, 0.2);
+//   transition: background-color .1s ease-in-out;
+// }
+
+%style_carousel_header_link {
+    font-size: 13.5px;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:link {
+      color: $color_card_link;
+    }
+
+    &:visited {
+      color: $color_card_link;
+    }
+
+    &:hover {
+      color: $color_card_link_hover;
+    }
+
+    &:active {
+      color: $color_card_link_active;
+    }
+}
+
+
+.carousel {
+  background-color: white;
+  height: 100%;
+  margin: 0 auto;
+  padding: $size_carousel_padding_y 0;
+  position: relative;
+  width: 90%;
+
+  &__header {
+      font-weight: 600;
+      margin-bottom: 0;
+      text-transform: uppercase;
+  }
+
+  &__slider {
+    display: flex;
+  }
+
+  &__item {
+    width: 100%;
+  }
+}
+
+.tns-controls {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  
+  $size: 55px;
+
+  button {
+    @include flex_center();
+    align-items: center;
+    background-color: $color_arrows_bg;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: $size;
+    width: $size;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    
+
+    &:hover {
+      background-color: #e7e7e7;
+  
+      i {
+        font-size: 26px;
+        transition: all .1s ease-in-out;
+      }
+    }
+    
+    i {
+      // color: $color_arrows;
+      color: black;
+      font-size: 25px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $color_arrows_outline;
+    }
+  }
+
+  $margin: -$size - 5px;
+  button[data-controls="prev"] {
+    left: $margin;
+  }
+  button[data-controls="next"] {
+    right: $margin;
+  }
+}
+
+.tns-nav {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0;
+  padding-bottom: $p3;
+
+  :not(:first-child) {
+    margin-left: 20px;
+  }
+
+  :not(button.tns-nav-active) {
+    $size: 7px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(155, 155, 155);
+    height: $size;
+    width: $size;
+  }
+
+  .tns-nav-active {
+    $size: 14px;
+    border: 2px solid $color-black;
+    border-radius: 50%;
+    background-color: $color-white;    
+    height: $size;
+    width: $size;
+  }
+
+}
+
+
 
 .res {color: red;}
 
