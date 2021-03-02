@@ -1,4 +1,7 @@
 // color variables
+$color-white: #ffffff;
+// $color-black: #000000;
+$color_top_button_bg: #444444;
 
 // text
 $primaryColor: rgb(59, 59, 59);
@@ -31,3 +34,10 @@ $contact_font: "Montserrat", sans-serif;
 $heading_light: 90px Montserrat, sans-serif;
 $heading_weight: 800;
 $contact_btnBackground: rgb(255, 0, 179);
+
+$spacer: 1rem;
+$p1: $spacer*.25;
+$p2: $spacer*.5;
+$p3: $spacer;
+$p4: $spacer*1.5;
+$p5: $spacer*3;

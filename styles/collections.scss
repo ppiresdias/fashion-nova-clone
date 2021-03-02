@@ -48,47 +48,47 @@ $size-swatch: 18px;
 }
 
 // GO TO TOP OF PAGE
-.top-button {
-  background-color: $color_top_button_bg;
-  border: none;
-  bottom: $p5;
-  cursor: pointer;
-  display: inline-block;
-  opacity: 0;
-  visibility: hidden;
-  padding: 2px 11px 6px;
-  right: $p3*1.8;
-  position: fixed;
-  z-index: 100;
+// .top-button {
+//   background-color: $color_top_button_bg;
+//   border: none;
+//   bottom: $p5;
+//   cursor: pointer;
+//   display: inline-block;
+//   opacity: 0;
+//   visibility: hidden;
+//   padding: 2px 11px 6px;
+//   right: $p3*1.8;
+//   position: fixed;
+//   z-index: 100;
 
-  &:hover, &.scrolling {
-    // background-color: $gray-600;
-    opacity: .9;
-    transition: opacity .1s ease-in-out;
-  }
+//   &:hover, &.scrolling {
+//     // background-color: $gray-600;
+//     opacity: .9;
+//     transition: opacity .1s ease-in-out;
+//   }
 
-  &.active {
-    cursor: pointer; /* Add a mouse pointer on hover */
-    opacity: 1;
-    transition: all .25s ease-in-out;
-    visibility: visible;
-  }
+//   &.active {
+//     cursor: pointer; /* Add a mouse pointer on hover */
+//     opacity: 1;
+//     transition: all .25s ease-in-out;
+//     visibility: visible;
+//   }
 
-  &__icon {
-    font-size: 11px;
-    color: $color-white;
-  }  
+//   &__icon {
+//     font-size: 11px;
+//     color: $color-white;
+//   }  
 
-  &--bottom {
-    background-color: $color-white;
-    transition: all .1s ease-in-out;
-    .top-button {
-      &__icon {
-        color: $color_top_button_bg;
-      }
-    }
-  }
-}
+//   &--bottom {
+//     background-color: $color-white;
+//     transition: all .1s ease-in-out;
+//     .top-button {
+//       &__icon {
+//         color: $color_top_button_bg;
+//       }
+//     }
+//   }
+// }
 
 // COLLECTIONS SECTION
 .collections {
