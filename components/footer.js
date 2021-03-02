@@ -127,7 +127,7 @@ const Footer = () => {
 							<form className="form-inline">
 								<input className="form-control newsletter-input" type="search" placeholder="Enter email" aria-label="Search"/>
 								<button className="btn newsletter-btn" type="submit">
-								<ImSearch/>
+								Go
 								</button>
 								<div className="form-group form-check">
 									<input type="checkbox" className="form-check-input" id="exampleCheck1" />
