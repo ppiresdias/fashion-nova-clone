@@ -40,6 +40,17 @@
   .card {
     border: none;
   }
+
+  .row a img {
+    object-position: center;
+    cursor: pointer;
+  }
+
+  h5,
+  p {
+    color: black;
+  }
+
   .previous__price {
     text-decoration: line-through;
     color: gray;

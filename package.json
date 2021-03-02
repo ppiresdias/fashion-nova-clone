@@ -9,11 +9,8 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-<<<<<<< HEAD
-    "bootstrap": "^4.6.0",
-=======
     "boostrap": "^2.0.0",
->>>>>>> origin/master
+    "bootstrap": "^4.6.0",
     "next": "10.0.7",
     "react": "17.0.1",
     "react-bootstrap": "^1.5.0",
