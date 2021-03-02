@@ -1,0 +1,43 @@
+// GO TO TOP OF PAGE
+#topButton {  
+}
+.top-button {
+  background-color: $color_top_button_bg;
+  border: none;
+  bottom: $p5;
+  cursor: pointer;
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+  padding: 2px 11px 6px;
+  right: $p3*1.8;
+  position: fixed;
+  z-index: 100;
+
+  &:hover, &.scrolling {
+    opacity: .9;
+    transition: opacity .1s ease-in-out;
+  }
+
+  &.active {
+    cursor: pointer;
+    opacity: 1;
+    transition: all .25s ease-in-out;
+    visibility: visible;
+  }
+
+  &__icon {
+    font-size: 11px;
+    color: $color-white;
+  }  
+
+  &--bottom {
+    background-color: $color-white;
+    transition: all .1s ease-in-out;
+    .top-button {
+      &__icon {
+        color: $color_top_button_bg;
+      }
+    }
+  }
+}

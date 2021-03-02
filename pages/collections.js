@@ -45,7 +45,7 @@ const Collections = () => {
         </Head>
         <section id="#collections" className="collections">
           {/* TOP BUTTON */}
-          <button onClick={topFunction} title="Back to top" id="topButton" className="top-button"><i className="fa fa-chevron-up top-button__icon" aria-hidden="true"></i></button>
+          {/* <button onClick={topFunction} title="Back to top" id="topButton" className="top-button"><i className="fa fa-chevron-up top-button__icon" aria-hidden="true"></i></button> */}
           <div className="container-fluid collections__container">
             <div className="container-fluid collections__modal" id="collections__modal">
               <i className="fa fa-times-circle collections__modal-close" id="collections__modal-close" aria-hidden="true"></i>
