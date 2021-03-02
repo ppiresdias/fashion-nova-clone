@@ -126,9 +126,7 @@ const Footer = () => {
 						<div className="row footer__signup">
 							<form className="form-inline">
 								<input className="form-control newsletter-input" type="search" placeholder="Enter email" aria-label="Search"/>
-								<button className="btn newsletter-btn" type="submit">
-								Go
-								</button>
+								<button className="btn newsletter-btn" type="submit">Go</button>
 								<div className="form-group form-check">
 									<input type="checkbox" className="form-check-input" id="exampleCheck1" />
 									<label className="form-check-label" htmlFor="exampleCheck1">I have read and agree to the Privacy Policy</label>
