@@ -44,6 +44,7 @@
 
                     .newsletter-input{
                         border-radius: 0px;
+                        // font-size: 12px;
                     }::placeholder{
                         color: grey;
                     }
@@ -51,7 +52,9 @@
                     .newsletter-btn{
                         background: $primaryColorBold;
                         color: $primaryTextColor;
-                        border-radius: 0px;   
+                        border-radius: 0px;  
+                        // font-size: 14px; 
+                        padding: 6px 8px;
                     }
 
                     .form-check{
