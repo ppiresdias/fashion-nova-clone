@@ -134,10 +134,13 @@ $(window).on("load", function() {
         640: {
           items: 2
         },
-        700: {
+        768: {
           items: 3
         },
-        900: {
+        992: {
+          items: 4
+        },
+        1200: {
           items: 5
         }},
       rewind: true,
@@ -147,3 +150,4 @@ $(window).on("load", function() {
     
     });
 });
+// $breakpoint: (lg: 1199.98px, md: 991.98px, sm: 767.98px, xs: 575.98px);

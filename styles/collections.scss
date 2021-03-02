@@ -845,6 +845,47 @@ $color_arrows_outline: rgba(128, 128, 128, .2);
       }
     }
   }
+
+  .tns-controls {
+    $size: 40px;
+  
+    button {
+      height: $size;
+      width: $size;
+
+      &:hover {
+        background-color: #e7e7e7;
+    
+        i {
+          font-size: 26px;
+          transition: all .1s ease-in-out;
+        }
+      }
+      
+      i {
+        font-size: 25px;
+      }
+    }
+  
+    $margin: -$size - 4px;
+    button[data-controls="prev"] {
+      left: $margin;
+    }
+    button[data-controls="next"] {
+      right: $margin;
+    }
+  }
+
+  .tns-nav { 
+    // align-items: center;
+    // display: flex;
+    // background-color: pink;
+    padding: $p1 0 $p2;
+    :not(:first-child) {
+      margin-left: 8px;
+    }
+
+  }
 }
 
 // // Extra small

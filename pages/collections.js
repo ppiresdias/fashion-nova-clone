@@ -87,7 +87,6 @@ const Collections = () => {
                       </div>
                     </div>
                   </div>
-                  {/* <p className="res">This is text</p> */}
                   <div className="row gallery__row">
                     {getPhotos()}
                   </div>
@@ -96,6 +95,7 @@ const Collections = () => {
 
             </div>
             <div className="">
+              {/* <p className="res">This is text</p> */}
               <Carousel />
             </div>
           </div>
