@@ -442,6 +442,13 @@
         object-fit: cover;
         object-position: center;
     }
+
+    a{
+        color: $primaryColor;
+        &:hover{
+            color: $primary_hover;
+        }
+    }
 }
 
 .slide-in
