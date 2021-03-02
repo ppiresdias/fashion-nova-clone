@@ -1133,41 +1133,45 @@ class Header extends Component {
                                             <div className="container-lg">
                                                 <div className="row d-flex justify-content-around header-jumbo__pad full_width">
                                                     <div className="mar_bottom_20">
-                                                        <div className="jumbo-menu-img">
-                                                            <img src="/img/charli_collection.jpg" alt="charli collection" style={{width: '200px'}} />
-                                                        </div>
-                                                        <div className="collection-title">
-                                                            Charli X Nova
-                                                        </div>
+                                                        <a href="/collections">
+                                                            <div className="jumbo-menu-img">
+                                                                <img src="/img/charli_collection.jpg" alt="charli collection" style={{width: '200px'}} />
+                                                            </div>
+                                                            <div className="collection-title">
+                                                                Charli X Nova
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                     <div className="mar_bottom_20">
-                                                   
-                                                        <div className="jumbo-menu-img">
-                                                            <img src="/img/hawaiian_shirt.jpg" alt="boy with hawaiian shirt" style={{width: '200px'}} />
+                                                        <a href="/collections">
+                                                            <div className="jumbo-menu-img">
+                                                                <img src="/img/hawaiian_shirt.jpg" alt="boy with hawaiian shirt" style={{width: '200px'}} />                                        
+                                                            </div>
+                                                            <div className="collection-title">
+                                                                Nova Summer Collection
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div className="mar_bottom_20">
+                                                        <a href="/collections">
+                                                            <div className="jumbo-menu-img">
+                                                                <img src="/img/Jacket.jpg" alt="girl with winter jacket" style={{width: '200px'}} />
                                                                 
-                                                        </div>
-                                                        <div className="collection-title">
-                                                            Nova Summer Collection
-                                                        </div>
+                                                            </div>
+                                                            <div className="collection-title">
+                                                                Winter Wonderland
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                     <div className="mar_bottom_20">
-                                                   
-                                                        <div className="jumbo-menu-img">
-                                                            <img src="/img/Jacket.jpg" alt="girl with winter jacket" style={{width: '200px'}} />
-                                                            
-                                                        </div>
-                                                        <div className="collection-title">
-                                                            Winter Wonderland
-                                                        </div>
-                                                    </div>
-                                                    <div className="mar_bottom_20">
-                                                    
-                                                        <div className="jumbo-menu-img">
-                                                            <img src="/img/beige__dress.jpg" alt="girl with beige dress" style={{width: '200px'}} />                                                         
-                                                        </div>
-                                                        <div className="collection-title">
-                                                            As seen on Instagram
-                                                        </div>
+                                                        <a href="/collections">
+                                                            <div className="jumbo-menu-img">
+                                                                <img src="/img/beige__dress.jpg" alt="girl with beige dress" style={{width: '200px'}} />                                                         
+                                                            </div>
+                                                            <div className="collection-title">
+                                                                As seen on Instagram
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
