@@ -41,6 +41,28 @@ jQuery(function () {
     //$(".header-jumbo-menu").css("display", "none");
   });
 
+
+  // GO TO TOP BUTTON
+  function scrollFunction() {
+    let topButton = document.getElementById("topButton");
+    if (topButton !== null) {
+      if(document.documentElement.scrollTop > 20) {
+        topButton.classList.add("active");
+      } else {
+        topButton.classList.remove("active");
+      }
+      
+      let scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+      let bottom = $(".footer-wrapper").height();
+      
+      if(scrollBottom < bottom) {
+        topButton.classList.add("top-button--bottom");
+      } else {
+        topButton.classList.remove("top-button--bottom");
+      }
+    } 
+  }
+  window.addEventListener("scroll", scrollFunction);  
 });
 
 
