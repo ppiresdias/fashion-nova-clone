@@ -437,6 +437,11 @@
             cursor: pointer;
         }
     }
+
+    img{
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 .slide-in
