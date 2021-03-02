@@ -1,17 +1,14 @@
-import Image from 'next/image';
-
 export default function FeaturedProducts() {
   return (
     <section className="container">
       <div className="feature__products">
         <h2>Featured products</h2>
         <div className="row">
-          <div className="card col-12 col-sm-6 col-lg-4">
-            <Image
+          <a href="/product" className="card col-12 col-sm-6 col-lg-4">
+            <img
+              loading="lazy"
               className="card-img-top"
               src="https://source.unsplash.com/mVGW8j9rrC4/1920x2880"
-              width="600"
-              height="900"
             />
 
             <div className="card-body">
@@ -22,13 +19,12 @@ export default function FeaturedProducts() {
                 <p className="card-text">$99.00</p>
               </div>
             </div>
-          </div>
-          <div className="card col-12 col-sm-6 col-lg-4">
-            <Image
+          </a>
+          <a href="/product" className="card col-12 col-sm-6 col-lg-4">
+            <img
+              loading="lazy"
               className="card-img-top"
               src="https://source.unsplash.com/NsYo3O3HVx4/1920x2880"
-              width="600"
-              height="900"
             />
 
             <div className="card-body">
@@ -39,13 +35,12 @@ export default function FeaturedProducts() {
                 <p className="card-text">$99.00</p>
               </div>
             </div>
-          </div>
-          <div className="card col-12 col-sm-12 col-lg-4">
-            <Image
+          </a>
+          <a href="/product" className="card col-12 col-sm-12 col-lg-4">
+            <img
+              loading="lazy"
               className="card-img-top"
               src="https://source.unsplash.com/pU4J5VFnqCQ/1920x2880"
-              width="600"
-              height="900"
             />
 
             <div className="card-body">
@@ -56,14 +51,13 @@ export default function FeaturedProducts() {
                 <p className="card-text">$99.00</p>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div className="card col-12 col-sm-6 col-lg-4">
-            <Image
+          <a href="/product" className="card col-12 col-sm-6 col-lg-4">
+            <img
+              loading="lazy"
               className="card-img-top"
               src="https://source.unsplash.com/BOHyxqepP9Y/1920x2880"
-              width="600"
-              height="900"
             />
 
             <div className="card-body">
@@ -74,14 +68,13 @@ export default function FeaturedProducts() {
                 <p className="card-text">$99.00</p>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div className="card col-12 col-sm-6 col-lg-4">
-            <Image
+          <a href="/product" className="card col-12 col-sm-6 col-lg-4">
+            <img
+              loading="lazy"
               className="card-img-top"
               src="https://source.unsplash.com/6Xai7XxOgBc/1920x2880"
-              width="600"
-              height="900"
             />
 
             <div className="card-body">
@@ -92,14 +85,13 @@ export default function FeaturedProducts() {
                 <p className="card-text">$99.00</p>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div className="card col-12 col-sm-12 col-lg-4">
-            <Image
+          <a href="/product" className="card col-12 col-sm-12 col-lg-4">
+            <img
+              loading="lazy"
               className="card-img-top"
               src="https://source.unsplash.com/L6N99o-UCnc/1920x2880"
-              width="600"
-              height="900"
             />
 
             <div className="card-body">
@@ -110,7 +102,7 @@ export default function FeaturedProducts() {
                 <p className="card-text">$99.00</p>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
