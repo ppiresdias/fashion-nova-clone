@@ -8,7 +8,7 @@ import InstagramPosts from '../components/instagramPosts'
 
 export default function Home() {
   return (
-    <div>
+    <div className="wrapper__padding">
       <Head>
         <title>Fashion Nova Clone Home</title>
         <link rel="icon" href="/favicon.ico" />
