@@ -29,13 +29,30 @@ const ContactUs = () => {
 				<h1 className="contact__formTitle">How are we doing?</h1>
 				<section className="contact__form row col-md-12">
 				<form className="col-lg-6 col-md">
-					<h2>Let us know</h2>
-						<input className="contact__formInput col" type="text" placeholder="First Name"></input>
-						<input className="contact__formInput col" type="text" placeholder="Last Name"></input>
-						<input className="contact__formInput col" type="email" placeholder="Email"></input>
-						<input className="contact__formInput col" type="text" placeholder="Country"></input>
-						<input className="contact__formInputCom col" type="text" placeholder="Comments"></input>
-						<button className="col-lg- col-md contact__formButton">Submit</button>
+					<fieldset>
+					    <legend>Let us know</legend>
+					    <div className="contact__formGroup">
+					        <label for="f-name">First Name: <abbr title="required" aria-label="required">*</abbr></label>
+						    <input className="contact__formInput col" id="f-name" type="text" placeholder="First Name"></input>
+					    </div>
+					    <div className="contact__formGroup">
+					        <label for="l-name">Last Name: <abbr title="required" aria-label="required">*</abbr></label>
+						    <input className="contact__formInput col" id="l-name" type="text" placeholder="Last Name"></input>
+					    </div>
+					    <div className="contact__formGroup">
+					        <label for="email">Email: <abbr title="required" aria-label="required">*</abbr></label>
+	                        <input className="contact__formInput col" id="email" type="email" placeholder="Email"></input>
+					    </div>
+					    <div className="contact__formGroup">
+					        <label for="country">Country: <abbr title="required" aria-label="required">*</abbr></label>
+	                        <input className="contact__formInput col" id="country" type="text" placeholder="Country"></input>
+					    </div>
+					    <div className="contact__formGroup">
+				        	<label for="comment">Comment: <abbr title="required" aria-label="required">*</abbr></label>
+                            <textarea className="contact__formInputCom col" id="comment" type="text" placeholder="Comments"></textarea>
+					    </div>	
+					    <button className="col-lg- col-md contact__formButton">Submit</button>
+					</fieldset>
 					</form>
 					<div className="contact__formCustomer col-lg-6 col-md">
 						<h3>Our customers always come first, feel free to let us know how we are 

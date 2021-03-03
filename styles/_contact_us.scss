@@ -65,10 +65,17 @@ $large: 775px;
 .contact__form {
   margin-top: 40px;
   font-family: $contact_font;
-  text-align: center;
+  text-align: left;
   margin-bottom: 80px;
+  .contact__formGroup{
+    margin-top: 15px;
+    label{
+      margin-bottom: -10px;
+    }
+  }
+
   .contact__formInput {
-    height: 50px;
+    height: 40px;
     margin-top: 10px;
   }
   .contact__formInputCom {
@@ -93,7 +100,7 @@ $large: 775px;
 }
 @media screen and (min-width: $medium){
   .contact__wrapper {
-    
+  
     height: 380px;
     .contact__heading {
       padding-top: 40px;
