@@ -32,15 +32,15 @@ const ContactUs = () => {
 					<fieldset>
 					    <legend>Let us know</legend>
 					    <div className="contact__formGroup">
-					        <label for="f-name">First Name: <abbr title="required" aria-label="required">*</abbr></label>
+					        <label for="f-name">First Name: <abbr title="First name is required." aria-label="required">*</abbr></label>
 						    <input className="contact__formInput col" id="f-name" type="text" placeholder="First Name"></input>
 					    </div>
 					    <div className="contact__formGroup">
-					        <label for="l-name">Last Name: <abbr title="required" aria-label="required">*</abbr></label>
+					        <label for="l-name">Last Name: <abbr title="Last name is required." aria-label="required">*</abbr></label>
 						    <input className="contact__formInput col" id="l-name" type="text" placeholder="Last Name"></input>
 					    </div>
 					    <div className="contact__formGroup">
-					        <label for="email">Email: <abbr title="required" aria-label="required">*</abbr></label>
+					        <label for="email">Email: <abbr title="An email is required." aria-label="required">*</abbr></label>
 	                        <input className="contact__formInput col" id="email" type="email" placeholder="Email"></input>
 					    </div>
 					    <div className="contact__formGroup">
@@ -48,7 +48,7 @@ const ContactUs = () => {
 	                        <input className="contact__formInput col" id="country" type="text" placeholder="Country"></input>
 					    </div>
 					    <div className="contact__formGroup">
-				        	<label for="comment">Comment: <abbr title="required" aria-label="required">*</abbr></label>
+				        	<label for="comment">Comment: <abbr title="A comment is required." aria-label="required">*</abbr></label>
                             <textarea className="contact__formInputCom col" id="comment" type="text" placeholder="Comments"></textarea>
 					    </div>	
 					    <button className="col-lg- col-md contact__formButton">Submit</button>
