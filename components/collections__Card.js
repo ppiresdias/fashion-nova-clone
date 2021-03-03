@@ -17,10 +17,10 @@ const Card = (props) => {
         <div className="gallery__icon gallery__icon--heart">
           <i className="fa fa-heart-o" aria-hidden="true"></i>
         </div>
-        <div className="gallery__icon gallery__icon--arrow-left">
+        <div className="gallery__icon gallery__icon--arrow gallery__icon--arrow--left">
           <i className="fa fa-chevron-left" aria-hidden="true"></i>
         </div>
-        <div className="gallery__icon gallery__icon--arrow-right">
+        <div className="gallery__icon gallery__icon--arrow gallery__icon--arrow--right">
           <i className="fa fa-chevron-right" aria-hidden="true"></i>
         </div>
       </div>

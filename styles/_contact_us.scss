@@ -55,8 +55,12 @@ $large: 775px;
     background-color: $contact_btnBackground;
     margin-top: 30px;
     font-weight: 600;
-    color: $primaryTextColor;
+    color: rgb(255, 0, 179);
   }
+.contact__contentJoinButton:hover {
+  background-color: $primary_hover;
+  color:rgb(0, 0, 0)
+}
 }
 .contact__formTitle{
     margin-top: 80px;
@@ -65,10 +69,17 @@ $large: 775px;
 .contact__form {
   margin-top: 40px;
   font-family: $contact_font;
-  text-align: center;
+  text-align: left;
   margin-bottom: 80px;
+  .contact__formGroup{
+    margin-top: 15px;
+    label{
+      margin-bottom: -10px;
+    }
+  }
+  
   .contact__formInput {
-    height: 50px;
+    height: 40px;
     margin-top: 10px;
   }
   .contact__formInputCom {
@@ -82,18 +93,22 @@ $large: 775px;
     border: none;
     background-color: $contact_btnBackground;
     font-weight: 600;
-    color: $primaryTextColor;
+    color: rgb(255, 0, 179);
+    
+  }
+  .contact__formButton:hover{
+    background-color: $primary_hover;
+    color:rgb(0, 0, 0);
   }
   .contact__formCustomer{
       margin-top: 20px;
       text-align: center;
       padding: 80px;
   }
-}
+
 }
 @media screen and (min-width: $medium){
   .contact__wrapper {
-    
     height: 380px;
     .contact__heading {
       padding-top: 40px;
@@ -107,4 +122,5 @@ $large: 775px;
     margin-top: -30px;
     padding-top: 0px;
   }
+}
 }
