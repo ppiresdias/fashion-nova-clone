@@ -78,6 +78,157 @@ class Header extends Component {
                                     <HiShoppingBag />{" "}  
                                     <span className="banner-count header-cart-count">0</span>
                                 </div>
+                                <div className="shopping-bag-section" id="shopping-bag">
+                                    <div className="shopping-cart-close__icon" id="shopping-cart-close-icon">
+                                        <VscChromeClose/>
+                                    </div>
+                                    <div className="shopping-cart-heading">
+                                        Shopping Cart
+                                    </div>
+                                    <hr/>
+                                    <div className="shopping-cart-items d-flex flex-column">
+                                        <div className="row shopping-cart-item">
+                                            <div className="col-4 shopping-cart-item__img"> 
+                                                <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '100px'}} />
+                                            </div>
+                                            <div className="col shopping-cart-item__info d-flex flex-column">
+                                                <div className="shopping-cart-item__title item_info">Rose Red Dress</div>
+                                                <div className="shopping-cart-item__price item_info">
+                                                    <strike className="item_original_price">US$19.99</strike> 
+                                                    <span className="item_discount_price">US$12.99</span> 
+                                                    (<span className="item_discount_percentage">30%</span> off)
+                                                </div>
+                                                <div className="shopping-cart-item__size item_info">
+                                                    Size: <span className="item_size">6</span>
+                                                </div>
+                                                <div className="shopping-cart-item__color item_info">
+                                                    Color:   
+                                                    <div className="item_color"></div> 
+                                                    <span className="item_color-name">red</span>
+                                                </div>
+                                                <div className="row item_info shopping-cart-item__functions">
+                                                    <div className="col item_adjust_count">
+                                                        <div className="row">
+                                                            <span className="col item_count_sub"> &minus; </span>
+                                                            <span className="col item_count">1</span>
+                                                            <span className="col item_count_add"> &#43; </span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div className="col item_remove">remove</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row shopping-cart-item">
+                                            <div className="col-4 shopping-cart-item__img"> 
+                                                <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '100px'}} />
+                                            </div>
+                                            <div className="col shopping-cart-item__info d-flex flex-column">
+                                                <div className="shopping-cart-item__title item_info">Rose Red Dress</div>
+                                                <div className="shopping-cart-item__price item_info">
+                                                    <strike className="item_original_price">US$19.99</strike> 
+                                                    <span className="item_discount_price">US$12.99</span> 
+                                                    (<span className="item_discount_percentage">30%</span> off)
+                                                </div>
+                                                <div className="shopping-cart-item__size item_info">
+                                                    Size: <span className="item_size">6</span>
+                                                </div>
+                                                <div className="shopping-cart-item__color item_info">
+                                                    Color:   
+                                                    <div className="item_color"></div> 
+                                                    <span className="item_color-name">red</span>
+                                                </div>
+                                                <div className="row item_info shopping-cart-item__functions">
+                                                    <div className="col item_adjust_count">
+                                                        <div className="row">
+                                                            <span className="col item_count_sub"> &minus; </span>
+                                                            <span className="col item_count">1</span>
+                                                            <span className="col item_count_add"> &#43; </span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div className="col item_remove">remove</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row shopping-cart-item">
+                                            <div className="col-4 shopping-cart-item__img"> 
+                                                <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '100px'}} />
+                                            </div>
+                                            <div className="col shopping-cart-item__info d-flex flex-column">
+                                                <div className="shopping-cart-item__title item_info">Rose Red Dress</div>
+                                                <div className="shopping-cart-item__price item_info">
+                                                    <strike className="item_original_price">US$19.99</strike> 
+                                                    <span className="item_discount_price">US$12.99</span> 
+                                                    (<span className="item_discount_percentage">30%</span> off)
+                                                </div>
+                                                <div className="shopping-cart-item__size item_info">
+                                                    Size: <span className="item_size">6</span>
+                                                </div>
+                                                <div className="shopping-cart-item__color item_info">
+                                                    Color:   
+                                                    <div className="item_color"></div> 
+                                                    <span className="item_color-name">red</span>
+                                                </div>
+                                                <div className="row item_info shopping-cart-item__functions">
+                                                    <div className="col item_adjust_count">
+                                                        <div className="row">
+                                                            <span className="col item_count_sub"> &minus; </span>
+                                                            <span className="col item_count">1</span>
+                                                            <span className="col item_count_add"> &#43; </span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div className="col item_remove">remove</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row shopping-cart-item">
+                                            <div className="col-4 shopping-cart-item__img"> 
+                                                <img src="/img/Jumpsuit.jpg" alt="new jumpsuit" style={{width: '100px'}} />
+                                            </div>
+                                            <div className="col shopping-cart-item__info d-flex flex-column">
+                                                <div className="shopping-cart-item__title item_info">Rose Red Dress</div>
+                                                <div className="shopping-cart-item__price item_info">
+                                                    <strike className="item_original_price">US$19.99</strike> 
+                                                    <span className="item_discount_price">US$12.99</span> 
+                                                    (<span className="item_discount_percentage">30%</span> off)
+                                                </div>
+                                                <div className="shopping-cart-item__size item_info">
+                                                    Size: <span className="item_size">6</span>
+                                                </div>
+                                                <div className="shopping-cart-item__color item_info">
+                                                    Color:   
+                                                    <div className="item_color"></div> 
+                                                    <span className="item_color-name">red</span>
+                                                </div>
+                                                <div className="row item_info shopping-cart-item__functions">
+                                                    <div className="col item_adjust_count">
+                                                        <div className="row">
+                                                            <span className="col item_count_sub"> &minus; </span>
+                                                            <span className="col item_count">1</span>
+                                                            <span className="col item_count_add"> &#43; </span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div className="col item_remove">remove</div>
+                                                </div>
+                                            </div>
+                                        </div>                                       
+                                    </div>
+                                    <div className="shopping-cart-actions">
+                                        <div className="shopping-cart-total d-flex justify-content-between">
+                                            <div className="">subtotal:</div>
+                                            <div className="shopping-cart-subtotal-amount">US$89.99</div>
+                                        </div>
+                                        <div className="shopping-cart__buttons primary-action">
+                                            Checkout
+                                        </div>
+                                        <div className="shopping-cart__buttons secondary-action">
+                                            Continue Shopping
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -171,7 +322,7 @@ class Header extends Component {
                                         women <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-2" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">
+                                                    <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">                                                     
                                                         <div className="col-sm-4 col-md-3 col-lg">
                                                             <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
@@ -200,6 +351,45 @@ class Header extends Component {
                                                             <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
+                                                                        <a className="jumbo-menu-link uppercase ">Dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">all dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">mini dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">midi dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">maxi dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">casual dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">formal dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
+                                                                <li className="jumbo-menu-heading jumbo-menu-item">
+                                                                    <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">Tops</a>
                                                                     </Link>
                                                                 </li>
@@ -210,27 +400,27 @@ class Header extends Component {
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">shirts &amp; blouses</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">short sleeve tops</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">long sleeve tops</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">bodysuits</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">hoddies &amp; sweatshirts</a>
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -249,66 +439,32 @@ class Header extends Component {
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">pants</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">jeans</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">shorts</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">skirts</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div className="col-sm-4 col-md-3 col-lg">
-                                                            <ul className="jumbo-menu-items mar_bottom_20">
-                                                                <li className="jumbo-menu-heading jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link uppercase ">Outerwear</a>
+                                                                        <a className="jumbo-menu-link">sweatpants</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">all outerwear</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
+                                                                        <a className="jumbo-menu-link">leggings</a>
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -328,6 +484,11 @@ class Header extends Component {
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link">activewear</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">outerwear</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
@@ -389,27 +550,32 @@ class Header extends Component {
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">graphic tees</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">button down shirts</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">tees &amp; tanks</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">short sleeve shirts</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">long sleeve shirts</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">sweaters</a>
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -428,27 +594,22 @@ class Header extends Component {
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">jeans</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">pants</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">joggers &amp; sweats</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">shorts</a>
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -467,27 +628,12 @@ class Header extends Component {
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
+                                                                        <a className="jumbo-menu-link">coats &amp; jackets</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
+                                                                        <a className="jumbo-menu-link">track suits</a>
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -501,17 +647,17 @@ class Header extends Component {
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
+                                                                        <a className="jumbo-menu-link">suits</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
                                                                         <a className="jumbo-menu-link">swimwear</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link">activewear</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">loungewear</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
@@ -529,7 +675,7 @@ class Header extends Component {
                                         plus+curve <HiChevronDown />{" "}
                                         <div id="header-jumbo-menu-4" className="header-jumbo-menu">
                                                 <div className="container-lg">
-                                                    <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">
+                                                <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">                                                     
                                                         <div className="col-sm-4 col-md-3 col-lg">
                                                             <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
@@ -558,6 +704,45 @@ class Header extends Component {
                                                             <ul className="jumbo-menu-items mar_bottom_20">
                                                                 <li className="jumbo-menu-heading jumbo-menu-item">
                                                                     <Link href="#">
+                                                                        <a className="jumbo-menu-link uppercase ">Dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">all dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">mini dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">midi dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">maxi dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">casual dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">formal dresses</a>
+                                                                    </Link>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div className="col-sm-4 col-md-3 col-lg">
+                                                            <ul className="jumbo-menu-items mar_bottom_20">
+                                                                <li className="jumbo-menu-heading jumbo-menu-item">
+                                                                    <Link href="#">
                                                                         <a className="jumbo-menu-link uppercase ">Tops</a>
                                                                     </Link>
                                                                 </li>
@@ -568,27 +753,27 @@ class Header extends Component {
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">shirts &amp; blouses</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">short sleeve tops</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">long sleeve tops</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">bodysuits</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">top-submenu</a>
+                                                                        <a className="jumbo-menu-link">hoddies &amp; sweatshirts</a>
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -607,66 +792,32 @@ class Header extends Component {
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">pants</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">jeans</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">shorts</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
+                                                                        <a className="jumbo-menu-link">skirts</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">bottoms-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div className="col-sm-4 col-md-3 col-lg">
-                                                            <ul className="jumbo-menu-items mar_bottom_20">
-                                                                <li className="jumbo-menu-heading jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link uppercase ">Outerwear</a>
+                                                                        <a className="jumbo-menu-link">sweatpants</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
-                                                                        <a className="jumbo-menu-link">all outerwear</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li className="jumbo-menu-item">
-                                                                    <Link href="#">
-                                                                        <a className="jumbo-menu-link">outerwear-submenu</a>
+                                                                        <a className="jumbo-menu-link">leggings</a>
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -686,6 +837,11 @@ class Header extends Component {
                                                                 <li className="jumbo-menu-item">
                                                                     <Link href="#">
                                                                         <a className="jumbo-menu-link">activewear</a>
+                                                                    </Link>
+                                                                </li>
+                                                                <li className="jumbo-menu-item">
+                                                                    <Link href="#">
+                                                                        <a className="jumbo-menu-link">outerwear</a>
                                                                     </Link>
                                                                 </li>
                                                                 <li className="jumbo-menu-item">
@@ -977,41 +1133,45 @@ class Header extends Component {
                                             <div className="container-lg">
                                                 <div className="row d-flex justify-content-around header-jumbo__pad full_width">
                                                     <div className="mar_bottom_20">
-                                                        <div className="jumbo-menu-img">
-                                                            <img src="/img/charli_collection.jpg" alt="charli collection" style={{width: '200px'}} />
-                                                        </div>
-                                                        <div className="collection-title">
-                                                            Charli X Nova
-                                                        </div>
+                                                        <a href="/collections">
+                                                            <div className="jumbo-menu-img">
+                                                                <img src="/img/charli_collection.jpg" alt="charli collection" style={{width: '200px'}} />
+                                                            </div>
+                                                            <div className="collection-title">
+                                                                Charli X Nova
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                     <div className="mar_bottom_20">
-                                                   
-                                                        <div className="jumbo-menu-img">
-                                                            <img src="/img/hawaiian_shirt.jpg" alt="boy with hawaiian shirt" style={{width: '200px'}} />
+                                                        <a href="/collections">
+                                                            <div className="jumbo-menu-img">
+                                                                <img src="/img/hawaiian_shirt.jpg" alt="boy with hawaiian shirt" style={{width: '200px'}} />                                        
+                                                            </div>
+                                                            <div className="collection-title">
+                                                                Nova Summer Collection
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div className="mar_bottom_20">
+                                                        <a href="/collections">
+                                                            <div className="jumbo-menu-img">
+                                                                <img src="/img/Jacket.jpg" alt="girl with winter jacket" style={{width: '200px'}} />
                                                                 
-                                                        </div>
-                                                        <div className="collection-title">
-                                                            Nova Summer Collection
-                                                        </div>
+                                                            </div>
+                                                            <div className="collection-title">
+                                                                Winter Wonderland
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                     <div className="mar_bottom_20">
-                                                   
-                                                        <div className="jumbo-menu-img">
-                                                            <img src="/img/Jacket.jpg" alt="girl with winter jacket" style={{width: '200px'}} />
-                                                            
-                                                        </div>
-                                                        <div className="collection-title">
-                                                            Winter Wonderland
-                                                        </div>
-                                                    </div>
-                                                    <div className="mar_bottom_20">
-                                                    
-                                                        <div className="jumbo-menu-img">
-                                                            <img src="/img/beige__dress.jpg" alt="girl with beige dress" style={{width: '200px'}} />                                                         
-                                                        </div>
-                                                        <div className="collection-title">
-                                                            As seen on Instagram
-                                                        </div>
+                                                        <a href="/collections">
+                                                            <div className="jumbo-menu-img">
+                                                                <img src="/img/beige__dress.jpg" alt="girl with beige dress" style={{width: '200px'}} />                                                         
+                                                            </div>
+                                                            <div className="collection-title">
+                                                                As seen on Instagram
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
