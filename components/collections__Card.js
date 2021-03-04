@@ -11,8 +11,13 @@ const Card = (props) => {
     <div className="card gallery__container h-100">
       <div className="gallery__image-container gallery__image-container--right card-img-top">
         <div className="gallery__carousel">
-          <img className="gallery__image gallery__image--first" src={`/img/collections/${props.photo1}`} />
-          <img className="gallery__image gallery__image--second" src={`/img/collections/${props.photo2}`} />
+          <div className="gallery__image">
+            <img className="" src={`/img/collections/${props.photo1}`} />
+          </div>
+          <div className="gallery__image">
+            <img className="" src={`/img/collections/${props.photo2}`} />
+          </div>
+
         </div>
         <div className="gallery__icon gallery__icon--heart">
           <i className="fa fa-heart-o" aria-hidden="true"></i>
@@ -29,7 +34,10 @@ const Card = (props) => {
         <div className="product-info__title">{props.title}</div>
         <div className="product-info__price">$19.99 USD</div>
         <div className="product-info__swatches">{Math.random() < 0.2 ? <></> : getSwatches(["red", "blue", "green"])}</div>
-        <button className="product-info__button bag-button"><span className="bag-button__text">Add to Bag</span><i className="fa fa-chevron-down bag-button__icon" aria-hidden="true"></i></button>
+        <button className="product-info__button bag-button">
+          <span className="bag-button__text">Add to Bag</span>
+          <i className="fa fa-chevron-down bag-button__icon" aria-hidden="true"></i>
+        </button>
       </div>
   </div>
   );
