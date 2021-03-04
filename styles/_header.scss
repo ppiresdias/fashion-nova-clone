@@ -34,6 +34,7 @@
                 cursor: pointer;
                 .header-banner-social__item-count{
                     font-size: 12px;
+                    margin-left: 5px;
                 }
                 &:hover{
                     color: $primaryTextHoverColor;
@@ -78,7 +79,7 @@
     }
 
     .header-banner-right{
-        font-size: 20px;
+        font-size: 18px;
 
         .header-banner-right__item{
             margin-left: 15px;
@@ -87,6 +88,7 @@
             .banner-count{
                 font-family: $primaryFont;
                 font-size: 12px;
+                margin-left: 5px;
             }
             &:hover{
                 color: $primaryTextHoverColor;
@@ -102,7 +104,7 @@
             right: 0;
             bottom: 0;
             padding: 0 15px 15px 15px;
-            width: 380px !important;
+            width: 390px !important;
             font-family: $primaryFont;
             overflow: hidden;
             z-index: 110;
@@ -319,6 +321,10 @@
             &:hover{
                 color: $primaryTextHoverColor;
                 cursor: pointer;  
+            }
+
+            .fa-chevron-down{
+                font-size: 12px;
             }
         }
     }
