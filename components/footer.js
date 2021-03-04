@@ -140,11 +140,11 @@ const Footer = () => {
 				</div>
 				<hr></hr>
 				<div className="row footer__bottom">
-					<div className="col-9 footer__copyright">
+					<div className="col-8 footer__copyright">
 						Copyright &#169; 2021. Nova. All Rights Reserved
 					</div>
 					{/* <div className="col"></div> */}
-					<div className="col-3 footer__payments">
+					<div className="col-4 footer__payments">
 						<ul className="payments__list">
 							<li className="payment__item"> <i class="fa fa-cc-stripe" aria-hidden="true"></i> </li>
 							<li className="payment__item"> <i class="fa fa-cc-visa" aria-hidden="true"></i> </li>
