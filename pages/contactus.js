@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Layout from "../components/layout"
 import Head from "next/head"
 
@@ -20,7 +20,7 @@ const ContactUs = () => {
 					<div className="contact__contentJoin col-md col-lg-6">
 						<h2 className="contact__contentJoinH2">Happiness needs company, tell your friends!</h2>
 						<h4 className="contact__contentJoinH4">Become an affiliate!</h4>
-						<button className="contact__contentJoinButton ">Learn How</button>
+						<a href="/affiliate"><button className="contact__contentJoinButton ">Learn How</button></a>
 					</div>
 					<div className="col-md col-lg-6">
 						<img className="col contact__img" src="/img/happyshopper.jpg"/>
