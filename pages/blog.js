@@ -6,7 +6,7 @@ import {
   IoIosArrowBack,
   IoIosArrowForward,
 } from "react-icons/io";
-import {BsSearch} from "react-icons/bs";
+import { BsSearch } from "react-icons/bs";
 
 const Blog = () => {
   return (
@@ -18,14 +18,14 @@ const Blog = () => {
       <div className="blog">
         <div className="blog__header-wrapper">
           <header className="blog__header">
-            <h1>Blog</h1>
+            <span>Blog</span>
           </header>
         </div>
 
         <div className="cards-wrapper">
           <div className="cards container">
             <div className="row flex-column left-column">
-             {/*  <div className=" search">
+              {/*  <div className=" search">
                 <BsSearch />
                 <input placeholder="Search" />
                 </div> */}

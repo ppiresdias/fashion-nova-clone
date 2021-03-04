@@ -90,6 +90,13 @@ const Collections = () => {
                   <div className="row gallery__row">
                     {getPhotos()}
                   </div>
+                  <div className="load-more">
+                    <p className="load-more__text">Showing 100 of 8500 styles</p> 
+                    <div className="progress load-more__progress">
+                      <div className="progress-bar" role="progressbar" style={{ width: "25%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button className="load-more__button">Load More</button> 
+                  </div>
                 </div>
               </div>
 
