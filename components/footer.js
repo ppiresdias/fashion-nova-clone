@@ -10,7 +10,7 @@ const Footer = () => {
 		<div className='footer-wrapper'>
 			<div className="container footer-container">
 				<div className="row footer__content">
-					<div className="col footer__menu">
+					<div className="col-6 col-sm-4 col-xl-3 footer__menu">
 						<div className="footer__menu__header">NOVA</div>
 						<ul className="footer__menu__links">
 							<li className="footer__menu__link__item">
@@ -51,7 +51,7 @@ const Footer = () => {
 						</ul>
 					</div>
 
-					<div className="col footer__menu">
+					<div className="col-6 col-sm-4 col-xl-3 footer__menu">
 						<div className="footer__menu__header">Account</div>
 						<ul className="footer__menu__links">
 							<li className="footer__menu__link__item">
@@ -87,7 +87,7 @@ const Footer = () => {
 						</ul>
 					</div>
 
-					<div className="col footer__menu">
+					<div className="col-6 col-sm-4 col-xl-3 footer__menu">
 						<div className="footer__menu__header">Customer Service</div>
 						<ul className="footer__menu__links">
 							<li className="footer__menu__link__item">
@@ -118,7 +118,7 @@ const Footer = () => {
 						</ul>
 					</div>
 
-					<div className="col footer__menu">
+					<div className="col-12 col-sm-12 col-xl-3 footer__menu">
 						<div className="footer__menu__header">Newsletter</div>
 						<div className="row footer__newsletter__info">
 							Signup to our newsletter to receives updates and promotions.
@@ -126,9 +126,7 @@ const Footer = () => {
 						<div className="row footer__signup">
 							<form className="form-inline">
 								<input className="form-control newsletter-input" type="search" placeholder="Enter email" aria-label="Search"/>
-								<button className="btn newsletter-btn" type="submit">
-								<ImSearch/>
-								</button>
+								<button className="btn newsletter-btn" type="submit">Go</button>
 								<div className="form-group form-check">
 									<input type="checkbox" className="form-check-input" id="exampleCheck1" />
 									<label className="form-check-label" htmlFor="exampleCheck1">I have read and agree to the Privacy Policy</label>
