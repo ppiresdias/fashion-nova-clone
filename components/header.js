@@ -1,13 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { Component } from "react";
-import {SiTiktok, SiInstagram} from "react-icons/si";
-import { HiChevronDown, HiShoppingBag } from "react-icons/hi";
-import { FaUser, FaHeart, FaBars} from "react-icons/fa";
-import {VscGlobe, VscChromeClose} from "react-icons/vsc"
-import {
-  ImSearch,
-} from "react-icons/im";
 
 class Header extends Component {
   render() {
@@ -31,21 +24,21 @@ class Header extends Component {
                         <div className="row d-flex align-items-center justify-content-between">
                             <div className="col header-banner-left d-flex align-items-center">
                                 <button className="navbar-toggler" id="navbar-toggle" type="button" data-toggle="collapsable" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-                                    <FaBars />
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
                                 </button>
                                 <div className="socials header-banner-socials d-flex">
                                     <div className="header-banner-social__item">
-                                        {" "}<SiInstagram />{" "}
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
                                         <span className="header-banner-social__item-count">1.6M</span>
                                     </div>
-                                    <div className="header-banner-social__item">
-                                        {" "}<SiTiktok />{" "}
-                                    </div>
+                                    {/* <div className="header-banner-social__item">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div> */}
                                 </div>
                                 <div className="header-banner-search">
                                     <form className="form-inline">
                                         <button className="btn search-btn" type="submit">
-                                            <ImSearch />
+                                            <i class="fa fa-search" aria-hidden="true"></i>
                                         </button>
                                         <input
                                         className="form-control search-input"
@@ -63,24 +56,24 @@ class Header extends Component {
                             </div>
                             <div className="col header-banner-right d-flex justify-content-end">
                                 <div className="header-banner-right__item header-banner-settings">
-                                    {" "} <VscGlobe />{" "}
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
                                 </div>
                                 <div className="header-banner-right__item header-banner-account">
-                                    {" "} <FaUser />{" "}
+                                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                                 </div>
                                 <div className="header-banner-right__item header-wishlist">
                                     {" "}
-                                    <FaHeart />{" "} 
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
                                     <span className="banner-count header-wishlist-count">0</span>
                                 </div>
                                 <div className="header-banner-right__item header-cart">
                                     {" "}
-                                    <HiShoppingBag />{" "}  
+                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                                     <span className="banner-count header-cart-count">0</span>
                                 </div>
                                 <div className="shopping-bag-section" id="shopping-bag">
                                     <div className="shopping-cart-close__icon" id="shopping-cart-close-icon">
-                                        <VscChromeClose/>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
                                     </div>
                                     <div className="shopping-cart-heading">
                                         Shopping Cart
@@ -240,7 +233,7 @@ class Header extends Component {
                                 <div className="collapsed-nav-search">
                                     <form className="form-inline">
                                         <button className="btn search-btn" type="submit">
-                                            <ImSearch />
+                                            <i class="fa fa-search" aria-hidden="true"></i>
                                         </button>
                                         <input
                                         className="form-control search-input"
@@ -251,11 +244,11 @@ class Header extends Component {
                                     </form>
                                 </div>
                                 <div className="nav-collapse-mobile-close-icon" id="nav-collapse-icon">
-                                    <VscChromeClose/>
+                                    <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                                 <ul className="menu wrappers d-flex justify-content-around">
                                     <li className="menu-link header-nav-menu-link hover" id="header-nav-menu-link-1" title="new" data-target="#header-jumbo-menu-1">
-                                        new <HiChevronDown />{" "}
+                                        new <i class="fa fa-chevron-down" aria-hidden="true"></i>{" "}
                                         <div id="header-jumbo-menu-1" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row d-flex justify-content-around header-jumbo__pad full_width">
@@ -319,7 +312,7 @@ class Header extends Component {
                                             </div>
                                     </li>
                                     <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-2" title="women" data-target="#header-jumbo-menu-2">
-                                        women <HiChevronDown />{" "}
+                                        women <i class="fa fa-chevron-down" aria-hidden="true"></i>{" "}
                                         <div id="header-jumbo-menu-2" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">                                                     
@@ -508,7 +501,7 @@ class Header extends Component {
                                             </div>
                                     </li>
                                     <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-3" title="men" data-target="#header-jumbo-menu-3">
-                                        men <HiChevronDown />{" "}
+                                        men <i class="fa fa-chevron-down" aria-hidden="true"></i>{" "}
                                         <div id="header-jumbo-menu-3" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">
@@ -672,7 +665,7 @@ class Header extends Component {
                                             </div>
                                     </li>
                                     <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-4" title="plus+curve" data-target="#header-jumbo-menu-4">
-                                        plus+curve <HiChevronDown />{" "}
+                                        plus+curve <i class="fa fa-chevron-down" aria-hidden="true"></i>{" "}
                                         <div id="header-jumbo-menu-4" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                 <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">                                                     
@@ -861,7 +854,7 @@ class Header extends Component {
                                             </div>
                                     </li>
                                     <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-5" title="kids" data-target="#header-jumbo-menu-5">
-                                            kids <HiChevronDown />{" "}
+                                            kids <i class="fa fa-chevron-down" aria-hidden="true"></i>{" "}
                                             <div id="header-jumbo-menu-5" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row d-flex justify-content-evenly header-jumbo__pad full_width">
@@ -990,7 +983,7 @@ class Header extends Component {
                                             </div>
                                     </li>
                                     <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-6" title="accessories" data-target="#header-jumbo-menu-6">
-                                            accessories <HiChevronDown />{" "}
+                                            accessories <i class="fa fa-chevron-down" aria-hidden="true"></i>{" "}
                                             <div id="header-jumbo-menu-6" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row d-flex justify-content-around header-jumbo__pad full_width">
@@ -1064,7 +1057,7 @@ class Header extends Component {
                                             </div>
                                     </li>
                                     <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-7" title="sale" data-target="#header-jumbo-menu-7">
-                                            sale <HiChevronDown />{" "}
+                                            sale <i class="fa fa-chevron-down" aria-hidden="true"></i>{" "}
                                             <div id="header-jumbo-menu-7" className="header-jumbo-menu">
                                                 <div className="container-lg">
                                                     <div className="row d-flex justify-content-around header-jumbo__pad full_width">
@@ -1128,7 +1121,7 @@ class Header extends Component {
                                             </div>
                                     </li>
                                     <li className="menu-link header-nav-menu-link" id="header-nav-menu-link-8" title="collections" data-target="#header-jumbo-menu-8">
-                                        collections <HiChevronDown />{" "}
+                                        collections <i class="fa fa-chevron-down" aria-hidden="true"></i>{" "}
                                         <div id="header-jumbo-menu-8" className="header-jumbo-menu">
                                             <div className="container-lg">
                                                 <div className="row d-flex justify-content-around header-jumbo__pad full_width">

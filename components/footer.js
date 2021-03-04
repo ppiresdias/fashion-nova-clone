@@ -1,8 +1,5 @@
 
 import Link from "next/link";
-import {ImSearch, ImFacebook, ImTwitter, ImYoutube, ImInstagram, ImPinterest} from 'react-icons/im'
-import {FaCcStripe, FaCcVisa, FaCcMastercard, FaCcPaypal, FaCcDiscover, FaInstagram, FaSnapchatGhost} from 'react-icons/fa'
-import {SiTiktok} from "react-icons/si"
 
 const Footer = () => {
 	return (
@@ -134,26 +131,26 @@ const Footer = () => {
 							</form>
 						</div>
 						<div className="row footer__socials">
-							<div className="footer__social__item" id="instagram-logo"> <FaInstagram/> </div>						
-							<div className="footer__social__item" id="tiktok-logo"> <SiTiktok/> </div>
-							<div className="footer__social__item" id="snapchat-logo"> <FaSnapchatGhost/> </div>
-							<div className="footer__social__item" id="facebook-logo"> <ImFacebook/> </div>
+							<div className="footer__social__item" id="instagram-logo"> <i class="fa fa-instagram" aria-hidden="true"></i> </div>						
+							<div className="footer__social__item" id="pinterest-logo"> <i class="fa fa-pinterest" aria-hidden="true"></i> </div>
+							<div className="footer__social__item" id="snapchat-logo"> <i class="fa fa-snapchat-ghost" aria-hidden="true"></i> </div>
+							<div className="footer__social__item" id="facebook-logo"> <i class="fa fa-facebook" aria-hidden="true"></i> </div>
 						</div>
 					</div>
 				</div>
 				<hr></hr>
 				<div className="row footer__bottom">
-					<div className="col-9 footer__copyright">
-						Copyright &#169; 2021. Fashion Nova Clone. All Rights Reserved
+					<div className="col-8 footer__copyright">
+						Copyright &#169; 2021. Nova. All Rights Reserved
 					</div>
 					{/* <div className="col"></div> */}
-					<div className="col-3 footer__payments">
+					<div className="col-4 footer__payments">
 						<ul className="payments__list">
-							<li className="payment__item"> <FaCcStripe/> </li>
-							<li className="payment__item"> <FaCcVisa/> </li>
-							<li className="payment__item"> <FaCcMastercard/> </li>
-							<li className="payment__item"> <FaCcPaypal/> </li>
-							<li className="payment__item"> <FaCcDiscover/> </li>
+							<li className="payment__item"> <i class="fa fa-cc-stripe" aria-hidden="true"></i> </li>
+							<li className="payment__item"> <i class="fa fa-cc-visa" aria-hidden="true"></i> </li>
+							<li className="payment__item"> <i class="fa fa-cc-mastercard" aria-hidden="true"></i> </li>
+							<li className="payment__item"> <i class="fa fa-cc-paypal" aria-hidden="true"></i> </li>
+							<li className="payment__item"> <i class="fa fa-cc-discover" aria-hidden="true"></i> </li>
 						</ul>
 					</div>
 				</div>
