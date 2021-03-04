@@ -113,7 +113,7 @@ $(window).on("load", function() {
     preventScrollOnTouch: "auto",
     responsive: {
       414: {
-        items: 1
+        items: 2
       },
       640: {
         items: 2
